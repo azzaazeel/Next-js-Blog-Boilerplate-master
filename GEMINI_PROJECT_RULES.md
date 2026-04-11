@@ -1,0 +1,26 @@
+# Project Rules for Gemini
+
+- **Communication Policy**: ALWAYS use Vietnamese for chat and pair-programming interactions with the USER. Default to Vietnamese unless explicitly requested otherwise.
+- **Website Language Policy**: STRICTLY use English for all website content, UI elements, metadata, and documentation. DO NOT use Vietnamese in the codebase.
+- **Tone**: Professional, financial, and data-driven.
+- **Code Standards**: 
+  - Next.js 16 (Pages Router)
+  - Tailwind CSS v4 (Using CSS-native theme blocks in `src/styles/main.css`)
+  - Modern Typography (Inter/Outfit, `text-xl` for nav, `font-bold` removed for sleek look)
+- **Features**:
+  - Interactive charts use the `useBlogCharts` hook in `src/utils/useBlogCharts.ts`.
+  - **Data Security**: Market data JSON files MUST be stored in the `/data/json/` directory. Use `/api/market-data` for recent activity (100-record limit, default), `/api/market-history` for annual trends (365-record limit, via `data-history="true"`) or specific year views (via `data-year="YYYY"`), and `/api/market-3y` for long-term macro trends (Weekly resolution, ~156 records over 3 years, via `data-3y="true"`). **When adding new data retrieval rules, ensure backward compatibility is maintained.**
+  - **Chart Interaction**: Use `mode: 'nearest'`, `axis: 'x'`, and `intersect: false` for optimal performance.
+  - **Performance Optimization**: Always prioritize Chart.js optimization to prevent client-side lag and ensure smooth interaction.
+    - All chart plugins (specifically `markers`) MUST use **Pre-indexing (O(M) complexity)**. Calculate indices during initialization and iterate only over markers (not labels) during the draw loop to prevent CPU 100% usage on long datasets (20,000+ points).
+    - Disable all Chart.js animations (`animation: false`) to save CPU cycles on pages with complex data.
+  - **Premium Features**: All charts MUST include:
+    - **Fullscreen Control**: A zoom button for deep analysis.
+    - **Physical Image Export**: A download button that renders all markers and legends directly on the canvas.
+    - **Logarithmic Scale**: ALL price charts MUST use `logarithmic` axis to ensure accurate comparative growth visualization across different price ranges.
+  - **Event Markers**: Use the format `MMM DD YYYY: ShortCode: Description` in `data-markers` (e.g., `Apr 02 2026: U1: Update`) to match JSON data keys exactly. Render as **Solid Lines** (no dash) with ~0.4 opacity for high-density event clusters.
+  - **Visual Export**: Charts MUST include a `data-title`. This title MUST be rendered on the canvas for exported/downloaded images.
+  - **Insights Theme**: Prefer `theme="light"` for Insight components to ensure maximum readability of financial analysis.
+- **Colors**:
+  - **Primary**: `#45AAF2` (Headings, Branding).
+  - **Secondary/Volume**: `#F7B731` (Market data highlights, Volume histograms).

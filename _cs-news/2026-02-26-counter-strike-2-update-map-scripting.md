@@ -1,0 +1,44 @@
+---
+title: "CS2 Update: February 26, 2026"
+date: "2026-02-26"
+type: "Update"
+marketImpact: "Low"
+---
+
+[ MAP SCRIPTING ]
+
+Added Instance.SetSaveData
+
+Added Instance.GetSaveData
+
+Workshop maps can write up to 1MB of save data.
+
+Workshop saves leverage Steam Cloud and persist across installs.
+
+Save data size limit can be configured with sv_workshop_map_save_data_max_filesize_mb.
+
+Added Instance.OnModifyPlayerDamage
+
+Called after all damage properties have been calculated, just before armor and health are modified
+
+Replaces Instance.OnBeforePlayerDamage
+
+Includes hitgroup in event data
+
+Added hitgroup to OnPlayerDamage event data
+
+Added CSDamageFlags.IGNORE_ARMOR
+
+Added CSPlayerPawn.IsInputPressed
+
+Added CSPlayerPawn.WasInputJustPressed
+
+Added CSPlayerPawn.WasInputJustReleased
+
+Added enum CSInputs
+
+Fixed bug where CSDamageTypes was exported under the name CSDamageType
+
+[ MISC ]
+
+Map guides for de_ancient can now be used on de_ancient_night and vice versa.

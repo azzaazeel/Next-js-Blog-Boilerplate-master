@@ -1,0 +1,39 @@
+---
+title: "CS2 Update: January 27, 2026"
+date: "2026-01-27"
+type: "Update"
+marketImpact: "Low"
+---
+
+[ GAMEPLAY ]
+
+Molotov/incendiary grenades that bounce off an enemy player have a one-time fuse extension added to prevent them from air-bursting when their has-never-hit-the-world timer elapses.
+
+
+[ SOUND ]
+
+Fixed a performance issue when running CS2 without a sound device.
+
+Various knife sound adjustments.
+
+
+[ MISC ]
+
+Fixed broken cl_ent_bbox visualization for some classes of rigid dynamic entities.
+
+Various stability improvements.
+
+
+[ MAPS ]
+
+Nuke
+
+Adjusted hanging hard hat model render bounds to prevent shadow popping when model exited the view frustum.
+
+Warden
+
+Updated to the latest version from the Community Workshop (Update Notes)
+
+Sanctum
+
+Updated to the latest version from the Community Workshop (Update Notes)

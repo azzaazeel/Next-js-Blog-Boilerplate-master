@@ -1,0 +1,8258 @@
+[
+  {
+    "date": "Jul 01 2022",
+    "timestamp": 1656676800000,
+    "price": 493921.72,
+    "volume": 6647
+  },
+  {
+    "date": "Jul 02 2022",
+    "timestamp": 1656763200000,
+    "price": 239170.63,
+    "volume": 65281
+  },
+  {
+    "date": "Jul 03 2022",
+    "timestamp": 1656849600000,
+    "price": 160591.91,
+    "volume": 55152
+  },
+  {
+    "date": "Jul 04 2022",
+    "timestamp": 1656936000000,
+    "price": 129898.08,
+    "volume": 50299
+  },
+  {
+    "date": "Jul 05 2022",
+    "timestamp": 1657022400000,
+    "price": 117787.42,
+    "volume": 51490
+  },
+  {
+    "date": "Jul 06 2022",
+    "timestamp": 1657108800000,
+    "price": 108621.91,
+    "volume": 48629
+  },
+  {
+    "date": "Jul 07 2022",
+    "timestamp": 1657195200000,
+    "price": 101547.87,
+    "volume": 46443
+  },
+  {
+    "date": "Jul 08 2022",
+    "timestamp": 1657281600000,
+    "price": 105733.63,
+    "volume": 46589
+  },
+  {
+    "date": "Jul 09 2022",
+    "timestamp": 1657368000000,
+    "price": 101703.28,
+    "volume": 48132
+  },
+  {
+    "date": "Jul 10 2022",
+    "timestamp": 1657454400000,
+    "price": 95861.28,
+    "volume": 51081
+  },
+  {
+    "date": "Jul 11 2022",
+    "timestamp": 1657540800000,
+    "price": 83207.02,
+    "volume": 50493
+  },
+  {
+    "date": "Jul 12 2022",
+    "timestamp": 1657627200000,
+    "price": 75012.47,
+    "volume": 50648
+  },
+  {
+    "date": "Jul 13 2022",
+    "timestamp": 1657713600000,
+    "price": 95073.34,
+    "volume": 37200
+  },
+  {
+    "date": "Jul 14 2022",
+    "timestamp": 1657800000000,
+    "price": 70375.72,
+    "volume": 56559
+  },
+  {
+    "date": "Jul 15 2022",
+    "timestamp": 1657886400000,
+    "price": 77687.44,
+    "volume": 50139
+  },
+  {
+    "date": "Jul 16 2022",
+    "timestamp": 1657972800000,
+    "price": 77190.06,
+    "volume": 47237
+  },
+  {
+    "date": "Jul 17 2022",
+    "timestamp": 1658059200000,
+    "price": 71744.77,
+    "volume": 50884
+  },
+  {
+    "date": "Jul 18 2022",
+    "timestamp": 1658145600000,
+    "price": 66321.3,
+    "volume": 49456
+  },
+  {
+    "date": "Jul 19 2022",
+    "timestamp": 1658232000000,
+    "price": 66905.09,
+    "volume": 52242
+  },
+  {
+    "date": "Jul 20 2022",
+    "timestamp": 1658318400000,
+    "price": 84290.91,
+    "volume": 35997
+  },
+  {
+    "date": "Jul 21 2022",
+    "timestamp": 1658404800000,
+    "price": 63621.49,
+    "volume": 57351
+  },
+  {
+    "date": "Jul 22 2022",
+    "timestamp": 1658491200000,
+    "price": 64295.91,
+    "volume": 52011
+  },
+  {
+    "date": "Jul 23 2022",
+    "timestamp": 1658577600000,
+    "price": 63404.47,
+    "volume": 51178
+  },
+  {
+    "date": "Jul 24 2022",
+    "timestamp": 1658664000000,
+    "price": 59421.92,
+    "volume": 53426
+  },
+  {
+    "date": "Jul 25 2022",
+    "timestamp": 1658750400000,
+    "price": 56467.63,
+    "volume": 49300
+  },
+  {
+    "date": "Jul 26 2022",
+    "timestamp": 1658836800000,
+    "price": 53946.01,
+    "volume": 51140
+  },
+  {
+    "date": "Jul 27 2022",
+    "timestamp": 1658923200000,
+    "price": 51185.35,
+    "volume": 50145
+  },
+  {
+    "date": "Jul 28 2022",
+    "timestamp": 1659009600000,
+    "price": 50481.14,
+    "volume": 52670
+  },
+  {
+    "date": "Jul 29 2022",
+    "timestamp": 1659096000000,
+    "price": 53120.94,
+    "volume": 51395
+  },
+  {
+    "date": "Jul 30 2022",
+    "timestamp": 1659182400000,
+    "price": 55490.29,
+    "volume": 52145
+  },
+  {
+    "date": "Jul 31 2022",
+    "timestamp": 1659268800000,
+    "price": 54425.01,
+    "volume": 53298
+  },
+  {
+    "date": "Aug 01 2022",
+    "timestamp": 1659355200000,
+    "price": 53780.96,
+    "volume": 51219
+  },
+  {
+    "date": "Aug 02 2022",
+    "timestamp": 1659441600000,
+    "price": 53023.56,
+    "volume": 57665
+  },
+  {
+    "date": "Aug 03 2022",
+    "timestamp": 1659528000000,
+    "price": 52393.29,
+    "volume": 56267
+  },
+  {
+    "date": "Aug 04 2022",
+    "timestamp": 1659614400000,
+    "price": 52163.45,
+    "volume": 54929
+  },
+  {
+    "date": "Aug 05 2022",
+    "timestamp": 1659700800000,
+    "price": 52904.07,
+    "volume": 52829
+  },
+  {
+    "date": "Aug 06 2022",
+    "timestamp": 1659787200000,
+    "price": 53626.27,
+    "volume": 53575
+  },
+  {
+    "date": "Aug 07 2022",
+    "timestamp": 1659873600000,
+    "price": 53085.73,
+    "volume": 55789
+  },
+  {
+    "date": "Aug 08 2022",
+    "timestamp": 1659960000000,
+    "price": 51721.52,
+    "volume": 51034
+  },
+  {
+    "date": "Aug 09 2022",
+    "timestamp": 1660046400000,
+    "price": 50542.44,
+    "volume": 33465
+  },
+  {
+    "date": "Aug 10 2022",
+    "timestamp": 1660132800000,
+    "price": 49672.8,
+    "volume": 58787
+  },
+  {
+    "date": "Aug 11 2022",
+    "timestamp": 1660219200000,
+    "price": 48591.28,
+    "volume": 54180
+  },
+  {
+    "date": "Aug 12 2022",
+    "timestamp": 1660305600000,
+    "price": 47612.64,
+    "volume": 54843
+  },
+  {
+    "date": "Aug 13 2022",
+    "timestamp": 1660392000000,
+    "price": 47527.59,
+    "volume": 53064
+  },
+  {
+    "date": "Aug 14 2022",
+    "timestamp": 1660478400000,
+    "price": 46373.82,
+    "volume": 56553
+  },
+  {
+    "date": "Aug 15 2022",
+    "timestamp": 1660564800000,
+    "price": 44593.23,
+    "volume": 50257
+  },
+  {
+    "date": "Aug 16 2022",
+    "timestamp": 1660651200000,
+    "price": 44094.59,
+    "volume": 55551
+  },
+  {
+    "date": "Aug 17 2022",
+    "timestamp": 1660737600000,
+    "price": 41792.84,
+    "volume": 66124
+  },
+  {
+    "date": "Aug 18 2022",
+    "timestamp": 1660824000000,
+    "price": 39880.69,
+    "volume": 62426
+  },
+  {
+    "date": "Aug 19 2022",
+    "timestamp": 1660910400000,
+    "price": 39746.29,
+    "volume": 63611
+  },
+  {
+    "date": "Aug 20 2022",
+    "timestamp": 1660996800000,
+    "price": 41273.13,
+    "volume": 61336
+  },
+  {
+    "date": "Aug 21 2022",
+    "timestamp": 1661083200000,
+    "price": 41783.38,
+    "volume": 61191
+  },
+  {
+    "date": "Aug 22 2022",
+    "timestamp": 1661169600000,
+    "price": 40565.66,
+    "volume": 56380
+  },
+  {
+    "date": "Aug 23 2022",
+    "timestamp": 1661256000000,
+    "price": 40838.01,
+    "volume": 53111
+  },
+  {
+    "date": "Aug 24 2022",
+    "timestamp": 1661342400000,
+    "price": 40499.25,
+    "volume": 55892
+  },
+  {
+    "date": "Aug 25 2022",
+    "timestamp": 1661428800000,
+    "price": 39871.64,
+    "volume": 55897
+  },
+  {
+    "date": "Aug 26 2022",
+    "timestamp": 1661515200000,
+    "price": 40517.56,
+    "volume": 57210
+  },
+  {
+    "date": "Aug 27 2022",
+    "timestamp": 1661601600000,
+    "price": 42008.63,
+    "volume": 60186
+  },
+  {
+    "date": "Aug 28 2022",
+    "timestamp": 1661688000000,
+    "price": 42434.61,
+    "volume": 62632
+  },
+  {
+    "date": "Aug 29 2022",
+    "timestamp": 1661774400000,
+    "price": 42454,
+    "volume": 57664
+  },
+  {
+    "date": "Aug 30 2022",
+    "timestamp": 1661860800000,
+    "price": 41194.89,
+    "volume": 56906
+  },
+  {
+    "date": "Aug 31 2022",
+    "timestamp": 1661947200000,
+    "price": 41694.89,
+    "volume": 57621
+  },
+  {
+    "date": "Sep 01 2022",
+    "timestamp": 1662033600000,
+    "price": 42425.26,
+    "volume": 57288
+  },
+  {
+    "date": "Sep 02 2022",
+    "timestamp": 1662120000000,
+    "price": 42914.88,
+    "volume": 59450
+  },
+  {
+    "date": "Sep 03 2022",
+    "timestamp": 1662206400000,
+    "price": 43674.89,
+    "volume": 63970
+  },
+  {
+    "date": "Sep 04 2022",
+    "timestamp": 1662292800000,
+    "price": 43595.32,
+    "volume": 59985
+  },
+  {
+    "date": "Sep 05 2022",
+    "timestamp": 1662379200000,
+    "price": 43684.43,
+    "volume": 56224
+  },
+  {
+    "date": "Sep 06 2022",
+    "timestamp": 1662465600000,
+    "price": 43699.22,
+    "volume": 52519
+  },
+  {
+    "date": "Sep 07 2022",
+    "timestamp": 1662552000000,
+    "price": 42875.16,
+    "volume": 53515
+  },
+  {
+    "date": "Sep 08 2022",
+    "timestamp": 1662638400000,
+    "price": 42855.85,
+    "volume": 54998
+  },
+  {
+    "date": "Sep 09 2022",
+    "timestamp": 1662724800000,
+    "price": 42652.83,
+    "volume": 58077
+  },
+  {
+    "date": "Sep 10 2022",
+    "timestamp": 1662811200000,
+    "price": 42863.39,
+    "volume": 64264
+  },
+  {
+    "date": "Sep 11 2022",
+    "timestamp": 1662897600000,
+    "price": 42512.71,
+    "volume": 63338
+  },
+  {
+    "date": "Sep 12 2022",
+    "timestamp": 1662984000000,
+    "price": 41757.1,
+    "volume": 50375
+  },
+  {
+    "date": "Sep 13 2022",
+    "timestamp": 1663070400000,
+    "price": 41273.23,
+    "volume": 52929
+  },
+  {
+    "date": "Sep 14 2022",
+    "timestamp": 1663156800000,
+    "price": 40871.85,
+    "volume": 55406
+  },
+  {
+    "date": "Sep 15 2022",
+    "timestamp": 1663243200000,
+    "price": 40294.22,
+    "volume": 55491
+  },
+  {
+    "date": "Sep 16 2022",
+    "timestamp": 1663329600000,
+    "price": 39856.34,
+    "volume": 55616
+  },
+  {
+    "date": "Sep 17 2022",
+    "timestamp": 1663416000000,
+    "price": 38832.19,
+    "volume": 62363
+  },
+  {
+    "date": "Sep 18 2022",
+    "timestamp": 1663502400000,
+    "price": 37009.22,
+    "volume": 61388
+  },
+  {
+    "date": "Sep 19 2022",
+    "timestamp": 1663588800000,
+    "price": 35349.13,
+    "volume": 52618
+  },
+  {
+    "date": "Sep 20 2022",
+    "timestamp": 1663675200000,
+    "price": 34602.79,
+    "volume": 53105
+  },
+  {
+    "date": "Sep 21 2022",
+    "timestamp": 1663761600000,
+    "price": 33384.95,
+    "volume": 53280
+  },
+  {
+    "date": "Sep 22 2022",
+    "timestamp": 1663848000000,
+    "price": 31270.11,
+    "volume": 55279
+  },
+  {
+    "date": "Sep 23 2022",
+    "timestamp": 1663934400000,
+    "price": 31013.37,
+    "volume": 67194
+  },
+  {
+    "date": "Sep 24 2022",
+    "timestamp": 1664020800000,
+    "price": 32519.79,
+    "volume": 68987
+  },
+  {
+    "date": "Sep 25 2022",
+    "timestamp": 1664107200000,
+    "price": 33106.32,
+    "volume": 67221
+  },
+  {
+    "date": "Sep 26 2022",
+    "timestamp": 1664193600000,
+    "price": 32957.34,
+    "volume": 54824
+  },
+  {
+    "date": "Sep 27 2022",
+    "timestamp": 1664280000000,
+    "price": 33141.43,
+    "volume": 54160
+  },
+  {
+    "date": "Sep 28 2022",
+    "timestamp": 1664366400000,
+    "price": 32488.58,
+    "volume": 51724
+  },
+  {
+    "date": "Sep 29 2022",
+    "timestamp": 1664452800000,
+    "price": 31340.12,
+    "volume": 58869
+  },
+  {
+    "date": "Sep 30 2022",
+    "timestamp": 1664539200000,
+    "price": 32037.68,
+    "volume": 64235
+  },
+  {
+    "date": "Oct 01 2022",
+    "timestamp": 1664625600000,
+    "price": 33619.64,
+    "volume": 70436
+  },
+  {
+    "date": "Oct 02 2022",
+    "timestamp": 1664712000000,
+    "price": 33430.88,
+    "volume": 64672
+  },
+  {
+    "date": "Oct 03 2022",
+    "timestamp": 1664798400000,
+    "price": 33667.02,
+    "volume": 55620
+  },
+  {
+    "date": "Oct 04 2022",
+    "timestamp": 1664884800000,
+    "price": 32855.25,
+    "volume": 50788
+  },
+  {
+    "date": "Oct 05 2022",
+    "timestamp": 1664971200000,
+    "price": 31286.06,
+    "volume": 53155
+  },
+  {
+    "date": "Oct 06 2022",
+    "timestamp": 1665057600000,
+    "price": 31192.75,
+    "volume": 56805
+  },
+  {
+    "date": "Oct 07 2022",
+    "timestamp": 1665144000000,
+    "price": 31526.31,
+    "volume": 60433
+  },
+  {
+    "date": "Oct 08 2022",
+    "timestamp": 1665230400000,
+    "price": 32235.51,
+    "volume": 66908
+  },
+  {
+    "date": "Oct 09 2022",
+    "timestamp": 1665316800000,
+    "price": 32363.96,
+    "volume": 61533
+  },
+  {
+    "date": "Oct 10 2022",
+    "timestamp": 1665403200000,
+    "price": 31905.34,
+    "volume": 55150
+  },
+  {
+    "date": "Oct 11 2022",
+    "timestamp": 1665489600000,
+    "price": 31827.15,
+    "volume": 52233
+  },
+  {
+    "date": "Oct 12 2022",
+    "timestamp": 1665576000000,
+    "price": 31825.04,
+    "volume": 45396
+  },
+  {
+    "date": "Oct 13 2022",
+    "timestamp": 1665662400000,
+    "price": 31299.19,
+    "volume": 60163
+  },
+  {
+    "date": "Oct 14 2022",
+    "timestamp": 1665748800000,
+    "price": 30579.45,
+    "volume": 47425
+  },
+  {
+    "date": "Oct 15 2022",
+    "timestamp": 1665835200000,
+    "price": 31257.13,
+    "volume": 76837
+  },
+  {
+    "date": "Oct 16 2022",
+    "timestamp": 1665921600000,
+    "price": 31786.12,
+    "volume": 59573
+  },
+  {
+    "date": "Oct 17 2022",
+    "timestamp": 1666008000000,
+    "price": 30778.93,
+    "volume": 50728
+  },
+  {
+    "date": "Oct 18 2022",
+    "timestamp": 1666094400000,
+    "price": 30345.44,
+    "volume": 57237
+  },
+  {
+    "date": "Oct 19 2022",
+    "timestamp": 1666180800000,
+    "price": 30730.92,
+    "volume": 54004
+  },
+  {
+    "date": "Oct 20 2022",
+    "timestamp": 1666267200000,
+    "price": 29919.53,
+    "volume": 53313
+  },
+  {
+    "date": "Oct 21 2022",
+    "timestamp": 1666353600000,
+    "price": 29370.78,
+    "volume": 64824
+  },
+  {
+    "date": "Oct 22 2022",
+    "timestamp": 1666440000000,
+    "price": 28335.62,
+    "volume": 77924
+  },
+  {
+    "date": "Oct 23 2022",
+    "timestamp": 1666526400000,
+    "price": 27482.61,
+    "volume": 73638
+  },
+  {
+    "date": "Oct 24 2022",
+    "timestamp": 1666612800000,
+    "price": 27262.78,
+    "volume": 60078
+  },
+  {
+    "date": "Oct 25 2022",
+    "timestamp": 1666699200000,
+    "price": 26493.72,
+    "volume": 56221
+  },
+  {
+    "date": "Oct 26 2022",
+    "timestamp": 1666785600000,
+    "price": 26383.22,
+    "volume": 57580
+  },
+  {
+    "date": "Oct 27 2022",
+    "timestamp": 1666872000000,
+    "price": 26315.05,
+    "volume": 58540
+  },
+  {
+    "date": "Oct 28 2022",
+    "timestamp": 1666958400000,
+    "price": 25677.2,
+    "volume": 62284
+  },
+  {
+    "date": "Oct 29 2022",
+    "timestamp": 1667044800000,
+    "price": 25248.23,
+    "volume": 68575
+  },
+  {
+    "date": "Oct 30 2022",
+    "timestamp": 1667131200000,
+    "price": 23948.4,
+    "volume": 69630
+  },
+  {
+    "date": "Oct 31 2022",
+    "timestamp": 1667217600000,
+    "price": 22273.33,
+    "volume": 61063
+  },
+  {
+    "date": "Nov 01 2022",
+    "timestamp": 1667304000000,
+    "price": 22469.34,
+    "volume": 63319
+  },
+  {
+    "date": "Nov 02 2022",
+    "timestamp": 1667390400000,
+    "price": 23680.89,
+    "volume": 60146
+  },
+  {
+    "date": "Nov 03 2022",
+    "timestamp": 1667476800000,
+    "price": 24810.05,
+    "volume": 60965
+  },
+  {
+    "date": "Nov 04 2022",
+    "timestamp": 1667563200000,
+    "price": 25491.19,
+    "volume": 65921
+  },
+  {
+    "date": "Nov 05 2022",
+    "timestamp": 1667649600000,
+    "price": 25258.03,
+    "volume": 65039
+  },
+  {
+    "date": "Nov 06 2022",
+    "timestamp": 1667736000000,
+    "price": 25076.49,
+    "volume": 64803
+  },
+  {
+    "date": "Nov 07 2022",
+    "timestamp": 1667822400000,
+    "price": 25031.42,
+    "volume": 55227
+  },
+  {
+    "date": "Nov 08 2022",
+    "timestamp": 1667908800000,
+    "price": 24809.22,
+    "volume": 54196
+  },
+  {
+    "date": "Nov 09 2022",
+    "timestamp": 1667995200000,
+    "price": 25067.82,
+    "volume": 54510
+  },
+  {
+    "date": "Nov 10 2022",
+    "timestamp": 1668081600000,
+    "price": 25012.41,
+    "volume": 55614
+  },
+  {
+    "date": "Nov 11 2022",
+    "timestamp": 1668168000000,
+    "price": 25300.63,
+    "volume": 59664
+  },
+  {
+    "date": "Nov 12 2022",
+    "timestamp": 1668254400000,
+    "price": 25155.35,
+    "volume": 67822
+  },
+  {
+    "date": "Nov 13 2022",
+    "timestamp": 1668340800000,
+    "price": 24271.81,
+    "volume": 67633
+  },
+  {
+    "date": "Nov 14 2022",
+    "timestamp": 1668427200000,
+    "price": 23431.95,
+    "volume": 57505
+  },
+  {
+    "date": "Nov 15 2022",
+    "timestamp": 1668513600000,
+    "price": 23264.06,
+    "volume": 57810
+  },
+  {
+    "date": "Nov 16 2022",
+    "timestamp": 1668600000000,
+    "price": 23187.33,
+    "volume": 56781
+  },
+  {
+    "date": "Nov 17 2022",
+    "timestamp": 1668686400000,
+    "price": 23386.33,
+    "volume": 55789
+  },
+  {
+    "date": "Nov 18 2022",
+    "timestamp": 1668772800000,
+    "price": 23721.04,
+    "volume": 65027
+  },
+  {
+    "date": "Nov 19 2022",
+    "timestamp": 1668859200000,
+    "price": 23128.7,
+    "volume": 69398
+  },
+  {
+    "date": "Nov 20 2022",
+    "timestamp": 1668945600000,
+    "price": 21578.37,
+    "volume": 65261
+  },
+  {
+    "date": "Nov 21 2022",
+    "timestamp": 1669032000000,
+    "price": 20853.51,
+    "volume": 54835
+  },
+  {
+    "date": "Nov 22 2022",
+    "timestamp": 1669118400000,
+    "price": 19809.22,
+    "volume": 54307
+  },
+  {
+    "date": "Nov 23 2022",
+    "timestamp": 1669204800000,
+    "price": 18769.26,
+    "volume": 57957
+  },
+  {
+    "date": "Nov 24 2022",
+    "timestamp": 1669291200000,
+    "price": 18426.97,
+    "volume": 60450
+  },
+  {
+    "date": "Nov 25 2022",
+    "timestamp": 1669377600000,
+    "price": 18111.74,
+    "volume": 63859
+  },
+  {
+    "date": "Nov 26 2022",
+    "timestamp": 1669464000000,
+    "price": 17765.12,
+    "volume": 70887
+  },
+  {
+    "date": "Nov 27 2022",
+    "timestamp": 1669550400000,
+    "price": 17543.34,
+    "volume": 69283
+  },
+  {
+    "date": "Nov 28 2022",
+    "timestamp": 1669636800000,
+    "price": 16629.61,
+    "volume": 58266
+  },
+  {
+    "date": "Nov 29 2022",
+    "timestamp": 1669723200000,
+    "price": 16469.13,
+    "volume": 57514
+  },
+  {
+    "date": "Nov 30 2022",
+    "timestamp": 1669809600000,
+    "price": 17384.94,
+    "volume": 52977
+  },
+  {
+    "date": "Dec 01 2022",
+    "timestamp": 1669896000000,
+    "price": 18018.1,
+    "volume": 55267
+  },
+  {
+    "date": "Dec 02 2022",
+    "timestamp": 1669982400000,
+    "price": 19091.73,
+    "volume": 61962
+  },
+  {
+    "date": "Dec 03 2022",
+    "timestamp": 1670068800000,
+    "price": 19320.27,
+    "volume": 68890
+  },
+  {
+    "date": "Dec 04 2022",
+    "timestamp": 1670155200000,
+    "price": 18399.55,
+    "volume": 64333
+  },
+  {
+    "date": "Dec 05 2022",
+    "timestamp": 1670241600000,
+    "price": 18092.8,
+    "volume": 52513
+  },
+  {
+    "date": "Dec 06 2022",
+    "timestamp": 1670328000000,
+    "price": 17408.87,
+    "volume": 51841
+  },
+  {
+    "date": "Dec 07 2022",
+    "timestamp": 1670414400000,
+    "price": 17323.44,
+    "volume": 53045
+  },
+  {
+    "date": "Dec 08 2022",
+    "timestamp": 1670500800000,
+    "price": 16805.65,
+    "volume": 54563
+  },
+  {
+    "date": "Dec 09 2022",
+    "timestamp": 1670587200000,
+    "price": 16947.78,
+    "volume": 55278
+  },
+  {
+    "date": "Dec 10 2022",
+    "timestamp": 1670673600000,
+    "price": 16865.69,
+    "volume": 63360
+  },
+  {
+    "date": "Dec 11 2022",
+    "timestamp": 1670760000000,
+    "price": 16610.56,
+    "volume": 65868
+  },
+  {
+    "date": "Dec 12 2022",
+    "timestamp": 1670846400000,
+    "price": 16732.78,
+    "volume": 55374
+  },
+  {
+    "date": "Dec 13 2022",
+    "timestamp": 1670932800000,
+    "price": 16569.28,
+    "volume": 55359
+  },
+  {
+    "date": "Dec 14 2022",
+    "timestamp": 1671019200000,
+    "price": 16480.03,
+    "volume": 54342
+  },
+  {
+    "date": "Dec 15 2022",
+    "timestamp": 1671105600000,
+    "price": 16626.1,
+    "volume": 56679
+  },
+  {
+    "date": "Dec 16 2022",
+    "timestamp": 1671192000000,
+    "price": 16729.03,
+    "volume": 61284
+  },
+  {
+    "date": "Dec 17 2022",
+    "timestamp": 1671278400000,
+    "price": 16996.83,
+    "volume": 68806
+  },
+  {
+    "date": "Dec 18 2022",
+    "timestamp": 1671364800000,
+    "price": 16898.31,
+    "volume": 61783
+  },
+  {
+    "date": "Dec 19 2022",
+    "timestamp": 1671451200000,
+    "price": 17107.13,
+    "volume": 57854
+  },
+  {
+    "date": "Dec 20 2022",
+    "timestamp": 1671537600000,
+    "price": 16772.13,
+    "volume": 57449
+  },
+  {
+    "date": "Dec 21 2022",
+    "timestamp": 1671624000000,
+    "price": 17266.67,
+    "volume": 58957
+  },
+  {
+    "date": "Dec 22 2022",
+    "timestamp": 1671710400000,
+    "price": 17228.71,
+    "volume": 63281
+  },
+  {
+    "date": "Dec 23 2022",
+    "timestamp": 1671796800000,
+    "price": 17036.5,
+    "volume": 75403
+  },
+  {
+    "date": "Dec 24 2022",
+    "timestamp": 1671883200000,
+    "price": 17497.97,
+    "volume": 72357
+  },
+  {
+    "date": "Dec 25 2022",
+    "timestamp": 1671969600000,
+    "price": 17497.34,
+    "volume": 69836
+  },
+  {
+    "date": "Dec 26 2022",
+    "timestamp": 1672056000000,
+    "price": 17124.85,
+    "volume": 64740
+  },
+  {
+    "date": "Dec 27 2022",
+    "timestamp": 1672142400000,
+    "price": 15806.42,
+    "volume": 61659
+  },
+  {
+    "date": "Dec 28 2022",
+    "timestamp": 1672228800000,
+    "price": 14849.08,
+    "volume": 63006
+  },
+  {
+    "date": "Dec 29 2022",
+    "timestamp": 1672315200000,
+    "price": 15096.2,
+    "volume": 67616
+  },
+  {
+    "date": "Dec 30 2022",
+    "timestamp": 1672401600000,
+    "price": 15586.08,
+    "volume": 72296
+  },
+  {
+    "date": "Dec 31 2022",
+    "timestamp": 1672488000000,
+    "price": 16331.75,
+    "volume": 58437
+  },
+  {
+    "date": "Jan 01 2023",
+    "timestamp": 1672574400000,
+    "price": 16640.53,
+    "volume": 64572
+  },
+  {
+    "date": "Jan 02 2023",
+    "timestamp": 1672660800000,
+    "price": 15665.73,
+    "volume": 67547
+  },
+  {
+    "date": "Jan 03 2023",
+    "timestamp": 1672747200000,
+    "price": 15764.63,
+    "volume": 65868
+  },
+  {
+    "date": "Jan 04 2023",
+    "timestamp": 1672833600000,
+    "price": 15628.75,
+    "volume": 66383
+  },
+  {
+    "date": "Jan 05 2023",
+    "timestamp": 1672920000000,
+    "price": 15669.29,
+    "volume": 64641
+  },
+  {
+    "date": "Jan 06 2023",
+    "timestamp": 1673006400000,
+    "price": 15516.63,
+    "volume": 65453
+  },
+  {
+    "date": "Jan 07 2023",
+    "timestamp": 1673092800000,
+    "price": 15433.27,
+    "volume": 67295
+  },
+  {
+    "date": "Jan 08 2023",
+    "timestamp": 1673179200000,
+    "price": 14944.57,
+    "volume": 64699
+  },
+  {
+    "date": "Jan 09 2023",
+    "timestamp": 1673265600000,
+    "price": 14594.53,
+    "volume": 61069
+  },
+  {
+    "date": "Jan 10 2023",
+    "timestamp": 1673352000000,
+    "price": 14386.63,
+    "volume": 60529
+  },
+  {
+    "date": "Jan 11 2023",
+    "timestamp": 1673438400000,
+    "price": 14859.98,
+    "volume": 63077
+  },
+  {
+    "date": "Jan 12 2023",
+    "timestamp": 1673524800000,
+    "price": 14950.36,
+    "volume": 58698
+  },
+  {
+    "date": "Jan 13 2023",
+    "timestamp": 1673611200000,
+    "price": 15295.49,
+    "volume": 65559
+  },
+  {
+    "date": "Jan 14 2023",
+    "timestamp": 1673697600000,
+    "price": 15762.92,
+    "volume": 75407
+  },
+  {
+    "date": "Jan 15 2023",
+    "timestamp": 1673784000000,
+    "price": 16058.59,
+    "volume": 68891
+  },
+  {
+    "date": "Jan 16 2023",
+    "timestamp": 1673870400000,
+    "price": 15899.64,
+    "volume": 56739
+  },
+  {
+    "date": "Jan 17 2023",
+    "timestamp": 1673956800000,
+    "price": 16066.19,
+    "volume": 61586
+  },
+  {
+    "date": "Jan 18 2023",
+    "timestamp": 1674043200000,
+    "price": 16214.15,
+    "volume": 59637
+  },
+  {
+    "date": "Jan 19 2023",
+    "timestamp": 1674129600000,
+    "price": 16182.98,
+    "volume": 59825
+  },
+  {
+    "date": "Jan 20 2023",
+    "timestamp": 1674216000000,
+    "price": 16497.6,
+    "volume": 67420
+  },
+  {
+    "date": "Jan 21 2023",
+    "timestamp": 1674302400000,
+    "price": 17228.04,
+    "volume": 89642
+  },
+  {
+    "date": "Jan 22 2023",
+    "timestamp": 1674388800000,
+    "price": 17944.28,
+    "volume": 81135
+  },
+  {
+    "date": "Jan 23 2023",
+    "timestamp": 1674475200000,
+    "price": 17704.04,
+    "volume": 63940
+  },
+  {
+    "date": "Jan 24 2023",
+    "timestamp": 1674561600000,
+    "price": 17663.21,
+    "volume": 63119
+  },
+  {
+    "date": "Jan 25 2023",
+    "timestamp": 1674648000000,
+    "price": 17697.07,
+    "volume": 60936
+  },
+  {
+    "date": "Jan 26 2023",
+    "timestamp": 1674734400000,
+    "price": 18059.03,
+    "volume": 67314
+  },
+  {
+    "date": "Jan 27 2023",
+    "timestamp": 1674820800000,
+    "price": 18437.88,
+    "volume": 71110
+  },
+  {
+    "date": "Jan 28 2023",
+    "timestamp": 1674907200000,
+    "price": 18575.94,
+    "volume": 78496
+  },
+  {
+    "date": "Jan 29 2023",
+    "timestamp": 1674993600000,
+    "price": 18595.46,
+    "volume": 76845
+  },
+  {
+    "date": "Jan 30 2023",
+    "timestamp": 1675080000000,
+    "price": 18409.23,
+    "volume": 64133
+  },
+  {
+    "date": "Jan 31 2023",
+    "timestamp": 1675166400000,
+    "price": 18474.76,
+    "volume": 64133
+  },
+  {
+    "date": "Feb 01 2023",
+    "timestamp": 1675252800000,
+    "price": 18493.07,
+    "volume": 63616
+  },
+  {
+    "date": "Feb 02 2023",
+    "timestamp": 1675339200000,
+    "price": 18538.21,
+    "volume": 64153
+  },
+  {
+    "date": "Feb 03 2023",
+    "timestamp": 1675425600000,
+    "price": 18629.25,
+    "volume": 68767
+  },
+  {
+    "date": "Feb 04 2023",
+    "timestamp": 1675512000000,
+    "price": 18829.98,
+    "volume": 79696
+  },
+  {
+    "date": "Feb 05 2023",
+    "timestamp": 1675598400000,
+    "price": 18749.99,
+    "volume": 77805
+  },
+  {
+    "date": "Feb 06 2023",
+    "timestamp": 1675684800000,
+    "price": 18558.71,
+    "volume": 63963
+  },
+  {
+    "date": "Feb 07 2023",
+    "timestamp": 1675771200000,
+    "price": 18391.83,
+    "volume": 61278
+  },
+  {
+    "date": "Feb 08 2023",
+    "timestamp": 1675857600000,
+    "price": 18658.61,
+    "volume": 66491
+  },
+  {
+    "date": "Feb 09 2023",
+    "timestamp": 1675944000000,
+    "price": 18285.99,
+    "volume": 61335
+  },
+  {
+    "date": "Feb 10 2023",
+    "timestamp": 1676030400000,
+    "price": 17639.95,
+    "volume": 102988
+  },
+  {
+    "date": "Feb 11 2023",
+    "timestamp": 1676116800000,
+    "price": 16471.67,
+    "volume": 102870
+  },
+  {
+    "date": "Feb 12 2023",
+    "timestamp": 1676203200000,
+    "price": 16289.77,
+    "volume": 96929
+  },
+  {
+    "date": "Feb 13 2023",
+    "timestamp": 1676289600000,
+    "price": 16844.28,
+    "volume": 81258
+  },
+  {
+    "date": "Feb 14 2023",
+    "timestamp": 1676376000000,
+    "price": 17286.44,
+    "volume": 76480
+  },
+  {
+    "date": "Feb 15 2023",
+    "timestamp": 1676462400000,
+    "price": 18006.03,
+    "volume": 78285
+  },
+  {
+    "date": "Feb 16 2023",
+    "timestamp": 1676548800000,
+    "price": 18443.67,
+    "volume": 80126
+  },
+  {
+    "date": "Feb 17 2023",
+    "timestamp": 1676635200000,
+    "price": 18637.56,
+    "volume": 86405
+  },
+  {
+    "date": "Feb 18 2023",
+    "timestamp": 1676721600000,
+    "price": 18242.37,
+    "volume": 94655
+  },
+  {
+    "date": "Feb 19 2023",
+    "timestamp": 1676808000000,
+    "price": 17832.75,
+    "volume": 92203
+  },
+  {
+    "date": "Feb 20 2023",
+    "timestamp": 1676894400000,
+    "price": 17063.01,
+    "volume": 72372
+  },
+  {
+    "date": "Feb 21 2023",
+    "timestamp": 1676980800000,
+    "price": 16930.83,
+    "volume": 73383
+  },
+  {
+    "date": "Feb 22 2023",
+    "timestamp": 1677067200000,
+    "price": 17219.02,
+    "volume": 81354
+  },
+  {
+    "date": "Feb 23 2023",
+    "timestamp": 1677153600000,
+    "price": 17904.14,
+    "volume": 82879
+  },
+  {
+    "date": "Feb 24 2023",
+    "timestamp": 1677240000000,
+    "price": 18699.63,
+    "volume": 94142
+  },
+  {
+    "date": "Feb 25 2023",
+    "timestamp": 1677326400000,
+    "price": 18845.96,
+    "volume": 104723
+  },
+  {
+    "date": "Feb 26 2023",
+    "timestamp": 1677412800000,
+    "price": 18719.43,
+    "volume": 100271
+  },
+  {
+    "date": "Feb 27 2023",
+    "timestamp": 1677499200000,
+    "price": 18861.52,
+    "volume": 81332
+  },
+  {
+    "date": "Feb 28 2023",
+    "timestamp": 1677585600000,
+    "price": 18911.88,
+    "volume": 78589
+  },
+  {
+    "date": "Mar 01 2023",
+    "timestamp": 1677672000000,
+    "price": 19371.99,
+    "volume": 78649
+  },
+  {
+    "date": "Mar 02 2023",
+    "timestamp": 1677758400000,
+    "price": 19242.63,
+    "volume": 78409
+  },
+  {
+    "date": "Mar 03 2023",
+    "timestamp": 1677844800000,
+    "price": 19279.84,
+    "volume": 82875
+  },
+  {
+    "date": "Mar 04 2023",
+    "timestamp": 1677931200000,
+    "price": 19452.75,
+    "volume": 97981
+  },
+  {
+    "date": "Mar 05 2023",
+    "timestamp": 1678017600000,
+    "price": 19581.64,
+    "volume": 98547
+  },
+  {
+    "date": "Mar 06 2023",
+    "timestamp": 1678104000000,
+    "price": 19733.82,
+    "volume": 80400
+  },
+  {
+    "date": "Mar 07 2023",
+    "timestamp": 1678190400000,
+    "price": 19938.63,
+    "volume": 84418
+  },
+  {
+    "date": "Mar 08 2023",
+    "timestamp": 1678276800000,
+    "price": 19471.32,
+    "volume": 77359
+  },
+  {
+    "date": "Mar 09 2023",
+    "timestamp": 1678363200000,
+    "price": 19832.14,
+    "volume": 78799
+  },
+  {
+    "date": "Mar 10 2023",
+    "timestamp": 1678449600000,
+    "price": 20852.81,
+    "volume": 95295
+  },
+  {
+    "date": "Mar 11 2023",
+    "timestamp": 1678536000000,
+    "price": 21630.45,
+    "volume": 107079
+  },
+  {
+    "date": "Mar 12 2023",
+    "timestamp": 1678622400000,
+    "price": 21641.1,
+    "volume": 97313
+  },
+  {
+    "date": "Mar 13 2023",
+    "timestamp": 1678708800000,
+    "price": 21007.69,
+    "volume": 76524
+  },
+  {
+    "date": "Mar 14 2023",
+    "timestamp": 1678795200000,
+    "price": 20718.3,
+    "volume": 76227
+  },
+  {
+    "date": "Mar 15 2023",
+    "timestamp": 1678881600000,
+    "price": 21152.9,
+    "volume": 79718
+  },
+  {
+    "date": "Mar 16 2023",
+    "timestamp": 1678968000000,
+    "price": 22166.84,
+    "volume": 88578
+  },
+  {
+    "date": "Mar 17 2023",
+    "timestamp": 1679054400000,
+    "price": 21895.54,
+    "volume": 93536
+  },
+  {
+    "date": "Mar 18 2023",
+    "timestamp": 1679140800000,
+    "price": 21794.78,
+    "volume": 100039
+  },
+  {
+    "date": "Mar 19 2023",
+    "timestamp": 1679227200000,
+    "price": 21334.02,
+    "volume": 97427
+  },
+  {
+    "date": "Mar 20 2023",
+    "timestamp": 1679313600000,
+    "price": 20815.21,
+    "volume": 85981
+  },
+  {
+    "date": "Mar 21 2023",
+    "timestamp": 1679400000000,
+    "price": 20596.32,
+    "volume": 84021
+  },
+  {
+    "date": "Mar 22 2023",
+    "timestamp": 1679486400000,
+    "price": 20584.09,
+    "volume": 95706
+  },
+  {
+    "date": "Mar 23 2023",
+    "timestamp": 1679572800000,
+    "price": 21721.84,
+    "volume": 110572
+  },
+  {
+    "date": "Mar 24 2023",
+    "timestamp": 1679659200000,
+    "price": 22427.94,
+    "volume": 107503
+  },
+  {
+    "date": "Mar 25 2023",
+    "timestamp": 1679745600000,
+    "price": 23477.93,
+    "volume": 114570
+  },
+  {
+    "date": "Mar 26 2023",
+    "timestamp": 1679832000000,
+    "price": 23335.85,
+    "volume": 113181
+  },
+  {
+    "date": "Mar 27 2023",
+    "timestamp": 1679918400000,
+    "price": 24355.06,
+    "volume": 102914
+  },
+  {
+    "date": "Mar 28 2023",
+    "timestamp": 1680004800000,
+    "price": 24988.28,
+    "volume": 99290
+  },
+  {
+    "date": "Mar 29 2023",
+    "timestamp": 1680091200000,
+    "price": 24773.47,
+    "volume": 89791
+  },
+  {
+    "date": "Mar 30 2023",
+    "timestamp": 1680177600000,
+    "price": 25565,
+    "volume": 78345
+  },
+  {
+    "date": "Mar 31 2023",
+    "timestamp": 1680264000000,
+    "price": 27527.52,
+    "volume": 86938
+  },
+  {
+    "date": "Apr 01 2023",
+    "timestamp": 1680350400000,
+    "price": 29587.63,
+    "volume": 111627
+  },
+  {
+    "date": "Apr 02 2023",
+    "timestamp": 1680436800000,
+    "price": 28856.55,
+    "volume": 107186
+  },
+  {
+    "date": "Apr 03 2023",
+    "timestamp": 1680523200000,
+    "price": 27634.26,
+    "volume": 104253
+  },
+  {
+    "date": "Apr 04 2023",
+    "timestamp": 1680609600000,
+    "price": 28206.15,
+    "volume": 90537
+  },
+  {
+    "date": "Apr 05 2023",
+    "timestamp": 1680696000000,
+    "price": 29731.76,
+    "volume": 91410
+  },
+  {
+    "date": "Apr 06 2023",
+    "timestamp": 1680782400000,
+    "price": 29995.34,
+    "volume": 94325
+  },
+  {
+    "date": "Apr 07 2023",
+    "timestamp": 1680868800000,
+    "price": 33240.39,
+    "volume": 97876
+  },
+  {
+    "date": "Apr 08 2023",
+    "timestamp": 1680955200000,
+    "price": 36424.14,
+    "volume": 87488
+  },
+  {
+    "date": "Apr 09 2023",
+    "timestamp": 1681041600000,
+    "price": 35624.57,
+    "volume": 93900
+  },
+  {
+    "date": "Apr 10 2023",
+    "timestamp": 1681128000000,
+    "price": 34414.53,
+    "volume": 91634
+  },
+  {
+    "date": "Apr 11 2023",
+    "timestamp": 1681214400000,
+    "price": 33132.66,
+    "volume": 86413
+  },
+  {
+    "date": "Apr 12 2023",
+    "timestamp": 1681300800000,
+    "price": 33191.81,
+    "volume": 84811
+  },
+  {
+    "date": "Apr 13 2023",
+    "timestamp": 1681387200000,
+    "price": 33706.76,
+    "volume": 85169
+  },
+  {
+    "date": "Apr 14 2023",
+    "timestamp": 1681473600000,
+    "price": 35401.67,
+    "volume": 83259
+  },
+  {
+    "date": "Apr 15 2023",
+    "timestamp": 1681560000000,
+    "price": 37206.53,
+    "volume": 76822
+  },
+  {
+    "date": "Apr 16 2023",
+    "timestamp": 1681646400000,
+    "price": 39664.44,
+    "volume": 83736
+  },
+  {
+    "date": "Apr 17 2023",
+    "timestamp": 1681732800000,
+    "price": 41135.58,
+    "volume": 107881
+  },
+  {
+    "date": "Apr 18 2023",
+    "timestamp": 1681819200000,
+    "price": 45124.69,
+    "volume": 77069
+  },
+  {
+    "date": "Apr 19 2023",
+    "timestamp": 1681905600000,
+    "price": 42099.46,
+    "volume": 74266
+  },
+  {
+    "date": "Apr 20 2023",
+    "timestamp": 1681992000000,
+    "price": 36953.45,
+    "volume": 103495
+  },
+  {
+    "date": "Apr 21 2023",
+    "timestamp": 1682078400000,
+    "price": 34704.27,
+    "volume": 110124
+  },
+  {
+    "date": "Apr 22 2023",
+    "timestamp": 1682164800000,
+    "price": 34166.55,
+    "volume": 105791
+  },
+  {
+    "date": "Apr 23 2023",
+    "timestamp": 1682251200000,
+    "price": 30965.34,
+    "volume": 106748
+  },
+  {
+    "date": "Apr 24 2023",
+    "timestamp": 1682337600000,
+    "price": 28296.83,
+    "volume": 111665
+  },
+  {
+    "date": "Apr 25 2023",
+    "timestamp": 1682424000000,
+    "price": 26653.15,
+    "volume": 120864
+  },
+  {
+    "date": "Apr 26 2023",
+    "timestamp": 1682510400000,
+    "price": 23625.91,
+    "volume": 102500
+  },
+  {
+    "date": "Apr 27 2023",
+    "timestamp": 1682596800000,
+    "price": 26034.93,
+    "volume": 105711
+  },
+  {
+    "date": "Apr 28 2023",
+    "timestamp": 1682683200000,
+    "price": 28854.84,
+    "volume": 106987
+  },
+  {
+    "date": "Apr 29 2023",
+    "timestamp": 1682769600000,
+    "price": 29535.18,
+    "volume": 108750
+  },
+  {
+    "date": "Apr 30 2023",
+    "timestamp": 1682856000000,
+    "price": 29053.12,
+    "volume": 105058
+  },
+  {
+    "date": "May 01 2023",
+    "timestamp": 1682942400000,
+    "price": 26909.38,
+    "volume": 95788
+  },
+  {
+    "date": "May 02 2023",
+    "timestamp": 1683028800000,
+    "price": 25750.32,
+    "volume": 95165
+  },
+  {
+    "date": "May 03 2023",
+    "timestamp": 1683115200000,
+    "price": 26183.96,
+    "volume": 85631
+  },
+  {
+    "date": "May 04 2023",
+    "timestamp": 1683201600000,
+    "price": 26179.66,
+    "volume": 82925
+  },
+  {
+    "date": "May 05 2023",
+    "timestamp": 1683288000000,
+    "price": 23734.21,
+    "volume": 109633
+  },
+  {
+    "date": "May 06 2023",
+    "timestamp": 1683374400000,
+    "price": 22896.01,
+    "volume": 104112
+  },
+  {
+    "date": "May 07 2023",
+    "timestamp": 1683460800000,
+    "price": 21627.82,
+    "volume": 103656
+  },
+  {
+    "date": "May 08 2023",
+    "timestamp": 1683547200000,
+    "price": 20100.62,
+    "volume": 91314
+  },
+  {
+    "date": "May 09 2023",
+    "timestamp": 1683633600000,
+    "price": 20429.4,
+    "volume": 91876
+  },
+  {
+    "date": "May 10 2023",
+    "timestamp": 1683720000000,
+    "price": 22416.51,
+    "volume": 91209
+  },
+  {
+    "date": "May 11 2023",
+    "timestamp": 1683806400000,
+    "price": 22844.08,
+    "volume": 84326
+  },
+  {
+    "date": "May 12 2023",
+    "timestamp": 1683892800000,
+    "price": 23238.11,
+    "volume": 92940
+  },
+  {
+    "date": "May 13 2023",
+    "timestamp": 1683979200000,
+    "price": 23423.27,
+    "volume": 95399
+  },
+  {
+    "date": "May 14 2023",
+    "timestamp": 1684065600000,
+    "price": 22998.46,
+    "volume": 96273
+  },
+  {
+    "date": "May 15 2023",
+    "timestamp": 1684152000000,
+    "price": 22902.9,
+    "volume": 82071
+  },
+  {
+    "date": "May 16 2023",
+    "timestamp": 1684238400000,
+    "price": 22108.29,
+    "volume": 80164
+  },
+  {
+    "date": "May 17 2023",
+    "timestamp": 1684324800000,
+    "price": 22032.51,
+    "volume": 88833
+  },
+  {
+    "date": "May 18 2023",
+    "timestamp": 1684411200000,
+    "price": 21788.93,
+    "volume": 85226
+  },
+  {
+    "date": "May 19 2023",
+    "timestamp": 1684497600000,
+    "price": 21833.95,
+    "volume": 90806
+  },
+  {
+    "date": "May 20 2023",
+    "timestamp": 1684584000000,
+    "price": 21499.63,
+    "volume": 94392
+  },
+  {
+    "date": "May 21 2023",
+    "timestamp": 1684670400000,
+    "price": 20800.84,
+    "volume": 96789
+  },
+  {
+    "date": "May 22 2023",
+    "timestamp": 1684756800000,
+    "price": 20186.5,
+    "volume": 85476
+  },
+  {
+    "date": "May 23 2023",
+    "timestamp": 1684843200000,
+    "price": 19882.04,
+    "volume": 83442
+  },
+  {
+    "date": "May 24 2023",
+    "timestamp": 1684929600000,
+    "price": 19728.56,
+    "volume": 84808
+  },
+  {
+    "date": "May 25 2023",
+    "timestamp": 1685016000000,
+    "price": 19858.63,
+    "volume": 86557
+  },
+  {
+    "date": "May 26 2023",
+    "timestamp": 1685102400000,
+    "price": 20518.93,
+    "volume": 96375
+  },
+  {
+    "date": "May 27 2023",
+    "timestamp": 1685188800000,
+    "price": 21070.86,
+    "volume": 98308
+  },
+  {
+    "date": "May 28 2023",
+    "timestamp": 1685275200000,
+    "price": 20974.39,
+    "volume": 93332
+  },
+  {
+    "date": "May 29 2023",
+    "timestamp": 1685361600000,
+    "price": 20919.98,
+    "volume": 86060
+  },
+  {
+    "date": "May 30 2023",
+    "timestamp": 1685448000000,
+    "price": 20642.02,
+    "volume": 80315
+  },
+  {
+    "date": "May 31 2023",
+    "timestamp": 1685534400000,
+    "price": 21054.74,
+    "volume": 88668
+  },
+  {
+    "date": "Jun 01 2023",
+    "timestamp": 1685620800000,
+    "price": 21611.74,
+    "volume": 87051
+  },
+  {
+    "date": "Jun 02 2023",
+    "timestamp": 1685707200000,
+    "price": 21760.7,
+    "volume": 88436
+  },
+  {
+    "date": "Jun 03 2023",
+    "timestamp": 1685793600000,
+    "price": 21829.83,
+    "volume": 92322
+  },
+  {
+    "date": "Jun 04 2023",
+    "timestamp": 1685880000000,
+    "price": 21713.22,
+    "volume": 89276
+  },
+  {
+    "date": "Jun 05 2023",
+    "timestamp": 1685966400000,
+    "price": 21449.79,
+    "volume": 82892
+  },
+  {
+    "date": "Jun 06 2023",
+    "timestamp": 1686052800000,
+    "price": 21307.52,
+    "volume": 83438
+  },
+  {
+    "date": "Jun 07 2023",
+    "timestamp": 1686139200000,
+    "price": 21123.38,
+    "volume": 83430
+  },
+  {
+    "date": "Jun 08 2023",
+    "timestamp": 1686225600000,
+    "price": 21078.39,
+    "volume": 87782
+  },
+  {
+    "date": "Jun 09 2023",
+    "timestamp": 1686312000000,
+    "price": 21461.78,
+    "volume": 85795
+  },
+  {
+    "date": "Jun 10 2023",
+    "timestamp": 1686398400000,
+    "price": 25034.91,
+    "volume": 139472
+  },
+  {
+    "date": "Jun 11 2023",
+    "timestamp": 1686484800000,
+    "price": 24810.41,
+    "volume": 70931
+  },
+  {
+    "date": "Jun 12 2023",
+    "timestamp": 1686571200000,
+    "price": 24694.91,
+    "volume": 61309
+  },
+  {
+    "date": "Jun 13 2023",
+    "timestamp": 1686657600000,
+    "price": 25678.85,
+    "volume": 59232
+  },
+  {
+    "date": "Jun 14 2023",
+    "timestamp": 1686744000000,
+    "price": 23924.14,
+    "volume": 102465
+  },
+  {
+    "date": "Jun 15 2023",
+    "timestamp": 1686830400000,
+    "price": 23245.33,
+    "volume": 87639
+  },
+  {
+    "date": "Jun 16 2023",
+    "timestamp": 1686916800000,
+    "price": 23316.41,
+    "volume": 77343
+  },
+  {
+    "date": "Jun 17 2023",
+    "timestamp": 1687003200000,
+    "price": 23845.45,
+    "volume": 74359
+  },
+  {
+    "date": "Jun 18 2023",
+    "timestamp": 1687089600000,
+    "price": 23877.04,
+    "volume": 66392
+  },
+  {
+    "date": "Jun 19 2023",
+    "timestamp": 1687176000000,
+    "price": 23648.16,
+    "volume": 56785
+  },
+  {
+    "date": "Jun 20 2023",
+    "timestamp": 1687262400000,
+    "price": 23523.47,
+    "volume": 50548
+  },
+  {
+    "date": "Jun 21 2023",
+    "timestamp": 1687348800000,
+    "price": 21865.72,
+    "volume": 97204
+  },
+  {
+    "date": "Jun 22 2023",
+    "timestamp": 1687435200000,
+    "price": 21041.22,
+    "volume": 84564
+  },
+  {
+    "date": "Jun 23 2023",
+    "timestamp": 1687521600000,
+    "price": 20136.24,
+    "volume": 93202
+  },
+  {
+    "date": "Jun 24 2023",
+    "timestamp": 1687608000000,
+    "price": 20135.03,
+    "volume": 76014
+  },
+  {
+    "date": "Jun 25 2023",
+    "timestamp": 1687694400000,
+    "price": 20444.04,
+    "volume": 65007
+  },
+  {
+    "date": "Jun 26 2023",
+    "timestamp": 1687780800000,
+    "price": 20230.41,
+    "volume": 60556
+  },
+  {
+    "date": "Jun 27 2023",
+    "timestamp": 1687867200000,
+    "price": 19918.84,
+    "volume": 57535
+  },
+  {
+    "date": "Jun 28 2023",
+    "timestamp": 1687953600000,
+    "price": 19098.81,
+    "volume": 103507
+  },
+  {
+    "date": "Jun 29 2023",
+    "timestamp": 1688040000000,
+    "price": 17259.03,
+    "volume": 90728
+  },
+  {
+    "date": "Jun 30 2023",
+    "timestamp": 1688126400000,
+    "price": 15793.6,
+    "volume": 85463
+  },
+  {
+    "date": "Jul 01 2023",
+    "timestamp": 1688212800000,
+    "price": 15926.53,
+    "volume": 78805
+  },
+  {
+    "date": "Jul 02 2023",
+    "timestamp": 1688299200000,
+    "price": 16019.42,
+    "volume": 75150
+  },
+  {
+    "date": "Jul 03 2023",
+    "timestamp": 1688385600000,
+    "price": 16845.23,
+    "volume": 68156
+  },
+  {
+    "date": "Jul 04 2023",
+    "timestamp": 1688472000000,
+    "price": 17534.76,
+    "volume": 64731
+  },
+  {
+    "date": "Jul 05 2023",
+    "timestamp": 1688558400000,
+    "price": 16788.4,
+    "volume": 102816
+  },
+  {
+    "date": "Jul 06 2023",
+    "timestamp": 1688644800000,
+    "price": 15649.96,
+    "volume": 79552
+  },
+  {
+    "date": "Jul 07 2023",
+    "timestamp": 1688731200000,
+    "price": 15561.32,
+    "volume": 76528
+  },
+  {
+    "date": "Jul 08 2023",
+    "timestamp": 1688817600000,
+    "price": 15913.9,
+    "volume": 74399
+  },
+  {
+    "date": "Jul 09 2023",
+    "timestamp": 1688904000000,
+    "price": 15884.27,
+    "volume": 67589
+  },
+  {
+    "date": "Jul 10 2023",
+    "timestamp": 1688990400000,
+    "price": 15844.08,
+    "volume": 60119
+  },
+  {
+    "date": "Jul 11 2023",
+    "timestamp": 1689076800000,
+    "price": 16297.32,
+    "volume": 58415
+  },
+  {
+    "date": "Jul 12 2023",
+    "timestamp": 1689163200000,
+    "price": 15354.25,
+    "volume": 93483
+  },
+  {
+    "date": "Jul 13 2023",
+    "timestamp": 1689249600000,
+    "price": 14617.1,
+    "volume": 80511
+  },
+  {
+    "date": "Jul 14 2023",
+    "timestamp": 1689336000000,
+    "price": 15423.02,
+    "volume": 69851
+  },
+  {
+    "date": "Jul 15 2023",
+    "timestamp": 1689422400000,
+    "price": 16320.69,
+    "volume": 72748
+  },
+  {
+    "date": "Jul 16 2023",
+    "timestamp": 1689508800000,
+    "price": 16768.06,
+    "volume": 68352
+  },
+  {
+    "date": "Jul 17 2023",
+    "timestamp": 1689595200000,
+    "price": 17111.55,
+    "volume": 58097
+  },
+  {
+    "date": "Jul 18 2023",
+    "timestamp": 1689681600000,
+    "price": 17172.72,
+    "volume": 57093
+  },
+  {
+    "date": "Jul 19 2023",
+    "timestamp": 1689768000000,
+    "price": 15906.65,
+    "volume": 95934
+  },
+  {
+    "date": "Jul 20 2023",
+    "timestamp": 1689854400000,
+    "price": 15201.72,
+    "volume": 77954
+  },
+  {
+    "date": "Jul 21 2023",
+    "timestamp": 1689940800000,
+    "price": 15819.56,
+    "volume": 69630
+  },
+  {
+    "date": "Jul 22 2023",
+    "timestamp": 1690027200000,
+    "price": 16483.75,
+    "volume": 69736
+  },
+  {
+    "date": "Jul 23 2023",
+    "timestamp": 1690113600000,
+    "price": 16516.02,
+    "volume": 67430
+  },
+  {
+    "date": "Jul 24 2023",
+    "timestamp": 1690200000000,
+    "price": 16469.52,
+    "volume": 56283
+  },
+  {
+    "date": "Jul 25 2023",
+    "timestamp": 1690286400000,
+    "price": 16551.51,
+    "volume": 57540
+  },
+  {
+    "date": "Jul 26 2023",
+    "timestamp": 1690372800000,
+    "price": 15400.31,
+    "volume": 98902
+  },
+  {
+    "date": "Jul 27 2023",
+    "timestamp": 1690459200000,
+    "price": 15280.92,
+    "volume": 80944
+  },
+  {
+    "date": "Jul 28 2023",
+    "timestamp": 1690545600000,
+    "price": 15561.06,
+    "volume": 76982
+  },
+  {
+    "date": "Jul 29 2023",
+    "timestamp": 1690632000000,
+    "price": 15972.59,
+    "volume": 79677
+  },
+  {
+    "date": "Jul 30 2023",
+    "timestamp": 1690718400000,
+    "price": 16034.33,
+    "volume": 67935
+  },
+  {
+    "date": "Jul 31 2023",
+    "timestamp": 1690804800000,
+    "price": 16545.25,
+    "volume": 65749
+  },
+  {
+    "date": "Aug 01 2023",
+    "timestamp": 1690891200000,
+    "price": 16710,
+    "volume": 62136
+  },
+  {
+    "date": "Aug 02 2023",
+    "timestamp": 1690977600000,
+    "price": 15222.08,
+    "volume": 100014
+  },
+  {
+    "date": "Aug 03 2023",
+    "timestamp": 1691064000000,
+    "price": 15039.36,
+    "volume": 83702
+  },
+  {
+    "date": "Aug 04 2023",
+    "timestamp": 1691150400000,
+    "price": 15323.26,
+    "volume": 71789
+  },
+  {
+    "date": "Aug 05 2023",
+    "timestamp": 1691236800000,
+    "price": 15425.84,
+    "volume": 70282
+  },
+  {
+    "date": "Aug 06 2023",
+    "timestamp": 1691323200000,
+    "price": 15156.1,
+    "volume": 66220
+  },
+  {
+    "date": "Aug 07 2023",
+    "timestamp": 1691409600000,
+    "price": 15090.32,
+    "volume": 59917
+  },
+  {
+    "date": "Aug 08 2023",
+    "timestamp": 1691496000000,
+    "price": 14788.41,
+    "volume": 58332
+  },
+  {
+    "date": "Aug 09 2023",
+    "timestamp": 1691582400000,
+    "price": 13832.1,
+    "volume": 100959
+  },
+  {
+    "date": "Aug 10 2023",
+    "timestamp": 1691668800000,
+    "price": 13482.33,
+    "volume": 79552
+  },
+  {
+    "date": "Aug 11 2023",
+    "timestamp": 1691755200000,
+    "price": 13797.78,
+    "volume": 73051
+  },
+  {
+    "date": "Aug 12 2023",
+    "timestamp": 1691841600000,
+    "price": 14264.9,
+    "volume": 70338
+  },
+  {
+    "date": "Aug 13 2023",
+    "timestamp": 1691928000000,
+    "price": 14528.97,
+    "volume": 65892
+  },
+  {
+    "date": "Aug 14 2023",
+    "timestamp": 1692014400000,
+    "price": 14361.01,
+    "volume": 56110
+  },
+  {
+    "date": "Aug 15 2023",
+    "timestamp": 1692100800000,
+    "price": 14364.7,
+    "volume": 56346
+  },
+  {
+    "date": "Aug 16 2023",
+    "timestamp": 1692187200000,
+    "price": 13182.31,
+    "volume": 94875
+  },
+  {
+    "date": "Aug 17 2023",
+    "timestamp": 1692273600000,
+    "price": 12979.26,
+    "volume": 78164
+  },
+  {
+    "date": "Aug 18 2023",
+    "timestamp": 1692360000000,
+    "price": 13346.29,
+    "volume": 72503
+  },
+  {
+    "date": "Aug 19 2023",
+    "timestamp": 1692446400000,
+    "price": 13695.28,
+    "volume": 72832
+  },
+  {
+    "date": "Aug 20 2023",
+    "timestamp": 1692532800000,
+    "price": 13701.75,
+    "volume": 68349
+  },
+  {
+    "date": "Aug 21 2023",
+    "timestamp": 1692619200000,
+    "price": 13554.43,
+    "volume": 57512
+  },
+  {
+    "date": "Aug 22 2023",
+    "timestamp": 1692705600000,
+    "price": 13612.65,
+    "volume": 57472
+  },
+  {
+    "date": "Aug 23 2023",
+    "timestamp": 1692792000000,
+    "price": 12480.04,
+    "volume": 95631
+  },
+  {
+    "date": "Aug 24 2023",
+    "timestamp": 1692878400000,
+    "price": 12281.98,
+    "volume": 78183
+  },
+  {
+    "date": "Aug 25 2023",
+    "timestamp": 1692964800000,
+    "price": 12935.77,
+    "volume": 80255
+  },
+  {
+    "date": "Aug 26 2023",
+    "timestamp": 1693051200000,
+    "price": 13215.75,
+    "volume": 74711
+  },
+  {
+    "date": "Aug 27 2023",
+    "timestamp": 1693137600000,
+    "price": 13351.19,
+    "volume": 67313
+  },
+  {
+    "date": "Aug 28 2023",
+    "timestamp": 1693224000000,
+    "price": 13461.24,
+    "volume": 61248
+  },
+  {
+    "date": "Aug 29 2023",
+    "timestamp": 1693310400000,
+    "price": 13532.69,
+    "volume": 59905
+  },
+  {
+    "date": "Aug 30 2023",
+    "timestamp": 1693396800000,
+    "price": 12446.96,
+    "volume": 101353
+  },
+  {
+    "date": "Aug 31 2023",
+    "timestamp": 1693483200000,
+    "price": 12269.58,
+    "volume": 86307
+  },
+  {
+    "date": "Sep 01 2023",
+    "timestamp": 1693569600000,
+    "price": 12955.02,
+    "volume": 85765
+  },
+  {
+    "date": "Sep 02 2023",
+    "timestamp": 1693656000000,
+    "price": 13474.41,
+    "volume": 94105
+  },
+  {
+    "date": "Sep 03 2023",
+    "timestamp": 1693742400000,
+    "price": 13942.53,
+    "volume": 81598
+  },
+  {
+    "date": "Sep 04 2023",
+    "timestamp": 1693828800000,
+    "price": 13933.07,
+    "volume": 72917
+  },
+  {
+    "date": "Sep 05 2023",
+    "timestamp": 1693915200000,
+    "price": 13878.23,
+    "volume": 62668
+  },
+  {
+    "date": "Sep 06 2023",
+    "timestamp": 1694001600000,
+    "price": 13086.4,
+    "volume": 110800
+  },
+  {
+    "date": "Sep 07 2023",
+    "timestamp": 1694088000000,
+    "price": 12794.61,
+    "volume": 97610
+  },
+  {
+    "date": "Sep 08 2023",
+    "timestamp": 1694174400000,
+    "price": 13147.11,
+    "volume": 88362
+  },
+  {
+    "date": "Sep 09 2023",
+    "timestamp": 1694260800000,
+    "price": 13250.84,
+    "volume": 82732
+  },
+  {
+    "date": "Sep 10 2023",
+    "timestamp": 1694347200000,
+    "price": 13239.47,
+    "volume": 80838
+  },
+  {
+    "date": "Sep 11 2023",
+    "timestamp": 1694433600000,
+    "price": 13454.74,
+    "volume": 66150
+  },
+  {
+    "date": "Sep 12 2023",
+    "timestamp": 1694520000000,
+    "price": 13674.7,
+    "volume": 62261
+  },
+  {
+    "date": "Sep 13 2023",
+    "timestamp": 1694606400000,
+    "price": 13025.34,
+    "volume": 111524
+  },
+  {
+    "date": "Sep 14 2023",
+    "timestamp": 1694692800000,
+    "price": 12892.62,
+    "volume": 93240
+  },
+  {
+    "date": "Sep 15 2023",
+    "timestamp": 1694779200000,
+    "price": 13384.54,
+    "volume": 90155
+  },
+  {
+    "date": "Sep 16 2023",
+    "timestamp": 1694865600000,
+    "price": 13637.16,
+    "volume": 90433
+  },
+  {
+    "date": "Sep 17 2023",
+    "timestamp": 1694952000000,
+    "price": 13794.37,
+    "volume": 80350
+  },
+  {
+    "date": "Sep 18 2023",
+    "timestamp": 1695038400000,
+    "price": 13985.07,
+    "volume": 66310
+  },
+  {
+    "date": "Sep 19 2023",
+    "timestamp": 1695124800000,
+    "price": 14159.99,
+    "volume": 59132
+  },
+  {
+    "date": "Sep 20 2023",
+    "timestamp": 1695211200000,
+    "price": 13427.54,
+    "volume": 103879
+  },
+  {
+    "date": "Sep 21 2023",
+    "timestamp": 1695297600000,
+    "price": 13277.83,
+    "volume": 83716
+  },
+  {
+    "date": "Sep 22 2023",
+    "timestamp": 1695384000000,
+    "price": 13627.72,
+    "volume": 79663
+  },
+  {
+    "date": "Sep 23 2023",
+    "timestamp": 1695470400000,
+    "price": 13694.92,
+    "volume": 80973
+  },
+  {
+    "date": "Sep 24 2023",
+    "timestamp": 1695556800000,
+    "price": 13712.97,
+    "volume": 71942
+  },
+  {
+    "date": "Sep 25 2023",
+    "timestamp": 1695643200000,
+    "price": 13986.59,
+    "volume": 61566
+  },
+  {
+    "date": "Sep 26 2023",
+    "timestamp": 1695729600000,
+    "price": 14019.28,
+    "volume": 56955
+  },
+  {
+    "date": "Sep 27 2023",
+    "timestamp": 1695816000000,
+    "price": 13754.52,
+    "volume": 143298
+  },
+  {
+    "date": "Sep 28 2023",
+    "timestamp": 1695902400000,
+    "price": 14769.04,
+    "volume": 190771
+  },
+  {
+    "date": "Sep 29 2023",
+    "timestamp": 1695988800000,
+    "price": 15475.04,
+    "volume": 158882
+  },
+  {
+    "date": "Sep 30 2023",
+    "timestamp": 1696075200000,
+    "price": 15702.42,
+    "volume": 148461
+  },
+  {
+    "date": "Oct 01 2023",
+    "timestamp": 1696161600000,
+    "price": 16295.27,
+    "volume": 128568
+  },
+  {
+    "date": "Oct 02 2023",
+    "timestamp": 1696248000000,
+    "price": 16941.94,
+    "volume": 105281
+  },
+  {
+    "date": "Oct 03 2023",
+    "timestamp": 1696334400000,
+    "price": 17346.4,
+    "volume": 98257
+  },
+  {
+    "date": "Oct 04 2023",
+    "timestamp": 1696420800000,
+    "price": 15507.9,
+    "volume": 143623
+  },
+  {
+    "date": "Oct 05 2023",
+    "timestamp": 1696507200000,
+    "price": 15248.41,
+    "volume": 120945
+  },
+  {
+    "date": "Oct 06 2023",
+    "timestamp": 1696593600000,
+    "price": 16065.19,
+    "volume": 117206
+  },
+  {
+    "date": "Oct 07 2023",
+    "timestamp": 1696680000000,
+    "price": 16596.95,
+    "volume": 123440
+  },
+  {
+    "date": "Oct 08 2023",
+    "timestamp": 1696766400000,
+    "price": 16798.3,
+    "volume": 108966
+  },
+  {
+    "date": "Oct 09 2023",
+    "timestamp": 1696852800000,
+    "price": 17079.17,
+    "volume": 90236
+  },
+  {
+    "date": "Oct 10 2023",
+    "timestamp": 1696939200000,
+    "price": 17143.27,
+    "volume": 86830
+  },
+  {
+    "date": "Oct 11 2023",
+    "timestamp": 1697025600000,
+    "price": 15598.32,
+    "volume": 138952
+  },
+  {
+    "date": "Oct 12 2023",
+    "timestamp": 1697112000000,
+    "price": 15716.94,
+    "volume": 117573
+  },
+  {
+    "date": "Oct 13 2023",
+    "timestamp": 1697198400000,
+    "price": 16402.17,
+    "volume": 110778
+  },
+  {
+    "date": "Oct 14 2023",
+    "timestamp": 1697284800000,
+    "price": 16750.17,
+    "volume": 119844
+  },
+  {
+    "date": "Oct 15 2023",
+    "timestamp": 1697371200000,
+    "price": 16861.31,
+    "volume": 105438
+  },
+  {
+    "date": "Oct 16 2023",
+    "timestamp": 1697457600000,
+    "price": 17149.51,
+    "volume": 81950
+  },
+  {
+    "date": "Oct 17 2023",
+    "timestamp": 1697544000000,
+    "price": 17136.38,
+    "volume": 73332
+  },
+  {
+    "date": "Oct 18 2023",
+    "timestamp": 1697630400000,
+    "price": 15938.99,
+    "volume": 127015
+  },
+  {
+    "date": "Oct 19 2023",
+    "timestamp": 1697716800000,
+    "price": 15748.88,
+    "volume": 102706
+  },
+  {
+    "date": "Oct 20 2023",
+    "timestamp": 1697803200000,
+    "price": 16354.2,
+    "volume": 102911
+  },
+  {
+    "date": "Oct 21 2023",
+    "timestamp": 1697889600000,
+    "price": 16420.38,
+    "volume": 107878
+  },
+  {
+    "date": "Oct 22 2023",
+    "timestamp": 1697976000000,
+    "price": 16569.98,
+    "volume": 92971
+  },
+  {
+    "date": "Oct 23 2023",
+    "timestamp": 1698062400000,
+    "price": 16556.19,
+    "volume": 71597
+  },
+  {
+    "date": "Oct 24 2023",
+    "timestamp": 1698148800000,
+    "price": 16552.06,
+    "volume": 67822
+  },
+  {
+    "date": "Oct 25 2023",
+    "timestamp": 1698235200000,
+    "price": 15139.09,
+    "volume": 124906
+  },
+  {
+    "date": "Oct 26 2023",
+    "timestamp": 1698321600000,
+    "price": 14829.77,
+    "volume": 101584
+  },
+  {
+    "date": "Oct 27 2023",
+    "timestamp": 1698408000000,
+    "price": 14713.32,
+    "volume": 95899
+  },
+  {
+    "date": "Oct 28 2023",
+    "timestamp": 1698494400000,
+    "price": 14727.39,
+    "volume": 94149
+  },
+  {
+    "date": "Oct 29 2023",
+    "timestamp": 1698580800000,
+    "price": 14365.42,
+    "volume": 81209
+  },
+  {
+    "date": "Oct 30 2023",
+    "timestamp": 1698667200000,
+    "price": 13924.04,
+    "volume": 69758
+  },
+  {
+    "date": "Oct 31 2023",
+    "timestamp": 1698753600000,
+    "price": 14049.29,
+    "volume": 66292
+  },
+  {
+    "date": "Nov 01 2023",
+    "timestamp": 1698840000000,
+    "price": 13121.61,
+    "volume": 118343
+  },
+  {
+    "date": "Nov 02 2023",
+    "timestamp": 1698926400000,
+    "price": 12284.47,
+    "volume": 94563
+  },
+  {
+    "date": "Nov 03 2023",
+    "timestamp": 1699012800000,
+    "price": 12856.02,
+    "volume": 89548
+  },
+  {
+    "date": "Nov 04 2023",
+    "timestamp": 1699099200000,
+    "price": 13059.93,
+    "volume": 87899
+  },
+  {
+    "date": "Nov 05 2023",
+    "timestamp": 1699185600000,
+    "price": 13094.24,
+    "volume": 76069
+  },
+  {
+    "date": "Nov 06 2023",
+    "timestamp": 1699272000000,
+    "price": 13084.75,
+    "volume": 61518
+  },
+  {
+    "date": "Nov 07 2023",
+    "timestamp": 1699358400000,
+    "price": 13335.1,
+    "volume": 59475
+  },
+  {
+    "date": "Nov 08 2023",
+    "timestamp": 1699444800000,
+    "price": 12526.52,
+    "volume": 105447
+  },
+  {
+    "date": "Nov 09 2023",
+    "timestamp": 1699531200000,
+    "price": 12237.71,
+    "volume": 87045
+  },
+  {
+    "date": "Nov 10 2023",
+    "timestamp": 1699617600000,
+    "price": 12339.34,
+    "volume": 81821
+  },
+  {
+    "date": "Nov 11 2023",
+    "timestamp": 1699704000000,
+    "price": 12131.74,
+    "volume": 83127
+  },
+  {
+    "date": "Nov 12 2023",
+    "timestamp": 1699790400000,
+    "price": 11640.56,
+    "volume": 68701
+  },
+  {
+    "date": "Nov 13 2023",
+    "timestamp": 1699876800000,
+    "price": 11040.84,
+    "volume": 58258
+  },
+  {
+    "date": "Nov 14 2023",
+    "timestamp": 1699963200000,
+    "price": 10600.49,
+    "volume": 58866
+  },
+  {
+    "date": "Nov 15 2023",
+    "timestamp": 1700049600000,
+    "price": 9628.53,
+    "volume": 110333
+  },
+  {
+    "date": "Nov 16 2023",
+    "timestamp": 1700136000000,
+    "price": 9196.21,
+    "volume": 83930
+  },
+  {
+    "date": "Nov 17 2023",
+    "timestamp": 1700222400000,
+    "price": 9781.75,
+    "volume": 71922
+  },
+  {
+    "date": "Nov 18 2023",
+    "timestamp": 1700308800000,
+    "price": 9970.38,
+    "volume": 75311
+  },
+  {
+    "date": "Nov 19 2023",
+    "timestamp": 1700395200000,
+    "price": 9771.72,
+    "volume": 69182
+  },
+  {
+    "date": "Nov 20 2023",
+    "timestamp": 1700481600000,
+    "price": 9410.27,
+    "volume": 53368
+  },
+  {
+    "date": "Nov 21 2023",
+    "timestamp": 1700568000000,
+    "price": 9298.52,
+    "volume": 56905
+  },
+  {
+    "date": "Nov 22 2023",
+    "timestamp": 1700654400000,
+    "price": 8416.89,
+    "volume": 117415
+  },
+  {
+    "date": "Nov 23 2023",
+    "timestamp": 1700740800000,
+    "price": 8094.52,
+    "volume": 91593
+  },
+  {
+    "date": "Nov 24 2023",
+    "timestamp": 1700827200000,
+    "price": 8023.31,
+    "volume": 77200
+  },
+  {
+    "date": "Nov 25 2023",
+    "timestamp": 1700913600000,
+    "price": 8048.8,
+    "volume": 80761
+  },
+  {
+    "date": "Nov 26 2023",
+    "timestamp": 1701000000000,
+    "price": 8101.02,
+    "volume": 70893
+  },
+  {
+    "date": "Nov 27 2023",
+    "timestamp": 1701086400000,
+    "price": 7968.05,
+    "volume": 54564
+  },
+  {
+    "date": "Nov 28 2023",
+    "timestamp": 1701172800000,
+    "price": 8058.92,
+    "volume": 56477
+  },
+  {
+    "date": "Nov 29 2023",
+    "timestamp": 1701259200000,
+    "price": 8026.76,
+    "volume": 86469
+  },
+  {
+    "date": "Nov 30 2023",
+    "timestamp": 1701345600000,
+    "price": 8222.57,
+    "volume": 72861
+  },
+  {
+    "date": "Dec 01 2023",
+    "timestamp": 1701432000000,
+    "price": 8611.15,
+    "volume": 79718
+  },
+  {
+    "date": "Dec 02 2023",
+    "timestamp": 1701518400000,
+    "price": 9304.67,
+    "volume": 80226
+  },
+  {
+    "date": "Dec 03 2023",
+    "timestamp": 1701604800000,
+    "price": 9629.68,
+    "volume": 63427
+  },
+  {
+    "date": "Dec 04 2023",
+    "timestamp": 1701691200000,
+    "price": 10000.09,
+    "volume": 56915
+  },
+  {
+    "date": "Dec 05 2023",
+    "timestamp": 1701777600000,
+    "price": 10419.86,
+    "volume": 54803
+  },
+  {
+    "date": "Dec 06 2023",
+    "timestamp": 1701864000000,
+    "price": 9945.94,
+    "volume": 103491
+  },
+  {
+    "date": "Dec 07 2023",
+    "timestamp": 1701950400000,
+    "price": 9598.97,
+    "volume": 80350
+  },
+  {
+    "date": "Dec 08 2023",
+    "timestamp": 1702036800000,
+    "price": 9402.84,
+    "volume": 73434
+  },
+  {
+    "date": "Dec 09 2023",
+    "timestamp": 1702123200000,
+    "price": 9278.08,
+    "volume": 69728
+  },
+  {
+    "date": "Dec 10 2023",
+    "timestamp": 1702209600000,
+    "price": 9226.47,
+    "volume": 60783
+  },
+  {
+    "date": "Dec 11 2023",
+    "timestamp": 1702296000000,
+    "price": 9256.42,
+    "volume": 47788
+  },
+  {
+    "date": "Dec 12 2023",
+    "timestamp": 1702382400000,
+    "price": 9273.75,
+    "volume": 42445
+  },
+  {
+    "date": "Dec 13 2023",
+    "timestamp": 1702468800000,
+    "price": 8957.5,
+    "volume": 91176
+  },
+  {
+    "date": "Dec 14 2023",
+    "timestamp": 1702555200000,
+    "price": 8803,
+    "volume": 76235
+  },
+  {
+    "date": "Dec 15 2023",
+    "timestamp": 1702641600000,
+    "price": 8376.38,
+    "volume": 67406
+  },
+  {
+    "date": "Dec 16 2023",
+    "timestamp": 1702728000000,
+    "price": 8412.22,
+    "volume": 71766
+  },
+  {
+    "date": "Dec 17 2023",
+    "timestamp": 1702814400000,
+    "price": 8504.55,
+    "volume": 66508
+  },
+  {
+    "date": "Dec 18 2023",
+    "timestamp": 1702900800000,
+    "price": 8466.06,
+    "volume": 49522
+  },
+  {
+    "date": "Dec 19 2023",
+    "timestamp": 1702987200000,
+    "price": 8482.71,
+    "volume": 48480
+  },
+  {
+    "date": "Dec 20 2023",
+    "timestamp": 1703073600000,
+    "price": 8250.26,
+    "volume": 93691
+  },
+  {
+    "date": "Dec 21 2023",
+    "timestamp": 1703160000000,
+    "price": 8115.38,
+    "volume": 81274
+  },
+  {
+    "date": "Dec 22 2023",
+    "timestamp": 1703246400000,
+    "price": 7875.13,
+    "volume": 80593
+  },
+  {
+    "date": "Dec 23 2023",
+    "timestamp": 1703332800000,
+    "price": 7879.2,
+    "volume": 78289
+  },
+  {
+    "date": "Dec 24 2023",
+    "timestamp": 1703419200000,
+    "price": 7941.31,
+    "volume": 75264
+  },
+  {
+    "date": "Dec 25 2023",
+    "timestamp": 1703505600000,
+    "price": 7995.35,
+    "volume": 65954
+  },
+  {
+    "date": "Dec 26 2023",
+    "timestamp": 1703592000000,
+    "price": 8053.15,
+    "volume": 74541
+  },
+  {
+    "date": "Dec 27 2023",
+    "timestamp": 1703678400000,
+    "price": 7712.77,
+    "volume": 106053
+  },
+  {
+    "date": "Dec 28 2023",
+    "timestamp": 1703764800000,
+    "price": 7585.25,
+    "volume": 88503
+  },
+  {
+    "date": "Dec 29 2023",
+    "timestamp": 1703851200000,
+    "price": 7623.03,
+    "volume": 82179
+  },
+  {
+    "date": "Dec 30 2023",
+    "timestamp": 1703937600000,
+    "price": 7844.78,
+    "volume": 82352
+  },
+  {
+    "date": "Dec 31 2023",
+    "timestamp": 1704024000000,
+    "price": 7949.04,
+    "volume": 68236
+  },
+  {
+    "date": "Jan 01 2024",
+    "timestamp": 1704110400000,
+    "price": 8027.22,
+    "volume": 67291
+  },
+  {
+    "date": "Jan 02 2024",
+    "timestamp": 1704196800000,
+    "price": 7683.76,
+    "volume": 57096
+  },
+  {
+    "date": "Jan 03 2024",
+    "timestamp": 1704283200000,
+    "price": 7217.27,
+    "volume": 102065
+  },
+  {
+    "date": "Jan 04 2024",
+    "timestamp": 1704369600000,
+    "price": 7152.91,
+    "volume": 88711
+  },
+  {
+    "date": "Jan 05 2024",
+    "timestamp": 1704456000000,
+    "price": 7281.44,
+    "volume": 68275
+  },
+  {
+    "date": "Jan 06 2024",
+    "timestamp": 1704542400000,
+    "price": 7163.34,
+    "volume": 64868
+  },
+  {
+    "date": "Jan 07 2024",
+    "timestamp": 1704628800000,
+    "price": 7212.37,
+    "volume": 62762
+  },
+  {
+    "date": "Jan 08 2024",
+    "timestamp": 1704715200000,
+    "price": 7278.59,
+    "volume": 57976
+  },
+  {
+    "date": "Jan 09 2024",
+    "timestamp": 1704801600000,
+    "price": 7245.58,
+    "volume": 60615
+  },
+  {
+    "date": "Jan 10 2024",
+    "timestamp": 1704888000000,
+    "price": 6948.49,
+    "volume": 93995
+  },
+  {
+    "date": "Jan 11 2024",
+    "timestamp": 1704974400000,
+    "price": 6768.39,
+    "volume": 81670
+  },
+  {
+    "date": "Jan 12 2024",
+    "timestamp": 1705060800000,
+    "price": 6697.84,
+    "volume": 67039
+  },
+  {
+    "date": "Jan 13 2024",
+    "timestamp": 1705147200000,
+    "price": 6544.51,
+    "volume": 63657
+  },
+  {
+    "date": "Jan 14 2024",
+    "timestamp": 1705233600000,
+    "price": 6559.53,
+    "volume": 58698
+  },
+  {
+    "date": "Jan 15 2024",
+    "timestamp": 1705320000000,
+    "price": 6539.22,
+    "volume": 52079
+  },
+  {
+    "date": "Jan 16 2024",
+    "timestamp": 1705406400000,
+    "price": 6370.65,
+    "volume": 43619
+  },
+  {
+    "date": "Jan 17 2024",
+    "timestamp": 1705492800000,
+    "price": 5888.49,
+    "volume": 83779
+  },
+  {
+    "date": "Jan 18 2024",
+    "timestamp": 1705579200000,
+    "price": 5643.53,
+    "volume": 69052
+  },
+  {
+    "date": "Jan 19 2024",
+    "timestamp": 1705665600000,
+    "price": 5710.99,
+    "volume": 67419
+  },
+  {
+    "date": "Jan 20 2024",
+    "timestamp": 1705752000000,
+    "price": 5646.29,
+    "volume": 73475
+  },
+  {
+    "date": "Jan 21 2024",
+    "timestamp": 1705838400000,
+    "price": 5587.08,
+    "volume": 68112
+  },
+  {
+    "date": "Jan 22 2024",
+    "timestamp": 1705924800000,
+    "price": 5394.56,
+    "volume": 53830
+  },
+  {
+    "date": "Jan 23 2024",
+    "timestamp": 1706011200000,
+    "price": 5234.98,
+    "volume": 54691
+  },
+  {
+    "date": "Jan 24 2024",
+    "timestamp": 1706097600000,
+    "price": 4925.52,
+    "volume": 81923
+  },
+  {
+    "date": "Jan 25 2024",
+    "timestamp": 1706184000000,
+    "price": 4884.21,
+    "volume": 70645
+  },
+  {
+    "date": "Jan 26 2024",
+    "timestamp": 1706270400000,
+    "price": 5100.36,
+    "volume": 68313
+  },
+  {
+    "date": "Jan 27 2024",
+    "timestamp": 1706356800000,
+    "price": 5172.45,
+    "volume": 63961
+  },
+  {
+    "date": "Jan 28 2024",
+    "timestamp": 1706443200000,
+    "price": 5088.64,
+    "volume": 55049
+  },
+  {
+    "date": "Jan 29 2024",
+    "timestamp": 1706529600000,
+    "price": 4943.76,
+    "volume": 44799
+  },
+  {
+    "date": "Jan 30 2024",
+    "timestamp": 1706616000000,
+    "price": 4872.81,
+    "volume": 48052
+  },
+  {
+    "date": "Jan 31 2024",
+    "timestamp": 1706702400000,
+    "price": 4706.43,
+    "volume": 81438
+  },
+  {
+    "date": "Feb 01 2024",
+    "timestamp": 1706788800000,
+    "price": 4650.76,
+    "volume": 71871
+  },
+  {
+    "date": "Feb 02 2024",
+    "timestamp": 1706875200000,
+    "price": 4640.66,
+    "volume": 66774
+  },
+  {
+    "date": "Feb 03 2024",
+    "timestamp": 1706961600000,
+    "price": 4819.67,
+    "volume": 67351
+  },
+  {
+    "date": "Feb 04 2024",
+    "timestamp": 1707048000000,
+    "price": 5330.56,
+    "volume": 87054
+  },
+  {
+    "date": "Feb 05 2024",
+    "timestamp": 1707134400000,
+    "price": 5616.84,
+    "volume": 70590
+  },
+  {
+    "date": "Feb 06 2024",
+    "timestamp": 1707220800000,
+    "price": 5377.52,
+    "volume": 55630
+  },
+  {
+    "date": "Feb 07 2024",
+    "timestamp": 1707307200000,
+    "price": 5032.41,
+    "volume": 170877
+  },
+  {
+    "date": "Feb 08 2024",
+    "timestamp": 1707393600000,
+    "price": 4882.94,
+    "volume": 114109
+  },
+  {
+    "date": "Feb 09 2024",
+    "timestamp": 1707480000000,
+    "price": 5126.32,
+    "volume": 119904
+  },
+  {
+    "date": "Feb 10 2024",
+    "timestamp": 1707566400000,
+    "price": 5372.47,
+    "volume": 107569
+  },
+  {
+    "date": "Feb 11 2024",
+    "timestamp": 1707652800000,
+    "price": 5449.73,
+    "volume": 93220
+  },
+  {
+    "date": "Feb 12 2024",
+    "timestamp": 1707739200000,
+    "price": 5545.44,
+    "volume": 77318
+  },
+  {
+    "date": "Feb 13 2024",
+    "timestamp": 1707825600000,
+    "price": 5533.89,
+    "volume": 83726
+  },
+  {
+    "date": "Feb 14 2024",
+    "timestamp": 1707912000000,
+    "price": 5186.92,
+    "volume": 125683
+  },
+  {
+    "date": "Feb 15 2024",
+    "timestamp": 1707998400000,
+    "price": 5113.65,
+    "volume": 102421
+  },
+  {
+    "date": "Feb 16 2024",
+    "timestamp": 1708084800000,
+    "price": 5178.42,
+    "volume": 105778
+  },
+  {
+    "date": "Feb 17 2024",
+    "timestamp": 1708171200000,
+    "price": 5158.38,
+    "volume": 102676
+  },
+  {
+    "date": "Feb 18 2024",
+    "timestamp": 1708257600000,
+    "price": 5131.14,
+    "volume": 92985
+  },
+  {
+    "date": "Feb 19 2024",
+    "timestamp": 1708344000000,
+    "price": 5102.95,
+    "volume": 78424
+  },
+  {
+    "date": "Feb 20 2024",
+    "timestamp": 1708430400000,
+    "price": 5059.75,
+    "volume": 80703
+  },
+  {
+    "date": "Feb 21 2024",
+    "timestamp": 1708516800000,
+    "price": 4898.82,
+    "volume": 123602
+  },
+  {
+    "date": "Feb 22 2024",
+    "timestamp": 1708603200000,
+    "price": 4791.33,
+    "volume": 95626
+  },
+  {
+    "date": "Feb 23 2024",
+    "timestamp": 1708689600000,
+    "price": 4768.25,
+    "volume": 99466
+  },
+  {
+    "date": "Feb 24 2024",
+    "timestamp": 1708776000000,
+    "price": 4899.82,
+    "volume": 88066
+  },
+  {
+    "date": "Feb 25 2024",
+    "timestamp": 1708862400000,
+    "price": 4913.2,
+    "volume": 76223
+  },
+  {
+    "date": "Feb 26 2024",
+    "timestamp": 1708948800000,
+    "price": 4961.4,
+    "volume": 67905
+  },
+  {
+    "date": "Feb 27 2024",
+    "timestamp": 1709035200000,
+    "price": 5018.18,
+    "volume": 68295
+  },
+  {
+    "date": "Feb 28 2024",
+    "timestamp": 1709121600000,
+    "price": 4813.6,
+    "volume": 113309
+  },
+  {
+    "date": "Feb 29 2024",
+    "timestamp": 1709208000000,
+    "price": 5104.86,
+    "volume": 102324
+  },
+  {
+    "date": "Mar 01 2024",
+    "timestamp": 1709294400000,
+    "price": 5473.47,
+    "volume": 107247
+  },
+  {
+    "date": "Mar 02 2024",
+    "timestamp": 1709380800000,
+    "price": 5620.55,
+    "volume": 107812
+  },
+  {
+    "date": "Mar 03 2024",
+    "timestamp": 1709467200000,
+    "price": 5850.07,
+    "volume": 96412
+  },
+  {
+    "date": "Mar 04 2024",
+    "timestamp": 1709553600000,
+    "price": 5976.88,
+    "volume": 72279
+  },
+  {
+    "date": "Mar 05 2024",
+    "timestamp": 1709640000000,
+    "price": 5763.94,
+    "volume": 69724
+  },
+  {
+    "date": "Mar 06 2024",
+    "timestamp": 1709726400000,
+    "price": 5364.48,
+    "volume": 114037
+  },
+  {
+    "date": "Mar 07 2024",
+    "timestamp": 1709812800000,
+    "price": 5356.26,
+    "volume": 94105
+  },
+  {
+    "date": "Mar 08 2024",
+    "timestamp": 1709899200000,
+    "price": 5531.85,
+    "volume": 101136
+  },
+  {
+    "date": "Mar 09 2024",
+    "timestamp": 1709985600000,
+    "price": 5538.9,
+    "volume": 92363
+  },
+  {
+    "date": "Mar 10 2024",
+    "timestamp": 1710072000000,
+    "price": 5512.16,
+    "volume": 82446
+  },
+  {
+    "date": "Mar 11 2024",
+    "timestamp": 1710158400000,
+    "price": 5471.35,
+    "volume": 78689
+  },
+  {
+    "date": "Mar 12 2024",
+    "timestamp": 1710244800000,
+    "price": 5367.02,
+    "volume": 70444
+  },
+  {
+    "date": "Mar 13 2024",
+    "timestamp": 1710331200000,
+    "price": 5164.4,
+    "volume": 112750
+  },
+  {
+    "date": "Mar 14 2024",
+    "timestamp": 1710417600000,
+    "price": 4943.21,
+    "volume": 129005
+  },
+  {
+    "date": "Mar 15 2024",
+    "timestamp": 1710504000000,
+    "price": 4897.49,
+    "volume": 107232
+  },
+  {
+    "date": "Mar 16 2024",
+    "timestamp": 1710590400000,
+    "price": 4950.32,
+    "volume": 106566
+  },
+  {
+    "date": "Mar 17 2024",
+    "timestamp": 1710676800000,
+    "price": 4927.75,
+    "volume": 90354
+  },
+  {
+    "date": "Mar 18 2024",
+    "timestamp": 1710763200000,
+    "price": 4909.99,
+    "volume": 75208
+  },
+  {
+    "date": "Mar 19 2024",
+    "timestamp": 1710849600000,
+    "price": 5041.78,
+    "volume": 73838
+  },
+  {
+    "date": "Mar 20 2024",
+    "timestamp": 1710936000000,
+    "price": 4835.8,
+    "volume": 115609
+  },
+  {
+    "date": "Mar 21 2024",
+    "timestamp": 1711022400000,
+    "price": 4753.23,
+    "volume": 110463
+  },
+  {
+    "date": "Mar 22 2024",
+    "timestamp": 1711108800000,
+    "price": 4913.28,
+    "volume": 83196
+  },
+  {
+    "date": "Mar 23 2024",
+    "timestamp": 1711195200000,
+    "price": 4962.61,
+    "volume": 88011
+  },
+  {
+    "date": "Mar 24 2024",
+    "timestamp": 1711281600000,
+    "price": 5006.3,
+    "volume": 84675
+  },
+  {
+    "date": "Mar 25 2024",
+    "timestamp": 1711368000000,
+    "price": 5113,
+    "volume": 70296
+  },
+  {
+    "date": "Mar 26 2024",
+    "timestamp": 1711454400000,
+    "price": 5155.61,
+    "volume": 71485
+  },
+  {
+    "date": "Mar 27 2024",
+    "timestamp": 1711540800000,
+    "price": 4849.27,
+    "volume": 112211
+  },
+  {
+    "date": "Mar 28 2024",
+    "timestamp": 1711627200000,
+    "price": 4991.33,
+    "volume": 93945
+  },
+  {
+    "date": "Mar 29 2024",
+    "timestamp": 1711713600000,
+    "price": 5089.95,
+    "volume": 88465
+  },
+  {
+    "date": "Mar 30 2024",
+    "timestamp": 1711800000000,
+    "price": 5175.43,
+    "volume": 85624
+  },
+  {
+    "date": "Mar 31 2024",
+    "timestamp": 1711886400000,
+    "price": 5242.65,
+    "volume": 80627
+  },
+  {
+    "date": "Apr 01 2024",
+    "timestamp": 1711972800000,
+    "price": 5311.3,
+    "volume": 81430
+  },
+  {
+    "date": "Apr 02 2024",
+    "timestamp": 1712059200000,
+    "price": 5239.77,
+    "volume": 86123
+  },
+  {
+    "date": "Apr 03 2024",
+    "timestamp": 1712145600000,
+    "price": 5015.52,
+    "volume": 120074
+  },
+  {
+    "date": "Apr 04 2024",
+    "timestamp": 1712232000000,
+    "price": 5098.03,
+    "volume": 97849
+  },
+  {
+    "date": "Apr 05 2024",
+    "timestamp": 1712318400000,
+    "price": 5191.85,
+    "volume": 88429
+  },
+  {
+    "date": "Apr 06 2024",
+    "timestamp": 1712404800000,
+    "price": 5210.62,
+    "volume": 90023
+  },
+  {
+    "date": "Apr 07 2024",
+    "timestamp": 1712491200000,
+    "price": 5121.55,
+    "volume": 79049
+  },
+  {
+    "date": "Apr 08 2024",
+    "timestamp": 1712577600000,
+    "price": 5241.87,
+    "volume": 72607
+  },
+  {
+    "date": "Apr 09 2024",
+    "timestamp": 1712664000000,
+    "price": 5212.63,
+    "volume": 79381
+  },
+  {
+    "date": "Apr 10 2024",
+    "timestamp": 1712750400000,
+    "price": 4928.88,
+    "volume": 101129
+  },
+  {
+    "date": "Apr 11 2024",
+    "timestamp": 1712836800000,
+    "price": 5007.72,
+    "volume": 86815
+  },
+  {
+    "date": "Apr 12 2024",
+    "timestamp": 1712923200000,
+    "price": 5016.18,
+    "volume": 80537
+  },
+  {
+    "date": "Apr 13 2024",
+    "timestamp": 1713009600000,
+    "price": 4996.83,
+    "volume": 91987
+  },
+  {
+    "date": "Apr 14 2024",
+    "timestamp": 1713096000000,
+    "price": 5054.66,
+    "volume": 81863
+  },
+  {
+    "date": "Apr 15 2024",
+    "timestamp": 1713182400000,
+    "price": 5080.19,
+    "volume": 75270
+  },
+  {
+    "date": "Apr 16 2024",
+    "timestamp": 1713268800000,
+    "price": 5051.76,
+    "volume": 72836
+  },
+  {
+    "date": "Apr 17 2024",
+    "timestamp": 1713355200000,
+    "price": 4976.06,
+    "volume": 124781
+  },
+  {
+    "date": "Apr 18 2024",
+    "timestamp": 1713441600000,
+    "price": 4946.87,
+    "volume": 97552
+  },
+  {
+    "date": "Apr 19 2024",
+    "timestamp": 1713528000000,
+    "price": 4809.5,
+    "volume": 79851
+  },
+  {
+    "date": "Apr 20 2024",
+    "timestamp": 1713614400000,
+    "price": 4840.15,
+    "volume": 83219
+  },
+  {
+    "date": "Apr 21 2024",
+    "timestamp": 1713700800000,
+    "price": 4746.33,
+    "volume": 77947
+  },
+  {
+    "date": "Apr 22 2024",
+    "timestamp": 1713787200000,
+    "price": 4772.79,
+    "volume": 76407
+  },
+  {
+    "date": "Apr 23 2024",
+    "timestamp": 1713873600000,
+    "price": 4723.57,
+    "volume": 72757
+  },
+  {
+    "date": "Apr 24 2024",
+    "timestamp": 1713960000000,
+    "price": 4511.31,
+    "volume": 107354
+  },
+  {
+    "date": "Apr 25 2024",
+    "timestamp": 1714046400000,
+    "price": 4531.01,
+    "volume": 89153
+  },
+  {
+    "date": "Apr 26 2024",
+    "timestamp": 1714132800000,
+    "price": 4402.11,
+    "volume": 121242
+  },
+  {
+    "date": "Apr 27 2024",
+    "timestamp": 1714219200000,
+    "price": 4589.46,
+    "volume": 107436
+  },
+  {
+    "date": "Apr 28 2024",
+    "timestamp": 1714305600000,
+    "price": 4689.45,
+    "volume": 100718
+  },
+  {
+    "date": "Apr 29 2024",
+    "timestamp": 1714392000000,
+    "price": 4679.91,
+    "volume": 79003
+  },
+  {
+    "date": "Apr 30 2024",
+    "timestamp": 1714478400000,
+    "price": 4623.97,
+    "volume": 90300
+  },
+  {
+    "date": "May 01 2024",
+    "timestamp": 1714564800000,
+    "price": 4369.77,
+    "volume": 125765
+  },
+  {
+    "date": "May 02 2024",
+    "timestamp": 1714651200000,
+    "price": 4300.35,
+    "volume": 91008
+  },
+  {
+    "date": "May 03 2024",
+    "timestamp": 1714737600000,
+    "price": 4448.65,
+    "volume": 88074
+  },
+  {
+    "date": "May 04 2024",
+    "timestamp": 1714824000000,
+    "price": 4492.22,
+    "volume": 93424
+  },
+  {
+    "date": "May 05 2024",
+    "timestamp": 1714910400000,
+    "price": 4516.71,
+    "volume": 80991
+  },
+  {
+    "date": "May 06 2024",
+    "timestamp": 1714996800000,
+    "price": 4508.32,
+    "volume": 74324
+  },
+  {
+    "date": "May 07 2024",
+    "timestamp": 1715083200000,
+    "price": 4483.35,
+    "volume": 65679
+  },
+  {
+    "date": "May 08 2024",
+    "timestamp": 1715169600000,
+    "price": 4335.17,
+    "volume": 106778
+  },
+  {
+    "date": "May 09 2024",
+    "timestamp": 1715256000000,
+    "price": 4270.96,
+    "volume": 87631
+  },
+  {
+    "date": "May 10 2024",
+    "timestamp": 1715342400000,
+    "price": 4373.79,
+    "volume": 82075
+  },
+  {
+    "date": "May 11 2024",
+    "timestamp": 1715428800000,
+    "price": 4412.78,
+    "volume": 86376
+  },
+  {
+    "date": "May 12 2024",
+    "timestamp": 1715515200000,
+    "price": 4473.01,
+    "volume": 82044
+  },
+  {
+    "date": "May 13 2024",
+    "timestamp": 1715601600000,
+    "price": 4532.09,
+    "volume": 87595
+  },
+  {
+    "date": "May 14 2024",
+    "timestamp": 1715688000000,
+    "price": 4552.01,
+    "volume": 78030
+  },
+  {
+    "date": "May 15 2024",
+    "timestamp": 1715774400000,
+    "price": 4479.41,
+    "volume": 133839
+  },
+  {
+    "date": "May 16 2024",
+    "timestamp": 1715860800000,
+    "price": 4445.34,
+    "volume": 101724
+  },
+  {
+    "date": "May 17 2024",
+    "timestamp": 1715947200000,
+    "price": 4396.23,
+    "volume": 92906
+  },
+  {
+    "date": "May 18 2024",
+    "timestamp": 1716033600000,
+    "price": 4359.58,
+    "volume": 107821
+  },
+  {
+    "date": "May 19 2024",
+    "timestamp": 1716120000000,
+    "price": 4355.49,
+    "volume": 124581
+  },
+  {
+    "date": "May 20 2024",
+    "timestamp": 1716206400000,
+    "price": 4214.98,
+    "volume": 113621
+  },
+  {
+    "date": "May 21 2024",
+    "timestamp": 1716292800000,
+    "price": 4044.31,
+    "volume": 135920
+  },
+  {
+    "date": "May 22 2024",
+    "timestamp": 1716379200000,
+    "price": 3815.21,
+    "volume": 142265
+  },
+  {
+    "date": "May 23 2024",
+    "timestamp": 1716465600000,
+    "price": 3740.29,
+    "volume": 106721
+  },
+  {
+    "date": "May 24 2024",
+    "timestamp": 1716552000000,
+    "price": 3920.2,
+    "volume": 120375
+  },
+  {
+    "date": "May 25 2024",
+    "timestamp": 1716638400000,
+    "price": 4101.06,
+    "volume": 112045
+  },
+  {
+    "date": "May 26 2024",
+    "timestamp": 1716724800000,
+    "price": 4023.84,
+    "volume": 94150
+  },
+  {
+    "date": "May 27 2024",
+    "timestamp": 1716811200000,
+    "price": 4041.76,
+    "volume": 91323
+  },
+  {
+    "date": "May 28 2024",
+    "timestamp": 1716897600000,
+    "price": 3926.98,
+    "volume": 90607
+  },
+  {
+    "date": "May 29 2024",
+    "timestamp": 1716984000000,
+    "price": 3942.75,
+    "volume": 139495
+  },
+  {
+    "date": "May 30 2024",
+    "timestamp": 1717070400000,
+    "price": 4179.84,
+    "volume": 128989
+  },
+  {
+    "date": "May 31 2024",
+    "timestamp": 1717156800000,
+    "price": 4260.94,
+    "volume": 90877
+  },
+  {
+    "date": "Jun 01 2024",
+    "timestamp": 1717243200000,
+    "price": 4300.15,
+    "volume": 73341
+  },
+  {
+    "date": "Jun 02 2024",
+    "timestamp": 1717329600000,
+    "price": 4300.23,
+    "volume": 75700
+  },
+  {
+    "date": "Jun 03 2024",
+    "timestamp": 1717416000000,
+    "price": 4382.31,
+    "volume": 65059
+  },
+  {
+    "date": "Jun 04 2024",
+    "timestamp": 1717502400000,
+    "price": 4493.97,
+    "volume": 84278
+  },
+  {
+    "date": "Jun 05 2024",
+    "timestamp": 1717588800000,
+    "price": 4339.24,
+    "volume": 105864
+  },
+  {
+    "date": "Jun 06 2024",
+    "timestamp": 1717675200000,
+    "price": 4254.81,
+    "volume": 95102
+  },
+  {
+    "date": "Jun 07 2024",
+    "timestamp": 1717761600000,
+    "price": 4246.16,
+    "volume": 96257
+  },
+  {
+    "date": "Jun 08 2024",
+    "timestamp": 1717848000000,
+    "price": 4014.44,
+    "volume": 105844
+  },
+  {
+    "date": "Jun 09 2024",
+    "timestamp": 1717934400000,
+    "price": 4016.12,
+    "volume": 96123
+  },
+  {
+    "date": "Jun 10 2024",
+    "timestamp": 1718020800000,
+    "price": 4091.32,
+    "volume": 90603
+  },
+  {
+    "date": "Jun 11 2024",
+    "timestamp": 1718107200000,
+    "price": 4152.18,
+    "volume": 96215
+  },
+  {
+    "date": "Jun 12 2024",
+    "timestamp": 1718193600000,
+    "price": 4036.4,
+    "volume": 124097
+  },
+  {
+    "date": "Jun 13 2024",
+    "timestamp": 1718280000000,
+    "price": 4018.29,
+    "volume": 107510
+  },
+  {
+    "date": "Jun 14 2024",
+    "timestamp": 1718366400000,
+    "price": 4065.87,
+    "volume": 127911
+  },
+  {
+    "date": "Jun 15 2024",
+    "timestamp": 1718452800000,
+    "price": 3899.55,
+    "volume": 72566
+  },
+  {
+    "date": "Jun 16 2024",
+    "timestamp": 1718539200000,
+    "price": 3930.57,
+    "volume": 82885
+  },
+  {
+    "date": "Jun 17 2024",
+    "timestamp": 1718625600000,
+    "price": 3963.4,
+    "volume": 93601
+  },
+  {
+    "date": "Jun 18 2024",
+    "timestamp": 1718712000000,
+    "price": 4045.72,
+    "volume": 100093
+  },
+  {
+    "date": "Jun 19 2024",
+    "timestamp": 1718798400000,
+    "price": 3898.41,
+    "volume": 112290
+  },
+  {
+    "date": "Jun 20 2024",
+    "timestamp": 1718884800000,
+    "price": 3889.56,
+    "volume": 92250
+  },
+  {
+    "date": "Jun 21 2024",
+    "timestamp": 1718971200000,
+    "price": 3898.3,
+    "volume": 79075
+  },
+  {
+    "date": "Jun 22 2024",
+    "timestamp": 1719057600000,
+    "price": 3925.94,
+    "volume": 88637
+  },
+  {
+    "date": "Jun 23 2024",
+    "timestamp": 1719144000000,
+    "price": 3928.24,
+    "volume": 84867
+  },
+  {
+    "date": "Jun 24 2024",
+    "timestamp": 1719230400000,
+    "price": 3943.77,
+    "volume": 85001
+  },
+  {
+    "date": "Jun 25 2024",
+    "timestamp": 1719316800000,
+    "price": 3846.43,
+    "volume": 59337
+  },
+  {
+    "date": "Jun 26 2024",
+    "timestamp": 1719403200000,
+    "price": 3773.21,
+    "volume": 115734
+  },
+  {
+    "date": "Jun 27 2024",
+    "timestamp": 1719489600000,
+    "price": 3780.68,
+    "volume": 116760
+  },
+  {
+    "date": "Jun 28 2024",
+    "timestamp": 1719576000000,
+    "price": 3698.72,
+    "volume": 119291
+  },
+  {
+    "date": "Jun 29 2024",
+    "timestamp": 1719662400000,
+    "price": 3707.15,
+    "volume": 101328
+  },
+  {
+    "date": "Jun 30 2024",
+    "timestamp": 1719748800000,
+    "price": 3610.35,
+    "volume": 83338
+  },
+  {
+    "date": "Jul 01 2024",
+    "timestamp": 1719835200000,
+    "price": 3730.46,
+    "volume": 87306
+  },
+  {
+    "date": "Jul 02 2024",
+    "timestamp": 1719921600000,
+    "price": 3763.5,
+    "volume": 81461
+  },
+  {
+    "date": "Jul 03 2024",
+    "timestamp": 1720008000000,
+    "price": 3702.68,
+    "volume": 131783
+  },
+  {
+    "date": "Jul 04 2024",
+    "timestamp": 1720094400000,
+    "price": 3756.96,
+    "volume": 98122
+  },
+  {
+    "date": "Jul 05 2024",
+    "timestamp": 1720180800000,
+    "price": 3843.43,
+    "volume": 91898
+  },
+  {
+    "date": "Jul 06 2024",
+    "timestamp": 1720267200000,
+    "price": 3835.2,
+    "volume": 85896
+  },
+  {
+    "date": "Jul 07 2024",
+    "timestamp": 1720353600000,
+    "price": 3908.16,
+    "volume": 98707
+  },
+  {
+    "date": "Jul 08 2024",
+    "timestamp": 1720440000000,
+    "price": 3893.77,
+    "volume": 95949
+  },
+  {
+    "date": "Jul 09 2024",
+    "timestamp": 1720526400000,
+    "price": 3834.96,
+    "volume": 68911
+  },
+  {
+    "date": "Jul 10 2024",
+    "timestamp": 1720612800000,
+    "price": 3695.12,
+    "volume": 112893
+  },
+  {
+    "date": "Jul 11 2024",
+    "timestamp": 1720699200000,
+    "price": 3595.31,
+    "volume": 87275
+  },
+  {
+    "date": "Jul 12 2024",
+    "timestamp": 1720785600000,
+    "price": 3694.28,
+    "volume": 68083
+  },
+  {
+    "date": "Jul 13 2024",
+    "timestamp": 1720872000000,
+    "price": 3713.84,
+    "volume": 66470
+  },
+  {
+    "date": "Jul 14 2024",
+    "timestamp": 1720958400000,
+    "price": 3726.42,
+    "volume": 65147
+  },
+  {
+    "date": "Jul 15 2024",
+    "timestamp": 1721044800000,
+    "price": 3763.64,
+    "volume": 52912
+  },
+  {
+    "date": "Jul 16 2024",
+    "timestamp": 1721131200000,
+    "price": 3704.74,
+    "volume": 59196
+  },
+  {
+    "date": "Jul 17 2024",
+    "timestamp": 1721217600000,
+    "price": 3574.93,
+    "volume": 83942
+  },
+  {
+    "date": "Jul 18 2024",
+    "timestamp": 1721304000000,
+    "price": 3562.16,
+    "volume": 71625
+  },
+  {
+    "date": "Jul 19 2024",
+    "timestamp": 1721390400000,
+    "price": 3562.89,
+    "volume": 67985
+  },
+  {
+    "date": "Jul 20 2024",
+    "timestamp": 1721476800000,
+    "price": 3615.54,
+    "volume": 73954
+  },
+  {
+    "date": "Jul 21 2024",
+    "timestamp": 1721563200000,
+    "price": 3566.1,
+    "volume": 53595
+  },
+  {
+    "date": "Jul 22 2024",
+    "timestamp": 1721649600000,
+    "price": 3546.8,
+    "volume": 51739
+  },
+  {
+    "date": "Jul 23 2024",
+    "timestamp": 1721736000000,
+    "price": 3567.88,
+    "volume": 60893
+  },
+  {
+    "date": "Jul 24 2024",
+    "timestamp": 1721822400000,
+    "price": 3445.12,
+    "volume": 92800
+  },
+  {
+    "date": "Jul 25 2024",
+    "timestamp": 1721908800000,
+    "price": 3467.45,
+    "volume": 73478
+  },
+  {
+    "date": "Jul 26 2024",
+    "timestamp": 1721995200000,
+    "price": 3559.65,
+    "volume": 66983
+  },
+  {
+    "date": "Jul 27 2024",
+    "timestamp": 1722081600000,
+    "price": 3607.69,
+    "volume": 71548
+  },
+  {
+    "date": "Jul 28 2024",
+    "timestamp": 1722168000000,
+    "price": 3621.94,
+    "volume": 72428
+  },
+  {
+    "date": "Jul 29 2024",
+    "timestamp": 1722254400000,
+    "price": 3680.2,
+    "volume": 82107
+  },
+  {
+    "date": "Jul 30 2024",
+    "timestamp": 1722340800000,
+    "price": 3645.25,
+    "volume": 74556
+  },
+  {
+    "date": "Jul 31 2024",
+    "timestamp": 1722427200000,
+    "price": 3652.42,
+    "volume": 112330
+  },
+  {
+    "date": "Aug 01 2024",
+    "timestamp": 1722513600000,
+    "price": 3813.39,
+    "volume": 107016
+  },
+  {
+    "date": "Aug 02 2024",
+    "timestamp": 1722600000000,
+    "price": 3816.23,
+    "volume": 101289
+  },
+  {
+    "date": "Aug 03 2024",
+    "timestamp": 1722686400000,
+    "price": 3912.41,
+    "volume": 105497
+  },
+  {
+    "date": "Aug 04 2024",
+    "timestamp": 1722772800000,
+    "price": 3928.32,
+    "volume": 96043
+  },
+  {
+    "date": "Aug 05 2024",
+    "timestamp": 1722859200000,
+    "price": 4016.52,
+    "volume": 101588
+  },
+  {
+    "date": "Aug 06 2024",
+    "timestamp": 1722945600000,
+    "price": 4066.03,
+    "volume": 103381
+  },
+  {
+    "date": "Aug 07 2024",
+    "timestamp": 1723032000000,
+    "price": 3957.97,
+    "volume": 132953
+  },
+  {
+    "date": "Aug 08 2024",
+    "timestamp": 1723118400000,
+    "price": 3870.46,
+    "volume": 103831
+  },
+  {
+    "date": "Aug 09 2024",
+    "timestamp": 1723204800000,
+    "price": 3808.4,
+    "volume": 83917
+  },
+  {
+    "date": "Aug 10 2024",
+    "timestamp": 1723291200000,
+    "price": 3834.5,
+    "volume": 85358
+  },
+  {
+    "date": "Aug 11 2024",
+    "timestamp": 1723377600000,
+    "price": 3868.44,
+    "volume": 95274
+  },
+  {
+    "date": "Aug 12 2024",
+    "timestamp": 1723464000000,
+    "price": 3930.47,
+    "volume": 83720
+  },
+  {
+    "date": "Aug 13 2024",
+    "timestamp": 1723550400000,
+    "price": 4015.52,
+    "volume": 118951
+  },
+  {
+    "date": "Aug 14 2024",
+    "timestamp": 1723636800000,
+    "price": 3966.33,
+    "volume": 161933
+  },
+  {
+    "date": "Aug 15 2024",
+    "timestamp": 1723723200000,
+    "price": 4004.61,
+    "volume": 140899
+  },
+  {
+    "date": "Aug 16 2024",
+    "timestamp": 1723809600000,
+    "price": 4030.18,
+    "volume": 104781
+  },
+  {
+    "date": "Aug 17 2024",
+    "timestamp": 1723896000000,
+    "price": 3934.78,
+    "volume": 83519
+  },
+  {
+    "date": "Aug 18 2024",
+    "timestamp": 1723982400000,
+    "price": 3990.22,
+    "volume": 132447
+  },
+  {
+    "date": "Aug 19 2024",
+    "timestamp": 1724068800000,
+    "price": 4031.14,
+    "volume": 148138
+  },
+  {
+    "date": "Aug 20 2024",
+    "timestamp": 1724155200000,
+    "price": 4033.83,
+    "volume": 125201
+  },
+  {
+    "date": "Aug 21 2024",
+    "timestamp": 1724241600000,
+    "price": 3934.61,
+    "volume": 153446
+  },
+  {
+    "date": "Aug 22 2024",
+    "timestamp": 1724328000000,
+    "price": 3920.83,
+    "volume": 115180
+  },
+  {
+    "date": "Aug 23 2024",
+    "timestamp": 1724414400000,
+    "price": 3906.07,
+    "volume": 110046
+  },
+  {
+    "date": "Aug 24 2024",
+    "timestamp": 1724500800000,
+    "price": 4038.1,
+    "volume": 119401
+  },
+  {
+    "date": "Aug 25 2024",
+    "timestamp": 1724587200000,
+    "price": 4110.41,
+    "volume": 139062
+  },
+  {
+    "date": "Aug 26 2024",
+    "timestamp": 1724673600000,
+    "price": 4057.36,
+    "volume": 82510
+  },
+  {
+    "date": "Aug 27 2024",
+    "timestamp": 1724760000000,
+    "price": 4085.86,
+    "volume": 60984
+  },
+  {
+    "date": "Aug 28 2024",
+    "timestamp": 1724846400000,
+    "price": 3980.15,
+    "volume": 119974
+  },
+  {
+    "date": "Aug 29 2024",
+    "timestamp": 1724932800000,
+    "price": 4067.66,
+    "volume": 99949
+  },
+  {
+    "date": "Aug 30 2024",
+    "timestamp": 1725019200000,
+    "price": 4028.67,
+    "volume": 83124
+  },
+  {
+    "date": "Aug 31 2024",
+    "timestamp": 1725105600000,
+    "price": 4029.43,
+    "volume": 85990
+  },
+  {
+    "date": "Sep 01 2024",
+    "timestamp": 1725192000000,
+    "price": 4085.11,
+    "volume": 97948
+  },
+  {
+    "date": "Sep 02 2024",
+    "timestamp": 1725278400000,
+    "price": 4190.23,
+    "volume": 104632
+  },
+  {
+    "date": "Sep 03 2024",
+    "timestamp": 1725364800000,
+    "price": 4329.14,
+    "volume": 112922
+  },
+  {
+    "date": "Sep 04 2024",
+    "timestamp": 1725451200000,
+    "price": 4280.47,
+    "volume": 142616
+  },
+  {
+    "date": "Sep 05 2024",
+    "timestamp": 1725537600000,
+    "price": 4175.62,
+    "volume": 98266
+  },
+  {
+    "date": "Sep 06 2024",
+    "timestamp": 1725624000000,
+    "price": 4342.65,
+    "volume": 124242
+  },
+  {
+    "date": "Sep 07 2024",
+    "timestamp": 1725710400000,
+    "price": 4376.15,
+    "volume": 101015
+  },
+  {
+    "date": "Sep 08 2024",
+    "timestamp": 1725796800000,
+    "price": 4404,
+    "volume": 107926
+  },
+  {
+    "date": "Sep 09 2024",
+    "timestamp": 1725883200000,
+    "price": 4468.22,
+    "volume": 99200
+  },
+  {
+    "date": "Sep 10 2024",
+    "timestamp": 1725969600000,
+    "price": 4552.43,
+    "volume": 101163
+  },
+  {
+    "date": "Sep 11 2024",
+    "timestamp": 1726056000000,
+    "price": 4393.49,
+    "volume": 123499
+  },
+  {
+    "date": "Sep 12 2024",
+    "timestamp": 1726142400000,
+    "price": 4420.4,
+    "volume": 122793
+  },
+  {
+    "date": "Sep 13 2024",
+    "timestamp": 1726228800000,
+    "price": 4411.08,
+    "volume": 96698
+  },
+  {
+    "date": "Sep 14 2024",
+    "timestamp": 1726315200000,
+    "price": 4486.98,
+    "volume": 97747
+  },
+  {
+    "date": "Sep 15 2024",
+    "timestamp": 1726401600000,
+    "price": 4588.47,
+    "volume": 105370
+  },
+  {
+    "date": "Sep 16 2024",
+    "timestamp": 1726488000000,
+    "price": 4789.34,
+    "volume": 123740
+  },
+  {
+    "date": "Sep 17 2024",
+    "timestamp": 1726574400000,
+    "price": 4968.59,
+    "volume": 110356
+  },
+  {
+    "date": "Sep 18 2024",
+    "timestamp": 1726660800000,
+    "price": 4815.04,
+    "volume": 111192
+  },
+  {
+    "date": "Sep 19 2024",
+    "timestamp": 1726747200000,
+    "price": 4947.06,
+    "volume": 120712
+  },
+  {
+    "date": "Sep 20 2024",
+    "timestamp": 1726833600000,
+    "price": 4919.71,
+    "volume": 98713
+  },
+  {
+    "date": "Sep 21 2024",
+    "timestamp": 1726920000000,
+    "price": 4952.98,
+    "volume": 105130
+  },
+  {
+    "date": "Sep 22 2024",
+    "timestamp": 1727006400000,
+    "price": 5075.53,
+    "volume": 124596
+  },
+  {
+    "date": "Sep 23 2024",
+    "timestamp": 1727092800000,
+    "price": 5312.08,
+    "volume": 124328
+  },
+  {
+    "date": "Sep 24 2024",
+    "timestamp": 1727179200000,
+    "price": 5303.83,
+    "volume": 73824
+  },
+  {
+    "date": "Sep 25 2024",
+    "timestamp": 1727265600000,
+    "price": 5336.27,
+    "volume": 134199
+  },
+  {
+    "date": "Sep 26 2024",
+    "timestamp": 1727352000000,
+    "price": 5311.74,
+    "volume": 107702
+  },
+  {
+    "date": "Sep 27 2024",
+    "timestamp": 1727438400000,
+    "price": 5430.51,
+    "volume": 105601
+  },
+  {
+    "date": "Sep 28 2024",
+    "timestamp": 1727524800000,
+    "price": 5424.14,
+    "volume": 102385
+  },
+  {
+    "date": "Sep 29 2024",
+    "timestamp": 1727611200000,
+    "price": 5439.21,
+    "volume": 101959
+  },
+  {
+    "date": "Sep 30 2024",
+    "timestamp": 1727697600000,
+    "price": 5600.47,
+    "volume": 107339
+  },
+  {
+    "date": "Oct 01 2024",
+    "timestamp": 1727784000000,
+    "price": 5788.2,
+    "volume": 134213
+  },
+  {
+    "date": "Oct 02 2024",
+    "timestamp": 1727870400000,
+    "price": 5595.59,
+    "volume": 141747
+  },
+  {
+    "date": "Oct 03 2024",
+    "timestamp": 1727956800000,
+    "price": 4752.72,
+    "volume": 251035
+  },
+  {
+    "date": "Oct 04 2024",
+    "timestamp": 1728043200000,
+    "price": 5021.13,
+    "volume": 119706
+  },
+  {
+    "date": "Oct 05 2024",
+    "timestamp": 1728129600000,
+    "price": 5160.19,
+    "volume": 94126
+  },
+  {
+    "date": "Oct 06 2024",
+    "timestamp": 1728216000000,
+    "price": 5398.07,
+    "volume": 85570
+  },
+  {
+    "date": "Oct 07 2024",
+    "timestamp": 1728302400000,
+    "price": 5426.29,
+    "volume": 72068
+  },
+  {
+    "date": "Oct 08 2024",
+    "timestamp": 1728388800000,
+    "price": 5416.31,
+    "volume": 65566
+  },
+  {
+    "date": "Oct 09 2024",
+    "timestamp": 1728475200000,
+    "price": 5193.21,
+    "volume": 105768
+  },
+  {
+    "date": "Oct 10 2024",
+    "timestamp": 1728561600000,
+    "price": 5090.02,
+    "volume": 94304
+  },
+  {
+    "date": "Oct 11 2024",
+    "timestamp": 1728648000000,
+    "price": 5023.3,
+    "volume": 96988
+  },
+  {
+    "date": "Oct 12 2024",
+    "timestamp": 1728734400000,
+    "price": 4932.7,
+    "volume": 85970
+  },
+  {
+    "date": "Oct 13 2024",
+    "timestamp": 1728820800000,
+    "price": 4946.24,
+    "volume": 88733
+  },
+  {
+    "date": "Oct 14 2024",
+    "timestamp": 1728907200000,
+    "price": 5040.92,
+    "volume": 70787
+  },
+  {
+    "date": "Oct 15 2024",
+    "timestamp": 1728993600000,
+    "price": 5090.27,
+    "volume": 80558
+  },
+  {
+    "date": "Oct 16 2024",
+    "timestamp": 1729080000000,
+    "price": 4931.73,
+    "volume": 107294
+  },
+  {
+    "date": "Oct 17 2024",
+    "timestamp": 1729166400000,
+    "price": 4924.39,
+    "volume": 90279
+  },
+  {
+    "date": "Oct 18 2024",
+    "timestamp": 1729252800000,
+    "price": 4925.05,
+    "volume": 92238
+  },
+  {
+    "date": "Oct 19 2024",
+    "timestamp": 1729339200000,
+    "price": 5000.86,
+    "volume": 93861
+  },
+  {
+    "date": "Oct 20 2024",
+    "timestamp": 1729425600000,
+    "price": 4921.9,
+    "volume": 83159
+  },
+  {
+    "date": "Oct 21 2024",
+    "timestamp": 1729512000000,
+    "price": 4991.35,
+    "volume": 69468
+  },
+  {
+    "date": "Oct 22 2024",
+    "timestamp": 1729598400000,
+    "price": 5177.09,
+    "volume": 100825
+  },
+  {
+    "date": "Oct 23 2024",
+    "timestamp": 1729684800000,
+    "price": 5043.95,
+    "volume": 119435
+  },
+  {
+    "date": "Oct 24 2024",
+    "timestamp": 1729771200000,
+    "price": 5008.88,
+    "volume": 89642
+  },
+  {
+    "date": "Oct 25 2024",
+    "timestamp": 1729857600000,
+    "price": 5186.9,
+    "volume": 116170
+  },
+  {
+    "date": "Oct 26 2024",
+    "timestamp": 1729944000000,
+    "price": 5216.1,
+    "volume": 93798
+  },
+  {
+    "date": "Oct 27 2024",
+    "timestamp": 1730030400000,
+    "price": 5218.17,
+    "volume": 73852
+  },
+  {
+    "date": "Oct 28 2024",
+    "timestamp": 1730116800000,
+    "price": 5253.55,
+    "volume": 66841
+  },
+  {
+    "date": "Oct 29 2024",
+    "timestamp": 1730203200000,
+    "price": 5170.39,
+    "volume": 63169
+  },
+  {
+    "date": "Oct 30 2024",
+    "timestamp": 1730289600000,
+    "price": 5108.06,
+    "volume": 113892
+  },
+  {
+    "date": "Oct 31 2024",
+    "timestamp": 1730376000000,
+    "price": 5065.02,
+    "volume": 87074
+  },
+  {
+    "date": "Nov 01 2024",
+    "timestamp": 1730462400000,
+    "price": 5159.48,
+    "volume": 82127
+  },
+  {
+    "date": "Nov 02 2024",
+    "timestamp": 1730548800000,
+    "price": 5227.61,
+    "volume": 86343
+  },
+  {
+    "date": "Nov 03 2024",
+    "timestamp": 1730635200000,
+    "price": 5211.51,
+    "volume": 87110
+  },
+  {
+    "date": "Nov 04 2024",
+    "timestamp": 1730721600000,
+    "price": 5297.24,
+    "volume": 73785
+  },
+  {
+    "date": "Nov 05 2024",
+    "timestamp": 1730808000000,
+    "price": 5420.71,
+    "volume": 78687
+  },
+  {
+    "date": "Nov 06 2024",
+    "timestamp": 1730894400000,
+    "price": 5189.35,
+    "volume": 98878
+  },
+  {
+    "date": "Nov 07 2024",
+    "timestamp": 1730980800000,
+    "price": 5218.31,
+    "volume": 89837
+  },
+  {
+    "date": "Nov 08 2024",
+    "timestamp": 1731067200000,
+    "price": 5325,
+    "volume": 82313
+  },
+  {
+    "date": "Nov 09 2024",
+    "timestamp": 1731153600000,
+    "price": 5272.28,
+    "volume": 80246
+  },
+  {
+    "date": "Nov 10 2024",
+    "timestamp": 1731240000000,
+    "price": 5329.94,
+    "volume": 76034
+  },
+  {
+    "date": "Nov 11 2024",
+    "timestamp": 1731326400000,
+    "price": 5428.9,
+    "volume": 71385
+  },
+  {
+    "date": "Nov 12 2024",
+    "timestamp": 1731412800000,
+    "price": 5427.32,
+    "volume": 61619
+  },
+  {
+    "date": "Nov 13 2024",
+    "timestamp": 1731499200000,
+    "price": 5040.49,
+    "volume": 86796
+  },
+  {
+    "date": "Nov 14 2024",
+    "timestamp": 1731585600000,
+    "price": 5116.1,
+    "volume": 83893
+  },
+  {
+    "date": "Nov 15 2024",
+    "timestamp": 1731672000000,
+    "price": 5200.17,
+    "volume": 85652
+  },
+  {
+    "date": "Nov 16 2024",
+    "timestamp": 1731758400000,
+    "price": 5159.56,
+    "volume": 84628
+  },
+  {
+    "date": "Nov 17 2024",
+    "timestamp": 1731844800000,
+    "price": 5283.38,
+    "volume": 85104
+  },
+  {
+    "date": "Nov 18 2024",
+    "timestamp": 1731931200000,
+    "price": 5439.05,
+    "volume": 98245
+  },
+  {
+    "date": "Nov 19 2024",
+    "timestamp": 1732017600000,
+    "price": 5376.86,
+    "volume": 65812
+  },
+  {
+    "date": "Nov 20 2024",
+    "timestamp": 1732104000000,
+    "price": 5171.56,
+    "volume": 114671
+  },
+  {
+    "date": "Nov 21 2024",
+    "timestamp": 1732190400000,
+    "price": 5207.63,
+    "volume": 99887
+  },
+  {
+    "date": "Nov 22 2024",
+    "timestamp": 1732276800000,
+    "price": 5225.88,
+    "volume": 83280
+  },
+  {
+    "date": "Nov 23 2024",
+    "timestamp": 1732363200000,
+    "price": 5108.83,
+    "volume": 71305
+  },
+  {
+    "date": "Nov 24 2024",
+    "timestamp": 1732449600000,
+    "price": 5182.33,
+    "volume": 76245
+  },
+  {
+    "date": "Nov 25 2024",
+    "timestamp": 1732536000000,
+    "price": 5297.16,
+    "volume": 68513
+  },
+  {
+    "date": "Nov 26 2024",
+    "timestamp": 1732622400000,
+    "price": 5386.75,
+    "volume": 67517
+  },
+  {
+    "date": "Nov 27 2024",
+    "timestamp": 1732708800000,
+    "price": 5037.2,
+    "volume": 109645
+  },
+  {
+    "date": "Nov 28 2024",
+    "timestamp": 1732795200000,
+    "price": 4896.97,
+    "volume": 159001
+  },
+  {
+    "date": "Nov 29 2024",
+    "timestamp": 1732881600000,
+    "price": 4948.53,
+    "volume": 107641
+  },
+  {
+    "date": "Nov 30 2024",
+    "timestamp": 1732968000000,
+    "price": 5000.23,
+    "volume": 93639
+  },
+  {
+    "date": "Dec 01 2024",
+    "timestamp": 1733054400000,
+    "price": 4984.7,
+    "volume": 85100
+  },
+  {
+    "date": "Dec 02 2024",
+    "timestamp": 1733140800000,
+    "price": 5021.76,
+    "volume": 67853
+  },
+  {
+    "date": "Dec 03 2024",
+    "timestamp": 1733227200000,
+    "price": 5114.3,
+    "volume": 69732
+  },
+  {
+    "date": "Dec 04 2024",
+    "timestamp": 1733313600000,
+    "price": 4859.69,
+    "volume": 96297
+  },
+  {
+    "date": "Dec 05 2024",
+    "timestamp": 1733400000000,
+    "price": 5028.42,
+    "volume": 84880
+  },
+  {
+    "date": "Dec 06 2024",
+    "timestamp": 1733486400000,
+    "price": 5153.95,
+    "volume": 82899
+  },
+  {
+    "date": "Dec 07 2024",
+    "timestamp": 1733572800000,
+    "price": 5126.64,
+    "volume": 77220
+  },
+  {
+    "date": "Dec 08 2024",
+    "timestamp": 1733659200000,
+    "price": 5122.85,
+    "volume": 81608
+  },
+  {
+    "date": "Dec 09 2024",
+    "timestamp": 1733745600000,
+    "price": 5193.2,
+    "volume": 68540
+  },
+  {
+    "date": "Dec 10 2024",
+    "timestamp": 1733832000000,
+    "price": 5224.15,
+    "volume": 61600
+  },
+  {
+    "date": "Dec 11 2024",
+    "timestamp": 1733918400000,
+    "price": 5039.64,
+    "volume": 106626
+  },
+  {
+    "date": "Dec 12 2024",
+    "timestamp": 1734004800000,
+    "price": 5050.87,
+    "volume": 86498
+  },
+  {
+    "date": "Dec 13 2024",
+    "timestamp": 1734091200000,
+    "price": 5077.88,
+    "volume": 84236
+  },
+  {
+    "date": "Dec 14 2024",
+    "timestamp": 1734177600000,
+    "price": 5118.42,
+    "volume": 94745
+  },
+  {
+    "date": "Dec 15 2024",
+    "timestamp": 1734264000000,
+    "price": 5154.6,
+    "volume": 102784
+  },
+  {
+    "date": "Dec 16 2024",
+    "timestamp": 1734350400000,
+    "price": 5163.74,
+    "volume": 78113
+  },
+  {
+    "date": "Dec 17 2024",
+    "timestamp": 1734436800000,
+    "price": 5223.81,
+    "volume": 67037
+  },
+  {
+    "date": "Dec 18 2024",
+    "timestamp": 1734523200000,
+    "price": 5034,
+    "volume": 105347
+  },
+  {
+    "date": "Dec 19 2024",
+    "timestamp": 1734609600000,
+    "price": 5018.15,
+    "volume": 114402
+  },
+  {
+    "date": "Dec 20 2024",
+    "timestamp": 1734696000000,
+    "price": 5024.05,
+    "volume": 119600
+  },
+  {
+    "date": "Dec 21 2024",
+    "timestamp": 1734782400000,
+    "price": 5009,
+    "volume": 101434
+  },
+  {
+    "date": "Dec 22 2024",
+    "timestamp": 1734868800000,
+    "price": 5000.07,
+    "volume": 90724
+  },
+  {
+    "date": "Dec 23 2024",
+    "timestamp": 1734955200000,
+    "price": 5020.98,
+    "volume": 83972
+  },
+  {
+    "date": "Dec 24 2024",
+    "timestamp": 1735041600000,
+    "price": 5111.92,
+    "volume": 84585
+  },
+  {
+    "date": "Dec 25 2024",
+    "timestamp": 1735128000000,
+    "price": 5060.15,
+    "volume": 146180
+  },
+  {
+    "date": "Dec 26 2024",
+    "timestamp": 1735214400000,
+    "price": 5047.98,
+    "volume": 105921
+  },
+  {
+    "date": "Dec 27 2024",
+    "timestamp": 1735300800000,
+    "price": 5042.1,
+    "volume": 104711
+  },
+  {
+    "date": "Dec 28 2024",
+    "timestamp": 1735387200000,
+    "price": 5060.99,
+    "volume": 98479
+  },
+  {
+    "date": "Dec 29 2024",
+    "timestamp": 1735473600000,
+    "price": 5177.5,
+    "volume": 100559
+  },
+  {
+    "date": "Dec 30 2024",
+    "timestamp": 1735560000000,
+    "price": 5242.37,
+    "volume": 96586
+  },
+  {
+    "date": "Dec 31 2024",
+    "timestamp": 1735646400000,
+    "price": 5308.08,
+    "volume": 95178
+  },
+  {
+    "date": "Jan 01 2025",
+    "timestamp": 1735732800000,
+    "price": 5269.19,
+    "volume": 140539
+  },
+  {
+    "date": "Jan 02 2025",
+    "timestamp": 1735819200000,
+    "price": 5308.57,
+    "volume": 123590
+  },
+  {
+    "date": "Jan 03 2025",
+    "timestamp": 1735905600000,
+    "price": 5277.59,
+    "volume": 112301
+  },
+  {
+    "date": "Jan 04 2025",
+    "timestamp": 1735992000000,
+    "price": 5484.95,
+    "volume": 116944
+  },
+  {
+    "date": "Jan 05 2025",
+    "timestamp": 1736078400000,
+    "price": 5574.73,
+    "volume": 135610
+  },
+  {
+    "date": "Jan 06 2025",
+    "timestamp": 1736164800000,
+    "price": 5969.49,
+    "volume": 127117
+  },
+  {
+    "date": "Jan 07 2025",
+    "timestamp": 1736251200000,
+    "price": 6117.53,
+    "volume": 106089
+  },
+  {
+    "date": "Jan 08 2025",
+    "timestamp": 1736337600000,
+    "price": 5929.77,
+    "volume": 136599
+  },
+  {
+    "date": "Jan 09 2025",
+    "timestamp": 1736424000000,
+    "price": 6103.33,
+    "volume": 107785
+  },
+  {
+    "date": "Jan 10 2025",
+    "timestamp": 1736510400000,
+    "price": 6329.48,
+    "volume": 112948
+  },
+  {
+    "date": "Jan 11 2025",
+    "timestamp": 1736596800000,
+    "price": 6723.78,
+    "volume": 118657
+  },
+  {
+    "date": "Jan 12 2025",
+    "timestamp": 1736683200000,
+    "price": 7067.53,
+    "volume": 97283
+  },
+  {
+    "date": "Jan 13 2025",
+    "timestamp": 1736769600000,
+    "price": 7208.25,
+    "volume": 81225
+  },
+  {
+    "date": "Jan 14 2025",
+    "timestamp": 1736856000000,
+    "price": 7159.58,
+    "volume": 77478
+  },
+  {
+    "date": "Jan 15 2025",
+    "timestamp": 1736942400000,
+    "price": 6394.74,
+    "volume": 130887
+  },
+  {
+    "date": "Jan 16 2025",
+    "timestamp": 1737028800000,
+    "price": 6341.34,
+    "volume": 106890
+  },
+  {
+    "date": "Jan 17 2025",
+    "timestamp": 1737115200000,
+    "price": 6589.72,
+    "volume": 98840
+  },
+  {
+    "date": "Jan 18 2025",
+    "timestamp": 1737201600000,
+    "price": 6580.74,
+    "volume": 102946
+  },
+  {
+    "date": "Jan 19 2025",
+    "timestamp": 1737288000000,
+    "price": 6504.61,
+    "volume": 91316
+  },
+  {
+    "date": "Jan 20 2025",
+    "timestamp": 1737374400000,
+    "price": 6657.15,
+    "volume": 91139
+  },
+  {
+    "date": "Jan 21 2025",
+    "timestamp": 1737460800000,
+    "price": 6687.6,
+    "volume": 78438
+  },
+  {
+    "date": "Jan 22 2025",
+    "timestamp": 1737547200000,
+    "price": 6404.84,
+    "volume": 126991
+  },
+  {
+    "date": "Jan 23 2025",
+    "timestamp": 1737633600000,
+    "price": 6318.39,
+    "volume": 102318
+  },
+  {
+    "date": "Jan 24 2025",
+    "timestamp": 1737720000000,
+    "price": 6336.6,
+    "volume": 99906
+  },
+  {
+    "date": "Jan 25 2025",
+    "timestamp": 1737806400000,
+    "price": 6465.35,
+    "volume": 105624
+  },
+  {
+    "date": "Jan 26 2025",
+    "timestamp": 1737892800000,
+    "price": 6485.9,
+    "volume": 98288
+  },
+  {
+    "date": "Jan 27 2025",
+    "timestamp": 1737979200000,
+    "price": 6580.59,
+    "volume": 82290
+  },
+  {
+    "date": "Jan 28 2025",
+    "timestamp": 1738065600000,
+    "price": 6672.29,
+    "volume": 96992
+  },
+  {
+    "date": "Jan 29 2025",
+    "timestamp": 1738152000000,
+    "price": 6567.39,
+    "volume": 143458
+  },
+  {
+    "date": "Jan 30 2025",
+    "timestamp": 1738238400000,
+    "price": 6456.77,
+    "volume": 104656
+  },
+  {
+    "date": "Jan 31 2025",
+    "timestamp": 1738324800000,
+    "price": 6627.84,
+    "volume": 108319
+  },
+  {
+    "date": "Feb 01 2025",
+    "timestamp": 1738411200000,
+    "price": 6740.11,
+    "volume": 101285
+  },
+  {
+    "date": "Feb 02 2025",
+    "timestamp": 1738497600000,
+    "price": 6861.75,
+    "volume": 100204
+  },
+  {
+    "date": "Feb 03 2025",
+    "timestamp": 1738584000000,
+    "price": 7067.97,
+    "volume": 86980
+  },
+  {
+    "date": "Feb 04 2025",
+    "timestamp": 1738670400000,
+    "price": 6901.9,
+    "volume": 78340
+  },
+  {
+    "date": "Feb 05 2025",
+    "timestamp": 1738756800000,
+    "price": 6604,
+    "volume": 131871
+  },
+  {
+    "date": "Feb 06 2025",
+    "timestamp": 1738843200000,
+    "price": 6565.97,
+    "volume": 112064
+  },
+  {
+    "date": "Feb 07 2025",
+    "timestamp": 1738929600000,
+    "price": 7029.5,
+    "volume": 155965
+  },
+  {
+    "date": "Feb 08 2025",
+    "timestamp": 1739016000000,
+    "price": 7536.96,
+    "volume": 136671
+  },
+  {
+    "date": "Feb 09 2025",
+    "timestamp": 1739102400000,
+    "price": 7711.98,
+    "volume": 108164
+  },
+  {
+    "date": "Feb 10 2025",
+    "timestamp": 1739188800000,
+    "price": 7761.74,
+    "volume": 88938
+  },
+  {
+    "date": "Feb 11 2025",
+    "timestamp": 1739275200000,
+    "price": 8075.82,
+    "volume": 93360
+  },
+  {
+    "date": "Feb 12 2025",
+    "timestamp": 1739361600000,
+    "price": 7622.36,
+    "volume": 136907
+  },
+  {
+    "date": "Feb 13 2025",
+    "timestamp": 1739448000000,
+    "price": 7342.26,
+    "volume": 104193
+  },
+  {
+    "date": "Feb 14 2025",
+    "timestamp": 1739534400000,
+    "price": 7665.42,
+    "volume": 100393
+  },
+  {
+    "date": "Feb 15 2025",
+    "timestamp": 1739620800000,
+    "price": 7914.2,
+    "volume": 106371
+  },
+  {
+    "date": "Feb 16 2025",
+    "timestamp": 1739707200000,
+    "price": 8026.91,
+    "volume": 100486
+  },
+  {
+    "date": "Feb 17 2025",
+    "timestamp": 1739793600000,
+    "price": 8273.57,
+    "volume": 102566
+  },
+  {
+    "date": "Feb 18 2025",
+    "timestamp": 1739880000000,
+    "price": 8695.69,
+    "volume": 90421
+  },
+  {
+    "date": "Feb 19 2025",
+    "timestamp": 1739966400000,
+    "price": 8455.8,
+    "volume": 140517
+  },
+  {
+    "date": "Feb 20 2025",
+    "timestamp": 1740052800000,
+    "price": 8447.43,
+    "volume": 113676
+  },
+  {
+    "date": "Feb 21 2025",
+    "timestamp": 1740139200000,
+    "price": 8869.65,
+    "volume": 136668
+  },
+  {
+    "date": "Feb 22 2025",
+    "timestamp": 1740225600000,
+    "price": 9746.78,
+    "volume": 123902
+  },
+  {
+    "date": "Feb 23 2025",
+    "timestamp": 1740312000000,
+    "price": 10106.21,
+    "volume": 103627
+  },
+  {
+    "date": "Feb 24 2025",
+    "timestamp": 1740398400000,
+    "price": 10123.48,
+    "volume": 84551
+  },
+  {
+    "date": "Feb 25 2025",
+    "timestamp": 1740484800000,
+    "price": 10042.95,
+    "volume": 89437
+  },
+  {
+    "date": "Feb 26 2025",
+    "timestamp": 1740571200000,
+    "price": 9302.49,
+    "volume": 136295
+  },
+  {
+    "date": "Feb 27 2025",
+    "timestamp": 1740657600000,
+    "price": 9127.07,
+    "volume": 105321
+  },
+  {
+    "date": "Feb 28 2025",
+    "timestamp": 1740744000000,
+    "price": 9448.69,
+    "volume": 108997
+  },
+  {
+    "date": "Mar 01 2025",
+    "timestamp": 1740830400000,
+    "price": 9607.71,
+    "volume": 121786
+  },
+  {
+    "date": "Mar 02 2025",
+    "timestamp": 1740916800000,
+    "price": 9825.31,
+    "volume": 112590
+  },
+  {
+    "date": "Mar 03 2025",
+    "timestamp": 1741003200000,
+    "price": 9854.57,
+    "volume": 97337
+  },
+  {
+    "date": "Mar 04 2025",
+    "timestamp": 1741089600000,
+    "price": 9874.02,
+    "volume": 83616
+  },
+  {
+    "date": "Mar 05 2025",
+    "timestamp": 1741176000000,
+    "price": 9032.91,
+    "volume": 130844
+  },
+  {
+    "date": "Mar 06 2025",
+    "timestamp": 1741262400000,
+    "price": 8957.1,
+    "volume": 111355
+  },
+  {
+    "date": "Mar 07 2025",
+    "timestamp": 1741348800000,
+    "price": 9087.66,
+    "volume": 102875
+  },
+  {
+    "date": "Mar 08 2025",
+    "timestamp": 1741435200000,
+    "price": 9229.06,
+    "volume": 107686
+  },
+  {
+    "date": "Mar 09 2025",
+    "timestamp": 1741521600000,
+    "price": 9200.99,
+    "volume": 95934
+  },
+  {
+    "date": "Mar 10 2025",
+    "timestamp": 1741608000000,
+    "price": 9057.53,
+    "volume": 89679
+  },
+  {
+    "date": "Mar 11 2025",
+    "timestamp": 1741694400000,
+    "price": 8708.12,
+    "volume": 86602
+  },
+  {
+    "date": "Mar 12 2025",
+    "timestamp": 1741780800000,
+    "price": 8194.52,
+    "volume": 130345
+  },
+  {
+    "date": "Mar 13 2025",
+    "timestamp": 1741867200000,
+    "price": 8098,
+    "volume": 110881
+  },
+  {
+    "date": "Mar 14 2025",
+    "timestamp": 1741953600000,
+    "price": 7713.76,
+    "volume": 118945
+  },
+  {
+    "date": "Mar 15 2025",
+    "timestamp": 1742040000000,
+    "price": 7472.88,
+    "volume": 128067
+  },
+  {
+    "date": "Mar 16 2025",
+    "timestamp": 1742126400000,
+    "price": 7687.35,
+    "volume": 103427
+  },
+  {
+    "date": "Mar 17 2025",
+    "timestamp": 1742212800000,
+    "price": 7703.41,
+    "volume": 88030
+  },
+  {
+    "date": "Mar 18 2025",
+    "timestamp": 1742299200000,
+    "price": 7641.42,
+    "volume": 87425
+  },
+  {
+    "date": "Mar 19 2025",
+    "timestamp": 1742385600000,
+    "price": 7331.89,
+    "volume": 136616
+  },
+  {
+    "date": "Mar 20 2025",
+    "timestamp": 1742472000000,
+    "price": 7249.67,
+    "volume": 109020
+  },
+  {
+    "date": "Mar 21 2025",
+    "timestamp": 1742558400000,
+    "price": 7456.62,
+    "volume": 100005
+  },
+  {
+    "date": "Mar 22 2025",
+    "timestamp": 1742644800000,
+    "price": 7479.12,
+    "volume": 108720
+  },
+  {
+    "date": "Mar 23 2025",
+    "timestamp": 1742731200000,
+    "price": 7534.11,
+    "volume": 108471
+  },
+  {
+    "date": "Mar 24 2025",
+    "timestamp": 1742817600000,
+    "price": 7611.41,
+    "volume": 80177
+  },
+  {
+    "date": "Mar 25 2025",
+    "timestamp": 1742904000000,
+    "price": 7577.44,
+    "volume": 80617
+  },
+  {
+    "date": "Mar 26 2025",
+    "timestamp": 1742990400000,
+    "price": 7087.5,
+    "volume": 115688
+  },
+  {
+    "date": "Mar 27 2025",
+    "timestamp": 1743076800000,
+    "price": 7008.68,
+    "volume": 100971
+  },
+  {
+    "date": "Mar 28 2025",
+    "timestamp": 1743163200000,
+    "price": 7268.19,
+    "volume": 105978
+  },
+  {
+    "date": "Mar 29 2025",
+    "timestamp": 1743249600000,
+    "price": 7331.26,
+    "volume": 104935
+  },
+  {
+    "date": "Mar 30 2025",
+    "timestamp": 1743336000000,
+    "price": 7291.15,
+    "volume": 90430
+  },
+  {
+    "date": "Mar 31 2025",
+    "timestamp": 1743422400000,
+    "price": 7161.6,
+    "volume": 89095
+  },
+  {
+    "date": "Apr 01 2025",
+    "timestamp": 1743508800000,
+    "price": 6546.94,
+    "volume": 127088
+  },
+  {
+    "date": "Apr 02 2025",
+    "timestamp": 1743595200000,
+    "price": 6344.45,
+    "volume": 144675
+  },
+  {
+    "date": "Apr 03 2025",
+    "timestamp": 1743681600000,
+    "price": 6528.11,
+    "volume": 95868
+  },
+  {
+    "date": "Apr 04 2025",
+    "timestamp": 1743768000000,
+    "price": 6704.78,
+    "volume": 93797
+  },
+  {
+    "date": "Apr 05 2025",
+    "timestamp": 1743854400000,
+    "price": 6732.68,
+    "volume": 100468
+  },
+  {
+    "date": "Apr 06 2025",
+    "timestamp": 1743940800000,
+    "price": 6708.67,
+    "volume": 87018
+  },
+  {
+    "date": "Apr 07 2025",
+    "timestamp": 1744027200000,
+    "price": 6980.42,
+    "volume": 84440
+  },
+  {
+    "date": "Apr 08 2025",
+    "timestamp": 1744113600000,
+    "price": 6909.79,
+    "volume": 71597
+  },
+  {
+    "date": "Apr 09 2025",
+    "timestamp": 1744200000000,
+    "price": 6474.5,
+    "volume": 117984
+  },
+  {
+    "date": "Apr 10 2025",
+    "timestamp": 1744286400000,
+    "price": 6506.81,
+    "volume": 88373
+  },
+  {
+    "date": "Apr 11 2025",
+    "timestamp": 1744372800000,
+    "price": 6729.89,
+    "volume": 93138
+  },
+  {
+    "date": "Apr 12 2025",
+    "timestamp": 1744459200000,
+    "price": 6838.45,
+    "volume": 95049
+  },
+  {
+    "date": "Apr 13 2025",
+    "timestamp": 1744545600000,
+    "price": 6881.62,
+    "volume": 88134
+  },
+  {
+    "date": "Apr 14 2025",
+    "timestamp": 1744632000000,
+    "price": 6943.47,
+    "volume": 76849
+  },
+  {
+    "date": "Apr 15 2025",
+    "timestamp": 1744718400000,
+    "price": 6945.47,
+    "volume": 80126
+  },
+  {
+    "date": "Apr 16 2025",
+    "timestamp": 1744804800000,
+    "price": 6536.3,
+    "volume": 114099
+  },
+  {
+    "date": "Apr 17 2025",
+    "timestamp": 1744891200000,
+    "price": 6794.35,
+    "volume": 101407
+  },
+  {
+    "date": "Apr 18 2025",
+    "timestamp": 1744977600000,
+    "price": 6998.14,
+    "volume": 93878
+  },
+  {
+    "date": "Apr 19 2025",
+    "timestamp": 1745064000000,
+    "price": 6959.37,
+    "volume": 85354
+  },
+  {
+    "date": "Apr 20 2025",
+    "timestamp": 1745150400000,
+    "price": 6986.14,
+    "volume": 85017
+  },
+  {
+    "date": "Apr 21 2025",
+    "timestamp": 1745236800000,
+    "price": 6954.91,
+    "volume": 65981
+  },
+  {
+    "date": "Apr 22 2025",
+    "timestamp": 1745323200000,
+    "price": 6896.01,
+    "volume": 66271
+  },
+  {
+    "date": "Apr 23 2025",
+    "timestamp": 1745409600000,
+    "price": 6498.02,
+    "volume": 113970
+  },
+  {
+    "date": "Apr 24 2025",
+    "timestamp": 1745496000000,
+    "price": 6510.22,
+    "volume": 95374
+  },
+  {
+    "date": "Apr 25 2025",
+    "timestamp": 1745582400000,
+    "price": 6706.52,
+    "volume": 90997
+  },
+  {
+    "date": "Apr 26 2025",
+    "timestamp": 1745668800000,
+    "price": 6709.11,
+    "volume": 88795
+  },
+  {
+    "date": "Apr 27 2025",
+    "timestamp": 1745755200000,
+    "price": 6838.87,
+    "volume": 86841
+  },
+  {
+    "date": "Apr 28 2025",
+    "timestamp": 1745841600000,
+    "price": 6946.82,
+    "volume": 84017
+  },
+  {
+    "date": "Apr 29 2025",
+    "timestamp": 1745928000000,
+    "price": 6812.5,
+    "volume": 75826
+  },
+  {
+    "date": "Apr 30 2025",
+    "timestamp": 1746014400000,
+    "price": 6661.93,
+    "volume": 111693
+  },
+  {
+    "date": "May 01 2025",
+    "timestamp": 1746100800000,
+    "price": 6748.6,
+    "volume": 99242
+  },
+  {
+    "date": "May 02 2025",
+    "timestamp": 1746187200000,
+    "price": 6810.99,
+    "volume": 88931
+  },
+  {
+    "date": "May 03 2025",
+    "timestamp": 1746273600000,
+    "price": 7084.72,
+    "volume": 104406
+  },
+  {
+    "date": "May 04 2025",
+    "timestamp": 1746360000000,
+    "price": 7268.19,
+    "volume": 118995
+  },
+  {
+    "date": "May 05 2025",
+    "timestamp": 1746446400000,
+    "price": 7593.23,
+    "volume": 115522
+  },
+  {
+    "date": "May 06 2025",
+    "timestamp": 1746532800000,
+    "price": 7989.75,
+    "volume": 102361
+  },
+  {
+    "date": "May 07 2025",
+    "timestamp": 1746619200000,
+    "price": 7550.81,
+    "volume": 122077
+  },
+  {
+    "date": "May 08 2025",
+    "timestamp": 1746705600000,
+    "price": 7594.23,
+    "volume": 105291
+  },
+  {
+    "date": "May 09 2025",
+    "timestamp": 1746792000000,
+    "price": 7906.54,
+    "volume": 96078
+  },
+  {
+    "date": "May 10 2025",
+    "timestamp": 1746878400000,
+    "price": 8106.6,
+    "volume": 96203
+  },
+  {
+    "date": "May 11 2025",
+    "timestamp": 1746964800000,
+    "price": 8130.77,
+    "volume": 77585
+  },
+  {
+    "date": "May 12 2025",
+    "timestamp": 1747051200000,
+    "price": 8138.17,
+    "volume": 79207
+  },
+  {
+    "date": "May 13 2025",
+    "timestamp": 1747137600000,
+    "price": 8000.93,
+    "volume": 74803
+  },
+  {
+    "date": "May 14 2025",
+    "timestamp": 1747224000000,
+    "price": 7663.84,
+    "volume": 106431
+  },
+  {
+    "date": "May 15 2025",
+    "timestamp": 1747310400000,
+    "price": 7883.36,
+    "volume": 89944
+  },
+  {
+    "date": "May 16 2025",
+    "timestamp": 1747396800000,
+    "price": 8047.22,
+    "volume": 90244
+  },
+  {
+    "date": "May 17 2025",
+    "timestamp": 1747483200000,
+    "price": 8307.86,
+    "volume": 109716
+  },
+  {
+    "date": "May 18 2025",
+    "timestamp": 1747569600000,
+    "price": 8504.54,
+    "volume": 87497
+  },
+  {
+    "date": "May 19 2025",
+    "timestamp": 1747656000000,
+    "price": 8672.04,
+    "volume": 87521
+  },
+  {
+    "date": "May 20 2025",
+    "timestamp": 1747742400000,
+    "price": 8458.84,
+    "volume": 73159
+  },
+  {
+    "date": "May 21 2025",
+    "timestamp": 1747828800000,
+    "price": 8024.68,
+    "volume": 110726
+  },
+  {
+    "date": "May 22 2025",
+    "timestamp": 1747915200000,
+    "price": 7990.71,
+    "volume": 89639
+  },
+  {
+    "date": "May 23 2025",
+    "timestamp": 1748001600000,
+    "price": 7544.12,
+    "volume": 120087
+  },
+  {
+    "date": "May 24 2025",
+    "timestamp": 1748088000000,
+    "price": 7781.94,
+    "volume": 102333
+  },
+  {
+    "date": "May 25 2025",
+    "timestamp": 1748174400000,
+    "price": 7877.2,
+    "volume": 90725
+  },
+  {
+    "date": "May 26 2025",
+    "timestamp": 1748260800000,
+    "price": 7940.15,
+    "volume": 92125
+  },
+  {
+    "date": "May 27 2025",
+    "timestamp": 1748347200000,
+    "price": 7722.54,
+    "volume": 81165
+  },
+  {
+    "date": "May 28 2025",
+    "timestamp": 1748433600000,
+    "price": 7448.18,
+    "volume": 118777
+  },
+  {
+    "date": "May 29 2025",
+    "timestamp": 1748520000000,
+    "price": 7591.66,
+    "volume": 108173
+  },
+  {
+    "date": "May 30 2025",
+    "timestamp": 1748606400000,
+    "price": 7808.87,
+    "volume": 101207
+  },
+  {
+    "date": "May 31 2025",
+    "timestamp": 1748692800000,
+    "price": 7993.24,
+    "volume": 106649
+  },
+  {
+    "date": "Jun 01 2025",
+    "timestamp": 1748779200000,
+    "price": 8052.36,
+    "volume": 96246
+  },
+  {
+    "date": "Jun 02 2025",
+    "timestamp": 1748865600000,
+    "price": 8146.6,
+    "volume": 91508
+  },
+  {
+    "date": "Jun 03 2025",
+    "timestamp": 1748952000000,
+    "price": 8269.31,
+    "volume": 85113
+  },
+  {
+    "date": "Jun 04 2025",
+    "timestamp": 1749038400000,
+    "price": 7886.09,
+    "volume": 106840
+  },
+  {
+    "date": "Jun 05 2025",
+    "timestamp": 1749124800000,
+    "price": 7887.71,
+    "volume": 89530
+  },
+  {
+    "date": "Jun 06 2025",
+    "timestamp": 1749211200000,
+    "price": 8208.07,
+    "volume": 96190
+  },
+  {
+    "date": "Jun 07 2025",
+    "timestamp": 1749297600000,
+    "price": 8289.61,
+    "volume": 93847
+  },
+  {
+    "date": "Jun 08 2025",
+    "timestamp": 1749384000000,
+    "price": 8429.45,
+    "volume": 90637
+  },
+  {
+    "date": "Jun 09 2025",
+    "timestamp": 1749470400000,
+    "price": 8559.1,
+    "volume": 83328
+  },
+  {
+    "date": "Jun 10 2025",
+    "timestamp": 1749556800000,
+    "price": 8490.39,
+    "volume": 74997
+  },
+  {
+    "date": "Jun 11 2025",
+    "timestamp": 1749643200000,
+    "price": 8099.22,
+    "volume": 102293
+  },
+  {
+    "date": "Jun 12 2025",
+    "timestamp": 1749729600000,
+    "price": 8085.71,
+    "volume": 86730
+  },
+  {
+    "date": "Jun 13 2025",
+    "timestamp": 1749816000000,
+    "price": 8459.6,
+    "volume": 85970
+  },
+  {
+    "date": "Jun 14 2025",
+    "timestamp": 1749902400000,
+    "price": 8624.16,
+    "volume": 91340
+  },
+  {
+    "date": "Jun 15 2025",
+    "timestamp": 1749988800000,
+    "price": 8779.35,
+    "volume": 82727
+  },
+  {
+    "date": "Jun 16 2025",
+    "timestamp": 1750075200000,
+    "price": 9033.14,
+    "volume": 82841
+  },
+  {
+    "date": "Jun 17 2025",
+    "timestamp": 1750161600000,
+    "price": 8915.53,
+    "volume": 75005
+  },
+  {
+    "date": "Jun 18 2025",
+    "timestamp": 1750248000000,
+    "price": 8474.19,
+    "volume": 104744
+  },
+  {
+    "date": "Jun 19 2025",
+    "timestamp": 1750334400000,
+    "price": 8621.49,
+    "volume": 92866
+  },
+  {
+    "date": "Jun 20 2025",
+    "timestamp": 1750420800000,
+    "price": 8735.77,
+    "volume": 89560
+  },
+  {
+    "date": "Jun 21 2025",
+    "timestamp": 1750507200000,
+    "price": 8959.16,
+    "volume": 101513
+  },
+  {
+    "date": "Jun 22 2025",
+    "timestamp": 1750593600000,
+    "price": 9020.01,
+    "volume": 90871
+  },
+  {
+    "date": "Jun 23 2025",
+    "timestamp": 1750680000000,
+    "price": 9095.8,
+    "volume": 84649
+  },
+  {
+    "date": "Jun 24 2025",
+    "timestamp": 1750766400000,
+    "price": 9186.65,
+    "volume": 78213
+  },
+  {
+    "date": "Jun 25 2025",
+    "timestamp": 1750852800000,
+    "price": 8946.64,
+    "volume": 111244
+  },
+  {
+    "date": "Jun 26 2025",
+    "timestamp": 1750939200000,
+    "price": 9049.83,
+    "volume": 106743
+  },
+  {
+    "date": "Jun 27 2025",
+    "timestamp": 1751025600000,
+    "price": 9065.98,
+    "volume": 107790
+  },
+  {
+    "date": "Jun 28 2025",
+    "timestamp": 1751112000000,
+    "price": 9320.45,
+    "volume": 109440
+  },
+  {
+    "date": "Jun 29 2025",
+    "timestamp": 1751198400000,
+    "price": 9534.2,
+    "volume": 105119
+  },
+  {
+    "date": "Jun 30 2025",
+    "timestamp": 1751284800000,
+    "price": 9869.37,
+    "volume": 109744
+  },
+  {
+    "date": "Jul 01 2025",
+    "timestamp": 1751371200000,
+    "price": 10475.83,
+    "volume": 120723
+  },
+  {
+    "date": "Jul 02 2025",
+    "timestamp": 1751457600000,
+    "price": 10401.82,
+    "volume": 138466
+  },
+  {
+    "date": "Jul 03 2025",
+    "timestamp": 1751544000000,
+    "price": 10553.54,
+    "volume": 125953
+  },
+  {
+    "date": "Jul 04 2025",
+    "timestamp": 1751630400000,
+    "price": 11247.85,
+    "volume": 124527
+  },
+  {
+    "date": "Jul 05 2025",
+    "timestamp": 1751716800000,
+    "price": 12149.45,
+    "volume": 118197
+  },
+  {
+    "date": "Jul 06 2025",
+    "timestamp": 1751803200000,
+    "price": 12583.76,
+    "volume": 111543
+  },
+  {
+    "date": "Jul 07 2025",
+    "timestamp": 1751889600000,
+    "price": 13033.82,
+    "volume": 100355
+  },
+  {
+    "date": "Jul 08 2025",
+    "timestamp": 1751976000000,
+    "price": 12964.76,
+    "volume": 94616
+  },
+  {
+    "date": "Jul 09 2025",
+    "timestamp": 1752062400000,
+    "price": 11922.36,
+    "volume": 121364
+  },
+  {
+    "date": "Jul 10 2025",
+    "timestamp": 1752148800000,
+    "price": 12239.78,
+    "volume": 102309
+  },
+  {
+    "date": "Jul 11 2025",
+    "timestamp": 1752235200000,
+    "price": 13062.66,
+    "volume": 109986
+  },
+  {
+    "date": "Jul 12 2025",
+    "timestamp": 1752321600000,
+    "price": 13176.63,
+    "volume": 112066
+  },
+  {
+    "date": "Jul 13 2025",
+    "timestamp": 1752408000000,
+    "price": 13259.55,
+    "volume": 113582
+  },
+  {
+    "date": "Jul 14 2025",
+    "timestamp": 1752494400000,
+    "price": 13289.8,
+    "volume": 107748
+  },
+  {
+    "date": "Jul 15 2025",
+    "timestamp": 1752580800000,
+    "price": 13343.4,
+    "volume": 114055
+  },
+  {
+    "date": "Jul 16 2025",
+    "timestamp": 1752667200000,
+    "price": 12932.36,
+    "volume": 141762
+  },
+  {
+    "date": "Jul 17 2025",
+    "timestamp": 1752753600000,
+    "price": 12905.67,
+    "volume": 117919
+  },
+  {
+    "date": "Jul 18 2025",
+    "timestamp": 1752840000000,
+    "price": 13281.72,
+    "volume": 122316
+  },
+  {
+    "date": "Jul 19 2025",
+    "timestamp": 1752926400000,
+    "price": 14250.49,
+    "volume": 123946
+  },
+  {
+    "date": "Jul 20 2025",
+    "timestamp": 1753012800000,
+    "price": 14818.46,
+    "volume": 111378
+  },
+  {
+    "date": "Jul 21 2025",
+    "timestamp": 1753099200000,
+    "price": 14817.11,
+    "volume": 90697
+  },
+  {
+    "date": "Jul 22 2025",
+    "timestamp": 1753185600000,
+    "price": 14206.2,
+    "volume": 80541
+  },
+  {
+    "date": "Jul 23 2025",
+    "timestamp": 1753272000000,
+    "price": 13279.63,
+    "volume": 107501
+  },
+  {
+    "date": "Jul 24 2025",
+    "timestamp": 1753358400000,
+    "price": 12768.2,
+    "volume": 98428
+  },
+  {
+    "date": "Jul 25 2025",
+    "timestamp": 1753444800000,
+    "price": 13088.68,
+    "volume": 96710
+  },
+  {
+    "date": "Jul 26 2025",
+    "timestamp": 1753531200000,
+    "price": 13308.38,
+    "volume": 103322
+  },
+  {
+    "date": "Jul 27 2025",
+    "timestamp": 1753617600000,
+    "price": 13292.23,
+    "volume": 98475
+  },
+  {
+    "date": "Jul 28 2025",
+    "timestamp": 1753704000000,
+    "price": 13172.51,
+    "volume": 86410
+  },
+  {
+    "date": "Jul 29 2025",
+    "timestamp": 1753790400000,
+    "price": 12678.38,
+    "volume": 93093
+  },
+  {
+    "date": "Jul 30 2025",
+    "timestamp": 1753876800000,
+    "price": 11763.73,
+    "volume": 121674
+  },
+  {
+    "date": "Jul 31 2025",
+    "timestamp": 1753963200000,
+    "price": 11944.22,
+    "volume": 105197
+  },
+  {
+    "date": "Aug 01 2025",
+    "timestamp": 1754049600000,
+    "price": 12190.55,
+    "volume": 107575
+  },
+  {
+    "date": "Aug 02 2025",
+    "timestamp": 1754136000000,
+    "price": 12516.83,
+    "volume": 105905
+  },
+  {
+    "date": "Aug 03 2025",
+    "timestamp": 1754222400000,
+    "price": 12423.34,
+    "volume": 102457
+  },
+  {
+    "date": "Aug 04 2025",
+    "timestamp": 1754308800000,
+    "price": 12318.65,
+    "volume": 82787
+  },
+  {
+    "date": "Aug 05 2025",
+    "timestamp": 1754395200000,
+    "price": 12167.77,
+    "volume": 85067
+  },
+  {
+    "date": "Aug 06 2025",
+    "timestamp": 1754481600000,
+    "price": 11483.17,
+    "volume": 110392
+  },
+  {
+    "date": "Aug 07 2025",
+    "timestamp": 1754568000000,
+    "price": 11473.96,
+    "volume": 93844
+  },
+  {
+    "date": "Aug 08 2025",
+    "timestamp": 1754654400000,
+    "price": 11751.2,
+    "volume": 93064
+  },
+  {
+    "date": "Aug 09 2025",
+    "timestamp": 1754740800000,
+    "price": 11826.1,
+    "volume": 99277
+  },
+  {
+    "date": "Aug 10 2025",
+    "timestamp": 1754827200000,
+    "price": 11805.72,
+    "volume": 95656
+  },
+  {
+    "date": "Aug 11 2025",
+    "timestamp": 1754913600000,
+    "price": 11668.03,
+    "volume": 83158
+  },
+  {
+    "date": "Aug 12 2025",
+    "timestamp": 1755000000000,
+    "price": 11463.76,
+    "volume": 73939
+  },
+  {
+    "date": "Aug 13 2025",
+    "timestamp": 1755086400000,
+    "price": 10754.09,
+    "volume": 115204
+  },
+  {
+    "date": "Aug 14 2025",
+    "timestamp": 1755172800000,
+    "price": 10655.02,
+    "volume": 95940
+  },
+  {
+    "date": "Aug 15 2025",
+    "timestamp": 1755259200000,
+    "price": 10542.16,
+    "volume": 102540
+  },
+  {
+    "date": "Aug 16 2025",
+    "timestamp": 1755345600000,
+    "price": 10627.55,
+    "volume": 96774
+  },
+  {
+    "date": "Aug 17 2025",
+    "timestamp": 1755432000000,
+    "price": 10655.76,
+    "volume": 102275
+  },
+  {
+    "date": "Aug 18 2025",
+    "timestamp": 1755518400000,
+    "price": 10758.26,
+    "volume": 87439
+  },
+  {
+    "date": "Aug 19 2025",
+    "timestamp": 1755604800000,
+    "price": 10725.87,
+    "volume": 78540
+  },
+  {
+    "date": "Aug 20 2025",
+    "timestamp": 1755691200000,
+    "price": 9884,
+    "volume": 121610
+  },
+  {
+    "date": "Aug 21 2025",
+    "timestamp": 1755777600000,
+    "price": 9765.84,
+    "volume": 96316
+  },
+  {
+    "date": "Aug 22 2025",
+    "timestamp": 1755864000000,
+    "price": 9964.47,
+    "volume": 92670
+  },
+  {
+    "date": "Aug 23 2025",
+    "timestamp": 1755950400000,
+    "price": 10163.63,
+    "volume": 99475
+  },
+  {
+    "date": "Aug 24 2025",
+    "timestamp": 1756036800000,
+    "price": 10254.99,
+    "volume": 94237
+  },
+  {
+    "date": "Aug 25 2025",
+    "timestamp": 1756123200000,
+    "price": 10293.5,
+    "volume": 84747
+  },
+  {
+    "date": "Aug 26 2025",
+    "timestamp": 1756209600000,
+    "price": 10243.33,
+    "volume": 83838
+  },
+  {
+    "date": "Aug 27 2025",
+    "timestamp": 1756296000000,
+    "price": 9712.5,
+    "volume": 119757
+  },
+  {
+    "date": "Aug 28 2025",
+    "timestamp": 1756382400000,
+    "price": 9750.64,
+    "volume": 96660
+  },
+  {
+    "date": "Aug 29 2025",
+    "timestamp": 1756468800000,
+    "price": 10130.02,
+    "volume": 102522
+  },
+  {
+    "date": "Aug 30 2025",
+    "timestamp": 1756555200000,
+    "price": 10358.21,
+    "volume": 99808
+  },
+  {
+    "date": "Aug 31 2025",
+    "timestamp": 1756641600000,
+    "price": 10278,
+    "volume": 94425
+  },
+  {
+    "date": "Sep 01 2025",
+    "timestamp": 1756728000000,
+    "price": 10351.87,
+    "volume": 86971
+  },
+  {
+    "date": "Sep 02 2025",
+    "timestamp": 1756814400000,
+    "price": 10400.87,
+    "volume": 81424
+  },
+  {
+    "date": "Sep 03 2025",
+    "timestamp": 1756900800000,
+    "price": 9865.61,
+    "volume": 116618
+  },
+  {
+    "date": "Sep 04 2025",
+    "timestamp": 1756987200000,
+    "price": 9847.75,
+    "volume": 101946
+  },
+  {
+    "date": "Sep 05 2025",
+    "timestamp": 1757073600000,
+    "price": 10110.65,
+    "volume": 94896
+  },
+  {
+    "date": "Sep 06 2025",
+    "timestamp": 1757160000000,
+    "price": 10208.48,
+    "volume": 95843
+  },
+  {
+    "date": "Sep 07 2025",
+    "timestamp": 1757246400000,
+    "price": 10271.85,
+    "volume": 92934
+  },
+  {
+    "date": "Sep 08 2025",
+    "timestamp": 1757332800000,
+    "price": 10247.42,
+    "volume": 77285
+  },
+  {
+    "date": "Sep 09 2025",
+    "timestamp": 1757419200000,
+    "price": 10140.28,
+    "volume": 84159
+  },
+  {
+    "date": "Sep 10 2025",
+    "timestamp": 1757505600000,
+    "price": 9836.09,
+    "volume": 117031
+  },
+  {
+    "date": "Sep 11 2025",
+    "timestamp": 1757592000000,
+    "price": 9812.29,
+    "volume": 109117
+  },
+  {
+    "date": "Sep 12 2025",
+    "timestamp": 1757678400000,
+    "price": 10035.74,
+    "volume": 118559
+  },
+  {
+    "date": "Sep 13 2025",
+    "timestamp": 1757764800000,
+    "price": 10376.26,
+    "volume": 126687
+  },
+  {
+    "date": "Sep 14 2025",
+    "timestamp": 1757851200000,
+    "price": 10523.43,
+    "volume": 109364
+  },
+  {
+    "date": "Sep 15 2025",
+    "timestamp": 1757937600000,
+    "price": 10601.65,
+    "volume": 95666
+  },
+  {
+    "date": "Sep 16 2025",
+    "timestamp": 1758024000000,
+    "price": 10674.33,
+    "volume": 83085
+  },
+  {
+    "date": "Sep 17 2025",
+    "timestamp": 1758110400000,
+    "price": 10462.5,
+    "volume": 179882
+  },
+  {
+    "date": "Sep 18 2025",
+    "timestamp": 1758196800000,
+    "price": 11033.18,
+    "volume": 172287
+  },
+  {
+    "date": "Sep 19 2025",
+    "timestamp": 1758283200000,
+    "price": 11917.65,
+    "volume": 178016
+  },
+  {
+    "date": "Sep 20 2025",
+    "timestamp": 1758369600000,
+    "price": 12546.34,
+    "volume": 153641
+  },
+  {
+    "date": "Sep 21 2025",
+    "timestamp": 1758456000000,
+    "price": 12657.95,
+    "volume": 129968
+  },
+  {
+    "date": "Sep 22 2025",
+    "timestamp": 1758542400000,
+    "price": 12562.88,
+    "volume": 97442
+  },
+  {
+    "date": "Sep 23 2025",
+    "timestamp": 1758628800000,
+    "price": 12169.22,
+    "volume": 96442
+  },
+  {
+    "date": "Sep 24 2025",
+    "timestamp": 1758715200000,
+    "price": 11274.28,
+    "volume": 136388
+  },
+  {
+    "date": "Sep 25 2025",
+    "timestamp": 1758801600000,
+    "price": 10859.98,
+    "volume": 110747
+  },
+  {
+    "date": "Sep 26 2025",
+    "timestamp": 1758888000000,
+    "price": 11340.89,
+    "volume": 113105
+  },
+  {
+    "date": "Sep 27 2025",
+    "timestamp": 1758974400000,
+    "price": 11425.54,
+    "volume": 102662
+  },
+  {
+    "date": "Sep 28 2025",
+    "timestamp": 1759060800000,
+    "price": 11293.92,
+    "volume": 99811
+  },
+  {
+    "date": "Sep 29 2025",
+    "timestamp": 1759147200000,
+    "price": 11165.21,
+    "volume": 91143
+  },
+  {
+    "date": "Sep 30 2025",
+    "timestamp": 1759233600000,
+    "price": 10909.35,
+    "volume": 105202
+  },
+  {
+    "date": "Oct 01 2025",
+    "timestamp": 1759320000000,
+    "price": 10576.87,
+    "volume": 133092
+  },
+  {
+    "date": "Oct 02 2025",
+    "timestamp": 1759406400000,
+    "price": 10552.93,
+    "volume": 124533
+  },
+  {
+    "date": "Oct 03 2025",
+    "timestamp": 1759492800000,
+    "price": 10986.6,
+    "volume": 126222
+  },
+  {
+    "date": "Oct 04 2025",
+    "timestamp": 1759579200000,
+    "price": 11412.12,
+    "volume": 124277
+  },
+  {
+    "date": "Oct 05 2025",
+    "timestamp": 1759665600000,
+    "price": 11720.08,
+    "volume": 113055
+  },
+  {
+    "date": "Oct 06 2025",
+    "timestamp": 1759752000000,
+    "price": 11881.15,
+    "volume": 95363
+  },
+  {
+    "date": "Oct 07 2025",
+    "timestamp": 1759838400000,
+    "price": 12197.76,
+    "volume": 91992
+  },
+  {
+    "date": "Oct 08 2025",
+    "timestamp": 1759924800000,
+    "price": 11874.39,
+    "volume": 121303
+  },
+  {
+    "date": "Oct 09 2025",
+    "timestamp": 1760011200000,
+    "price": 11905.61,
+    "volume": 113114
+  },
+  {
+    "date": "Oct 10 2025",
+    "timestamp": 1760097600000,
+    "price": 12208.94,
+    "volume": 118113
+  },
+  {
+    "date": "Oct 11 2025",
+    "timestamp": 1760184000000,
+    "price": 12409.92,
+    "volume": 116264
+  },
+  {
+    "date": "Oct 12 2025",
+    "timestamp": 1760270400000,
+    "price": 12668.24,
+    "volume": 106345
+  },
+  {
+    "date": "Oct 13 2025",
+    "timestamp": 1760356800000,
+    "price": 12853.05,
+    "volume": 97985
+  },
+  {
+    "date": "Oct 14 2025",
+    "timestamp": 1760443200000,
+    "price": 12921.56,
+    "volume": 85206
+  },
+  {
+    "date": "Oct 15 2025",
+    "timestamp": 1760529600000,
+    "price": 12619.97,
+    "volume": 130278
+  },
+  {
+    "date": "Oct 16 2025",
+    "timestamp": 1760616000000,
+    "price": 12519.86,
+    "volume": 105497
+  },
+  {
+    "date": "Oct 17 2025",
+    "timestamp": 1760702400000,
+    "price": 12727.79,
+    "volume": 108165
+  },
+  {
+    "date": "Oct 18 2025",
+    "timestamp": 1760788800000,
+    "price": 12795.65,
+    "volume": 107658
+  },
+  {
+    "date": "Oct 19 2025",
+    "timestamp": 1760875200000,
+    "price": 13047.95,
+    "volume": 102341
+  },
+  {
+    "date": "Oct 20 2025",
+    "timestamp": 1760961600000,
+    "price": 13172.12,
+    "volume": 84661
+  },
+  {
+    "date": "Oct 21 2025",
+    "timestamp": 1761048000000,
+    "price": 13259.23,
+    "volume": 89228
+  },
+  {
+    "date": "Oct 22 2025",
+    "timestamp": 1761134400000,
+    "price": 12610.75,
+    "volume": 135402
+  },
+  {
+    "date": "Oct 23 2025",
+    "timestamp": 1761220800000,
+    "price": 13316.71,
+    "volume": 457115
+  },
+  {
+    "date": "Oct 24 2025",
+    "timestamp": 1761307200000,
+    "price": 11591.83,
+    "volume": 285971
+  },
+  {
+    "date": "Oct 25 2025",
+    "timestamp": 1761393600000,
+    "price": 12992.92,
+    "volume": 204550
+  },
+  {
+    "date": "Oct 26 2025",
+    "timestamp": 1761480000000,
+    "price": 13675.21,
+    "volume": 157121
+  },
+  {
+    "date": "Oct 27 2025",
+    "timestamp": 1761566400000,
+    "price": 13162.83,
+    "volume": 117292
+  },
+  {
+    "date": "Oct 28 2025",
+    "timestamp": 1761652800000,
+    "price": 12280.13,
+    "volume": 97313
+  },
+  {
+    "date": "Oct 29 2025",
+    "timestamp": 1761739200000,
+    "price": 11054.57,
+    "volume": 140474
+  },
+  {
+    "date": "Oct 30 2025",
+    "timestamp": 1761825600000,
+    "price": 11326.94,
+    "volume": 141285
+  },
+  {
+    "date": "Oct 31 2025",
+    "timestamp": 1761912000000,
+    "price": 11904.37,
+    "volume": 140052
+  },
+  {
+    "date": "Nov 01 2025",
+    "timestamp": 1761998400000,
+    "price": 12589.4,
+    "volume": 139360
+  },
+  {
+    "date": "Nov 02 2025",
+    "timestamp": 1762084800000,
+    "price": 13048.36,
+    "volume": 133076
+  },
+  {
+    "date": "Nov 03 2025",
+    "timestamp": 1762171200000,
+    "price": 13285.34,
+    "volume": 114922
+  },
+  {
+    "date": "Nov 04 2025",
+    "timestamp": 1762257600000,
+    "price": 13053.43,
+    "volume": 102807
+  },
+  {
+    "date": "Nov 05 2025",
+    "timestamp": 1762344000000,
+    "price": 12731.36,
+    "volume": 131225
+  },
+  {
+    "date": "Nov 06 2025",
+    "timestamp": 1762430400000,
+    "price": 12625.3,
+    "volume": 118497
+  },
+  {
+    "date": "Nov 07 2025",
+    "timestamp": 1762516800000,
+    "price": 12865.71,
+    "volume": 117387
+  },
+  {
+    "date": "Nov 08 2025",
+    "timestamp": 1762603200000,
+    "price": 12835.99,
+    "volume": 114982
+  },
+  {
+    "date": "Nov 09 2025",
+    "timestamp": 1762689600000,
+    "price": 12523.52,
+    "volume": 101187
+  },
+  {
+    "date": "Nov 10 2025",
+    "timestamp": 1762776000000,
+    "price": 12315.22,
+    "volume": 86164
+  },
+  {
+    "date": "Nov 11 2025",
+    "timestamp": 1762862400000,
+    "price": 12037.33,
+    "volume": 83316
+  },
+  {
+    "date": "Nov 12 2025",
+    "timestamp": 1762948800000,
+    "price": 11445.78,
+    "volume": 118802
+  },
+  {
+    "date": "Nov 13 2025",
+    "timestamp": 1763035200000,
+    "price": 10702.31,
+    "volume": 153949
+  },
+  {
+    "date": "Nov 14 2025",
+    "timestamp": 1763121600000,
+    "price": 10837.57,
+    "volume": 109396
+  },
+  {
+    "date": "Nov 15 2025",
+    "timestamp": 1763208000000,
+    "price": 10898.07,
+    "volume": 109133
+  },
+  {
+    "date": "Nov 16 2025",
+    "timestamp": 1763294400000,
+    "price": 10796.51,
+    "volume": 99478
+  },
+  {
+    "date": "Nov 17 2025",
+    "timestamp": 1763380800000,
+    "price": 10645.58,
+    "volume": 83209
+  },
+  {
+    "date": "Nov 18 2025",
+    "timestamp": 1763467200000,
+    "price": 10471.96,
+    "volume": 78189
+  },
+  {
+    "date": "Nov 19 2025",
+    "timestamp": 1763553600000,
+    "price": 10273.22,
+    "volume": 116518
+  },
+  {
+    "date": "Nov 20 2025",
+    "timestamp": 1763640000000,
+    "price": 10337.28,
+    "volume": 95538
+  },
+  {
+    "date": "Nov 21 2025",
+    "timestamp": 1763726400000,
+    "price": 10282.37,
+    "volume": 93310
+  },
+  {
+    "date": "Nov 22 2025",
+    "timestamp": 1763812800000,
+    "price": 9790.56,
+    "volume": 90992
+  },
+  {
+    "date": "Nov 23 2025",
+    "timestamp": 1763899200000,
+    "price": 9825.96,
+    "volume": 90096
+  },
+  {
+    "date": "Nov 24 2025",
+    "timestamp": 1763985600000,
+    "price": 9748.71,
+    "volume": 81505
+  },
+  {
+    "date": "Nov 25 2025",
+    "timestamp": 1764072000000,
+    "price": 9612.85,
+    "volume": 79148
+  },
+  {
+    "date": "Nov 26 2025",
+    "timestamp": 1764158400000,
+    "price": 9437.87,
+    "volume": 111783
+  },
+  {
+    "date": "Nov 27 2025",
+    "timestamp": 1764244800000,
+    "price": 9362.78,
+    "volume": 98053
+  },
+  {
+    "date": "Nov 28 2025",
+    "timestamp": 1764331200000,
+    "price": 9389.56,
+    "volume": 99479
+  },
+  {
+    "date": "Nov 29 2025",
+    "timestamp": 1764417600000,
+    "price": 9673.73,
+    "volume": 100755
+  },
+  {
+    "date": "Nov 30 2025",
+    "timestamp": 1764504000000,
+    "price": 9685.27,
+    "volume": 88857
+  },
+  {
+    "date": "Dec 01 2025",
+    "timestamp": 1764590400000,
+    "price": 10009.27,
+    "volume": 86695
+  },
+  {
+    "date": "Dec 02 2025",
+    "timestamp": 1764676800000,
+    "price": 10185.07,
+    "volume": 87141
+  },
+  {
+    "date": "Dec 03 2025",
+    "timestamp": 1764763200000,
+    "price": 10126.63,
+    "volume": 119536
+  },
+  {
+    "date": "Dec 04 2025",
+    "timestamp": 1764849600000,
+    "price": 10120.7,
+    "volume": 97234
+  },
+  {
+    "date": "Dec 05 2025",
+    "timestamp": 1764936000000,
+    "price": 10223.86,
+    "volume": 96940
+  },
+  {
+    "date": "Dec 06 2025",
+    "timestamp": 1765022400000,
+    "price": 10272.04,
+    "volume": 99149
+  },
+  {
+    "date": "Dec 07 2025",
+    "timestamp": 1765108800000,
+    "price": 10341.49,
+    "volume": 90499
+  },
+  {
+    "date": "Dec 08 2025",
+    "timestamp": 1765195200000,
+    "price": 10316.44,
+    "volume": 79036
+  },
+  {
+    "date": "Dec 09 2025",
+    "timestamp": 1765281600000,
+    "price": 10445.8,
+    "volume": 75452
+  },
+  {
+    "date": "Dec 10 2025",
+    "timestamp": 1765368000000,
+    "price": 9981.19,
+    "volume": 106367
+  },
+  {
+    "date": "Dec 11 2025",
+    "timestamp": 1765454400000,
+    "price": 9892.01,
+    "volume": 90619
+  },
+  {
+    "date": "Dec 12 2025",
+    "timestamp": 1765540800000,
+    "price": 9859.95,
+    "volume": 95591
+  },
+  {
+    "date": "Dec 13 2025",
+    "timestamp": 1765627200000,
+    "price": 9768.73,
+    "volume": 94449
+  },
+  {
+    "date": "Dec 14 2025",
+    "timestamp": 1765713600000,
+    "price": 9848.6,
+    "volume": 95343
+  },
+  {
+    "date": "Dec 15 2025",
+    "timestamp": 1765800000000,
+    "price": 9985.42,
+    "volume": 86273
+  },
+  {
+    "date": "Dec 16 2025",
+    "timestamp": 1765886400000,
+    "price": 9999.72,
+    "volume": 92551
+  },
+  {
+    "date": "Dec 17 2025",
+    "timestamp": 1765972800000,
+    "price": 9720.94,
+    "volume": 119140
+  },
+  {
+    "date": "Dec 18 2025",
+    "timestamp": 1766059200000,
+    "price": 9651.8,
+    "volume": 123162
+  },
+  {
+    "date": "Dec 19 2025",
+    "timestamp": 1766145600000,
+    "price": 10069.05,
+    "volume": 157942
+  },
+  {
+    "date": "Dec 20 2025",
+    "timestamp": 1766232000000,
+    "price": 10143.17,
+    "volume": 121596
+  },
+  {
+    "date": "Dec 21 2025",
+    "timestamp": 1766318400000,
+    "price": 9940.6,
+    "volume": 109501
+  },
+  {
+    "date": "Dec 22 2025",
+    "timestamp": 1766404800000,
+    "price": 10003.88,
+    "volume": 96081
+  },
+  {
+    "date": "Dec 23 2025",
+    "timestamp": 1766491200000,
+    "price": 10378.31,
+    "volume": 118392
+  },
+  {
+    "date": "Dec 24 2025",
+    "timestamp": 1766577600000,
+    "price": 10198.25,
+    "volume": 109924
+  },
+  {
+    "date": "Dec 25 2025",
+    "timestamp": 1766664000000,
+    "price": 10429.75,
+    "volume": 119350
+  },
+  {
+    "date": "Dec 26 2025",
+    "timestamp": 1766750400000,
+    "price": 10543.83,
+    "volume": 112446
+  },
+  {
+    "date": "Dec 27 2025",
+    "timestamp": 1766836800000,
+    "price": 10600.6,
+    "volume": 112936
+  },
+  {
+    "date": "Dec 28 2025",
+    "timestamp": 1766923200000,
+    "price": 10709.6,
+    "volume": 104060
+  },
+  {
+    "date": "Dec 29 2025",
+    "timestamp": 1767009600000,
+    "price": 10769.22,
+    "volume": 94922
+  },
+  {
+    "date": "Dec 30 2025",
+    "timestamp": 1767096000000,
+    "price": 10727.77,
+    "volume": 90829
+  },
+  {
+    "date": "Dec 31 2025",
+    "timestamp": 1767182400000,
+    "price": 10688.31,
+    "volume": 115015
+  },
+  {
+    "date": "Jan 01 2026",
+    "timestamp": 1767268800000,
+    "price": 10728.22,
+    "volume": 114556
+  },
+  {
+    "date": "Jan 02 2026",
+    "timestamp": 1767355200000,
+    "price": 10676.79,
+    "volume": 111264
+  },
+  {
+    "date": "Jan 03 2026",
+    "timestamp": 1767441600000,
+    "price": 10635.72,
+    "volume": 101945
+  },
+  {
+    "date": "Jan 04 2026",
+    "timestamp": 1767528000000,
+    "price": 10677.18,
+    "volume": 101673
+  },
+  {
+    "date": "Jan 05 2026",
+    "timestamp": 1767614400000,
+    "price": 10823.99,
+    "volume": 85095
+  },
+  {
+    "date": "Jan 06 2026",
+    "timestamp": 1767700800000,
+    "price": 10910.14,
+    "volume": 80601
+  },
+  {
+    "date": "Jan 07 2026",
+    "timestamp": 1767787200000,
+    "price": 10732.67,
+    "volume": 105659
+  },
+  {
+    "date": "Jan 08 2026",
+    "timestamp": 1767873600000,
+    "price": 10711.96,
+    "volume": 96017
+  },
+  {
+    "date": "Jan 09 2026",
+    "timestamp": 1767960000000,
+    "price": 10756.66,
+    "volume": 97334
+  },
+  {
+    "date": "Jan 10 2026",
+    "timestamp": 1768046400000,
+    "price": 10953.63,
+    "volume": 96291
+  },
+  {
+    "date": "Jan 11 2026",
+    "timestamp": 1768132800000,
+    "price": 11037.01,
+    "volume": 93769
+  },
+  {
+    "date": "Jan 12 2026",
+    "timestamp": 1768219200000,
+    "price": 11047.86,
+    "volume": 78811
+  },
+  {
+    "date": "Jan 13 2026",
+    "timestamp": 1768305600000,
+    "price": 11043.85,
+    "volume": 80707
+  },
+  {
+    "date": "Jan 14 2026",
+    "timestamp": 1768392000000,
+    "price": 10846.53,
+    "volume": 105849
+  },
+  {
+    "date": "Jan 15 2026",
+    "timestamp": 1768478400000,
+    "price": 10738.56,
+    "volume": 91138
+  },
+  {
+    "date": "Jan 16 2026",
+    "timestamp": 1768564800000,
+    "price": 10814.15,
+    "volume": 93255
+  },
+  {
+    "date": "Jan 17 2026",
+    "timestamp": 1768651200000,
+    "price": 10802.45,
+    "volume": 95961
+  },
+  {
+    "date": "Jan 18 2026",
+    "timestamp": 1768737600000,
+    "price": 10859.08,
+    "volume": 87461
+  },
+  {
+    "date": "Jan 19 2026",
+    "timestamp": 1768824000000,
+    "price": 10854.04,
+    "volume": 76166
+  },
+  {
+    "date": "Jan 20 2026",
+    "timestamp": 1768910400000,
+    "price": 10951.38,
+    "volume": 72261
+  },
+  {
+    "date": "Jan 21 2026",
+    "timestamp": 1768996800000,
+    "price": 10612.52,
+    "volume": 98077
+  },
+  {
+    "date": "Jan 22 2026",
+    "timestamp": 1769083200000,
+    "price": 10060.35,
+    "volume": 112801
+  },
+  {
+    "date": "Jan 23 2026",
+    "timestamp": 1769169600000,
+    "price": 10049.47,
+    "volume": 98945
+  },
+  {
+    "date": "Jan 24 2026",
+    "timestamp": 1769256000000,
+    "price": 10055.88,
+    "volume": 99361
+  },
+  {
+    "date": "Jan 25 2026",
+    "timestamp": 1769342400000,
+    "price": 10035,
+    "volume": 89734
+  },
+  {
+    "date": "Jan 26 2026",
+    "timestamp": 1769428800000,
+    "price": 10018.97,
+    "volume": 71513
+  },
+  {
+    "date": "Jan 27 2026",
+    "timestamp": 1769515200000,
+    "price": 9810.52,
+    "volume": 72132
+  },
+  {
+    "date": "Jan 28 2026",
+    "timestamp": 1769601600000,
+    "price": 9545.47,
+    "volume": 106448
+  },
+  {
+    "date": "Jan 29 2026",
+    "timestamp": 1769688000000,
+    "price": 9315.65,
+    "volume": 92434
+  },
+  {
+    "date": "Jan 30 2026",
+    "timestamp": 1769774400000,
+    "price": 9390.63,
+    "volume": 96279
+  },
+  {
+    "date": "Jan 31 2026",
+    "timestamp": 1769860800000,
+    "price": 9575,
+    "volume": 97301
+  },
+  {
+    "date": "Feb 01 2026",
+    "timestamp": 1769947200000,
+    "price": 9543.89,
+    "volume": 90636
+  },
+  {
+    "date": "Feb 02 2026",
+    "timestamp": 1770033600000,
+    "price": 9498.23,
+    "volume": 73857
+  },
+  {
+    "date": "Feb 03 2026",
+    "timestamp": 1770120000000,
+    "price": 9542.6,
+    "volume": 70193
+  },
+  {
+    "date": "Feb 04 2026",
+    "timestamp": 1770206400000,
+    "price": 9256.77,
+    "volume": 98838
+  },
+  {
+    "date": "Feb 05 2026",
+    "timestamp": 1770292800000,
+    "price": 9235.03,
+    "volume": 87240
+  },
+  {
+    "date": "Feb 06 2026",
+    "timestamp": 1770379200000,
+    "price": 9324.57,
+    "volume": 89960
+  },
+  {
+    "date": "Feb 07 2026",
+    "timestamp": 1770465600000,
+    "price": 9274.28,
+    "volume": 93090
+  },
+  {
+    "date": "Feb 08 2026",
+    "timestamp": 1770552000000,
+    "price": 9271.93,
+    "volume": 87495
+  },
+  {
+    "date": "Feb 09 2026",
+    "timestamp": 1770638400000,
+    "price": 9219.69,
+    "volume": 76063
+  },
+  {
+    "date": "Feb 10 2026",
+    "timestamp": 1770724800000,
+    "price": 9226.76,
+    "volume": 72989
+  },
+  {
+    "date": "Feb 11 2026",
+    "timestamp": 1770811200000,
+    "price": 8936.34,
+    "volume": 114666
+  },
+  {
+    "date": "Feb 12 2026",
+    "timestamp": 1770897600000,
+    "price": 8895.08,
+    "volume": 99272
+  },
+  {
+    "date": "Feb 13 2026",
+    "timestamp": 1770984000000,
+    "price": 8959.55,
+    "volume": 96271
+  },
+  {
+    "date": "Feb 14 2026",
+    "timestamp": 1771070400000,
+    "price": 9145.93,
+    "volume": 98628
+  },
+  {
+    "date": "Feb 15 2026",
+    "timestamp": 1771156800000,
+    "price": 9192.36,
+    "volume": 96515
+  },
+  {
+    "date": "Feb 16 2026",
+    "timestamp": 1771243200000,
+    "price": 9307.07,
+    "volume": 83803
+  },
+  {
+    "date": "Feb 17 2026",
+    "timestamp": 1771329600000,
+    "price": 9270.39,
+    "volume": 78838
+  },
+  {
+    "date": "Feb 18 2026",
+    "timestamp": 1771416000000,
+    "price": 8932.17,
+    "volume": 114086
+  },
+  {
+    "date": "Feb 19 2026",
+    "timestamp": 1771502400000,
+    "price": 8748.84,
+    "volume": 114337
+  },
+  {
+    "date": "Feb 20 2026",
+    "timestamp": 1771588800000,
+    "price": 8802.43,
+    "volume": 106270
+  },
+  {
+    "date": "Feb 21 2026",
+    "timestamp": 1771675200000,
+    "price": 8899.35,
+    "volume": 111242
+  },
+  {
+    "date": "Feb 22 2026",
+    "timestamp": 1771761600000,
+    "price": 8992.02,
+    "volume": 106630
+  },
+  {
+    "date": "Feb 23 2026",
+    "timestamp": 1771848000000,
+    "price": 9032.57,
+    "volume": 94091
+  },
+  {
+    "date": "Feb 24 2026",
+    "timestamp": 1771934400000,
+    "price": 8980.07,
+    "volume": 91054
+  },
+  {
+    "date": "Feb 25 2026",
+    "timestamp": 1772020800000,
+    "price": 8769.41,
+    "volume": 122744
+  },
+  {
+    "date": "Feb 26 2026",
+    "timestamp": 1772107200000,
+    "price": 8793.42,
+    "volume": 113073
+  },
+  {
+    "date": "Feb 27 2026",
+    "timestamp": 1772193600000,
+    "price": 8855.06,
+    "volume": 113920
+  },
+  {
+    "date": "Feb 28 2026",
+    "timestamp": 1772280000000,
+    "price": 8943.23,
+    "volume": 115191
+  },
+  {
+    "date": "Mar 01 2026",
+    "timestamp": 1772366400000,
+    "price": 9080.65,
+    "volume": 104791
+  },
+  {
+    "date": "Mar 02 2026",
+    "timestamp": 1772452800000,
+    "price": 9142.85,
+    "volume": 88297
+  },
+  {
+    "date": "Mar 03 2026",
+    "timestamp": 1772539200000,
+    "price": 9168.63,
+    "volume": 83909
+  },
+  {
+    "date": "Mar 04 2026",
+    "timestamp": 1772625600000,
+    "price": 8852.08,
+    "volume": 113696
+  },
+  {
+    "date": "Mar 05 2026",
+    "timestamp": 1772712000000,
+    "price": 8977.78,
+    "volume": 111660
+  },
+  {
+    "date": "Mar 06 2026",
+    "timestamp": 1772798400000,
+    "price": 9021.75,
+    "volume": 107145
+  },
+  {
+    "date": "Mar 07 2026",
+    "timestamp": 1772884800000,
+    "price": 9204.65,
+    "volume": 119062
+  },
+  {
+    "date": "Mar 08 2026",
+    "timestamp": 1772971200000,
+    "price": 9173.39,
+    "volume": 112718
+  },
+  {
+    "date": "Mar 09 2026",
+    "timestamp": 1773057600000,
+    "price": 9354.68,
+    "volume": 105688
+  },
+  {
+    "date": "Mar 10 2026",
+    "timestamp": 1773144000000,
+    "price": 9369.95,
+    "volume": 92913
+  },
+  {
+    "date": "Mar 11 2026",
+    "timestamp": 1773230400000,
+    "price": 9197.91,
+    "volume": 129083
+  },
+  {
+    "date": "Mar 12 2026",
+    "timestamp": 1773316800000,
+    "price": 12492.29,
+    "volume": 663963
+  },
+  {
+    "date": "Mar 13 2026",
+    "timestamp": 1773403200000,
+    "price": 13881.02,
+    "volume": 370220
+  },
+  {
+    "date": "Mar 14 2026",
+    "timestamp": 1773489600000,
+    "price": 14693.5,
+    "volume": 275858
+  },
+  {
+    "date": "Mar 15 2026",
+    "timestamp": 1773576000000,
+    "price": 14683.61,
+    "volume": 229705
+  },
+  {
+    "date": "Mar 16 2026",
+    "timestamp": 1773662400000,
+    "price": 14503.55,
+    "volume": 147154
+  },
+  {
+    "date": "Mar 17 2026",
+    "timestamp": 1773748800000,
+    "price": 14612.12,
+    "volume": 159189
+  },
+  {
+    "date": "Mar 18 2026",
+    "timestamp": 1773835200000,
+    "price": 14658.26,
+    "volume": 145218
+  },
+  {
+    "date": "Mar 19 2026",
+    "timestamp": 1773921600000,
+    "price": 14363.19,
+    "volume": 171219
+  },
+  {
+    "date": "Mar 20 2026",
+    "timestamp": 1774008000000,
+    "price": 13187.02,
+    "volume": 131392
+  },
+  {
+    "date": "Mar 21 2026",
+    "timestamp": 1774094400000,
+    "price": 13206.16,
+    "volume": 139501
+  },
+  {
+    "date": "Mar 22 2026",
+    "timestamp": 1774180800000,
+    "price": 13210.38,
+    "volume": 129638
+  },
+  {
+    "date": "Mar 23 2026",
+    "timestamp": 1774267200000,
+    "price": 13318.05,
+    "volume": 106532
+  },
+  {
+    "date": "Mar 24 2026",
+    "timestamp": 1774353600000,
+    "price": 13181.33,
+    "volume": 95477
+  },
+  {
+    "date": "Mar 25 2026",
+    "timestamp": 1774440000000,
+    "price": 13128.92,
+    "volume": 106213
+  },
+  {
+    "date": "Mar 26 2026",
+    "timestamp": 1774526400000,
+    "price": 12795.98,
+    "volume": 98241
+  },
+  {
+    "date": "Mar 27 2026",
+    "timestamp": 1774612800000,
+    "price": 13114.12,
+    "volume": 97396
+  },
+  {
+    "date": "Mar 28 2026",
+    "timestamp": 1774699200000,
+    "price": 13381.34,
+    "volume": 109388
+  },
+  {
+    "date": "Mar 29 2026",
+    "timestamp": 1774785600000,
+    "price": 13651.19,
+    "volume": 108195
+  },
+  {
+    "date": "Mar 30 2026",
+    "timestamp": 1774872000000,
+    "price": 13664.93,
+    "volume": 88785
+  },
+  {
+    "date": "Mar 31 2026",
+    "timestamp": 1774958400000,
+    "price": 13646.9,
+    "volume": 75863
+  },
+  {
+    "date": "Apr 01 2026",
+    "timestamp": 1775044800000,
+    "price": 13928.13,
+    "volume": 93711
+  },
+  {
+    "date": "Apr 02 2026",
+    "timestamp": 1775131200000,
+    "price": 14483,
+    "volume": 109901
+  },
+  {
+    "date": "Apr 03 2026",
+    "timestamp": 1775217600000,
+    "price": 14708.1,
+    "volume": 94189
+  },
+  {
+    "date": "Apr 04 2026",
+    "timestamp": 1775304000000,
+    "price": 15440.96,
+    "volume": 138973
+  },
+  {
+    "date": "Apr 05 2026",
+    "timestamp": 1775390400000,
+    "price": 16232.96,
+    "volume": 102458
+  },
+  {
+    "date": "Apr 06 2026",
+    "timestamp": 1775476800000,
+    "price": 16173.82,
+    "volume": 49154
+  }
+]
