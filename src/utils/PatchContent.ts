@@ -70,14 +70,14 @@ export function getAllPatches(): PatchItem[] {
         .substring(0, 160) + '...';
 
       patches.push({
-        date,
-        day,
-        time,
-        title,
-        buildId,
-        slug: buildId,
-        content,
-        description
+        date: date || '',
+        day: day || '',
+        time: time || '',
+        title: title || '',
+        buildId: buildId || '',
+        slug: buildId || '',
+        content: content || '',
+        description: description || ''
       });
     }
   }
@@ -121,14 +121,14 @@ export function getPatchBySlug(slug: string): PatchItem | null {
           .substring(0, 160) + '...';
 
         return {
-          date,
-          day,
-          time,
-          title,
-          buildId,
-          slug: buildId,
-          content,
-          description
+          date: date || '',
+          day: day || '',
+          time: time || '',
+          title: title || '',
+          buildId: buildId || '',
+          slug: buildId || '',
+          content: content || '',
+          description: description || ''
         };
       }
     }

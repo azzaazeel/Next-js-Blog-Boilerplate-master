@@ -10,8 +10,8 @@ Truy cập vào server thông qua SSH và cài đặt cấu hình cơ bản gồ
 # Cập nhật Repositories
 sudo apt update && sudo apt upgrade -y
 
-# Cài đặt Node.js (Khuyến nghị phiên bản 18.x hoặc mới hơn)
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+# Cài đặt Node.js (Khuyến nghị phiên bản 20.x hoặc mới hơn - Next.js 15 yêu cầu >= 20.9.0)
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt install -y nodejs
 
 # Kiểm tra phiên bản Node và Npm
@@ -27,16 +27,31 @@ sudo apt install -y nginx
 
 ## Bước 2: Tải Source Code về Server
 
-Di chuyển tới thư mục `/var/www/` và tải mã nguồn của bạn về (Bạn có thể bỏ qua Git nếu dùng phương pháp copy file thủ công (rsync, sftp...)):
+Di chuyển tới thư mục `/var/www/` và tải mã nguồn về từ GitHub:
 
 ```bash
 cd /var/www
 # Thay thế URL bằng link github của bạn, hoặc tạo thư mục và copy source vào đây
-sudo git clone https://github.com/your-username/kanocs-blog.git
+sudo git clone https://github.com/azzaazeel/Next-js-Blog-Boilerplate-master.git
 
 # Cấp quyền cho thư mục
-sudo chown -R $USER:$USER /var/www/kanocs-blog
-cd kanocs-blog
+sudo chown -R $USER:$USER /var/www/Next-js-Blog-Boilerplate-master
+cd Next-js-Blog-Boilerplate-master
+```
+
+## Bước 2.1: Cập nhật mã nguồn (Khi có thay đổi mới)
+
+Nếu sau này bạn có commit mới trên máy tính và đẩy lên GitHub, hãy chạy lệnh sau trên VPS để cập nhật:
+
+```bash
+cd /var/www/Next-js-Blog-Boilerplate-master
+git pull origin main
+
+# Sau khi pull, nhớ build lại và restart PM2
+npm install --legacy-peer-deps
+npm run build
+pm2 restart nextjs-blog
+```
 
 ## Bước 2.5: Cấu hình Biến môi trường (Environment Variables)
 
@@ -59,7 +74,7 @@ Cài đặt package (modules) và tiến hành đóng gói dự án.
 
 ```bash
 # Cài đặt các thư viện
-npm install
+npm install --legacy-peer-deps
 
 # Build ứng dụng Next.js
 npm run build
@@ -71,7 +86,7 @@ Sử dụng PM2 để chạy server Next.js (port 3000) trên không gian nền 
 
 ```bash
 # Khởi tạo project trong PM2
-pm2 start npm --name "kanocs-blog" -- start
+pm2 start npm --name "nextjs-blog" -- start
 
 # Lưu trữ cấu hình PM2 để tự động chạy lại khi server bị khởi động lại
 pm2 save
@@ -130,4 +145,15 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx -d kanocs.com -d www.kanocs.com
 ```
 
-Chúc mừng! Khi hiển thị "Successfully deployed certificate", bạn chỉ cần mở trình duyệt và gõ tên miền là website sẽ trực tiếp hoạt động một cách mượt mà và bảo mật.
+## Xử lý sự cố (Troubleshooting)
+
+### 1. Lỗi "Cannot find native binding" (Tailwind Oxide)
+Nếu bạn gặp lỗi liên quan đến `@tailwindcss/oxide` hoặc "native binding", nguyên nhân thường do xung đột giữa môi trường Windows và Linux. Hãy chạy lệnh sau để dọn dẹp và cài đặt lại hoàn toàn:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install --legacy-peer-deps
+```
+
+### 2. Lỗi phiên bản Node.js
+Nếu Next.js báo lỗi yêu cầu Node.js >= 20.9.0, hãy đảm bảo bạn đã chạy đúng các lệnh nâng cấp ở **Bước 1**.

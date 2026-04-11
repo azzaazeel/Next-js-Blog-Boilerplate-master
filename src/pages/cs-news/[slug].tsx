@@ -124,9 +124,9 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
 
   return {
     props: {
-        title: post.title,
+        title: post.title || '',
         description: `Official CS2 News: ${post.title}`,
-        date: post.date,
+        date: post.date || new Date().toISOString(),
         type: post.type || 'News',
         marketImpact: post.marketImpact || 'Low',
         content,

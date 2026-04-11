@@ -35,10 +35,12 @@ export function getPostBySlug(
       items[field] = content.replace(/@@baseUrl@@/g, process.env.baseUrl || '');
     }
 
-    if (data[field]) {
+    if (data[field] !== undefined && data[field] !== null) {
       // gray-matter parses date fields as JS Date objects — stringify to preserve sort
       items[field] =
         field === 'date' ? String(data[field]).split('T')[0] : data[field];
+    } else if (!items[field]) {
+      items[field] = ''; // Default to empty string instead of undefined
     }
   });
 

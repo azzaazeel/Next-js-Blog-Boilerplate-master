@@ -103,11 +103,11 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
 
   return {
     props: {
-      title: post.title,
-      description: post.description,
-      date: post.date,
-      modified_date: post.modified_date,
-      image: post.image,
+      title: post.title || '',
+      description: post.description || '',
+      date: post.date || new Date().toISOString(),
+      modified_date: post.modified_date || post.date || new Date().toISOString(),
+      image: post.image || '',
       content,
     },
     revalidate: 10,
