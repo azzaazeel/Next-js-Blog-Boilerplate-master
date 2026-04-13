@@ -324,11 +324,7 @@ export function useBlogCharts(deps: any[]) {
               id: 'statsOverlay',
               afterDraw: (chart: any) => {
                 const { ctx, chartArea } = chart;
-                if (!priceDeltaAttr || !volDeltaAttr) return;
-
-                const pDelta = parseFloat(priceDeltaAttr);
-                const vDelta = parseFloat(volDeltaAttr);
-
+                
                 ctx.save();
 
                 const margin = 20; 
@@ -348,10 +344,13 @@ export function useBlogCharts(deps: any[]) {
                    currentY += (caseImages[0].naturalHeight * 0.5) + 15;
                 }
 
-                if (isComparison) {
+                if (isComparison || !priceDeltaAttr || !volDeltaAttr) {
                    ctx.restore();
                    return;
                 }
+
+                const pDelta = parseFloat(priceDeltaAttr);
+                const vDelta = parseFloat(volDeltaAttr);
 
                 ctx.font = 'bold 11px Inter, system-ui, -apple-system, sans-serif';
                 ctx.textAlign = 'left';

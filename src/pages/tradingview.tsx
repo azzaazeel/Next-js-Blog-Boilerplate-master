@@ -62,6 +62,7 @@ const TradingViewAdminPage = () => {
   
   const [allCases, setAllCases] = useState<CaseMetadata[]>([]);
   const [selectedCaseNames, setSelectedCaseNames] = useState<Set<string>>(new Set());
+  const [allAgents, setAllAgents] = useState<CaseMetadata[]>([]);
   const [showDiscontinued, setShowDiscontinued] = useState(false);
   
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -83,6 +84,9 @@ const TradingViewAdminPage = () => {
   const [dropdownCategoryOpen, setDropdownCategoryOpen] = useState(false);
   const [performanceData, setPerformanceData] = useState<any[]>([]);
   
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownCategoryRef = useRef<HTMLDivElement>(null);
+  
   const [stats, setStats] = useState<{
     startPrice: number;
     endPrice: number;
@@ -93,8 +97,6 @@ const TradingViewAdminPage = () => {
     avgVolume: number;
   } | null>(null);
   
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
   // Auth guard
   useEffect(() => {
     if (!isPending && !session) {
@@ -145,6 +147,12 @@ const TradingViewAdminPage = () => {
       .then(res => res.json())
       .then(data => {
         if (data.cases) setAllCases(data.cases);
+      });
+
+    fetch('/api/admin/agents')
+      .then(res => res.json())
+      .then(data => {
+        if (data.agents) setAllAgents(data.agents);
       });
 
     // Load watchlist from localStorage
@@ -326,7 +334,9 @@ const TradingViewAdminPage = () => {
       if (dropdownRef.current && !dropdownRef.current.contains(target)) {
         setDropdownOpen(false);
       }
-      // Since we don't have a ref for Category yet, let's use a generic approach or add a ref
+      if (dropdownCategoryRef.current && !dropdownCategoryRef.current.contains(target)) {
+        setDropdownCategoryOpen(false);
+      }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
@@ -422,19 +432,22 @@ const TradingViewAdminPage = () => {
 
   const selectedCase = useMemo(() => {
     const normalize = (s: string) => s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-    return allCases.find(c => normalize(c.name) === normalize(selectedItem));
-  }, [allCases, selectedItem]);
+    const sourceList = selectedCategory === 'Agents' ? allAgents : allCases;
+    return sourceList.find(c => normalize(c.name) === normalize(selectedItem));
+  }, [allCases, allAgents, selectedItem, selectedCategory]);
 
   const selectedCaseImages = useMemo(() => {
     const normalize = (s: string) => s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    const sourceList = selectedCategory === 'Agents' ? allAgents : allCases;
+    
     if (compareMode) {
       return Array.from(selectedCompareItems)
-        .map(name => allCases.find(c => normalize(c.name) === normalize(name))?.image)
+        .map(name => sourceList.find(c => normalize(c.name) === normalize(name))?.image)
         .filter(img => !!img)
         .join(',');
     }
     return selectedCase?.image || '';
-  }, [compareMode, selectedCompareItems, selectedCase, allCases]);
+  }, [compareMode, selectedCompareItems, selectedCase, allCases, allAgents, selectedCategory]);
 
   useBlogCharts([filename, selectedCategory, customStartDate, resolution, range, selectedYearString, markersString, rangesString, showSMA50, showSMA200, showVolSMA50, showRSI, compareBTC, stats?.priceChange, stats?.volumeChange, selectedCaseImages]);
 
@@ -542,7 +555,7 @@ const TradingViewAdminPage = () => {
           <div className="flex flex-wrap items-end gap-6">
 
           {/* 1. Category */}
-          <div className="relative w-full md:w-56" onMouseLeave={() => setDropdownCategoryOpen(false)}>
+          <div className="relative w-full md:w-56" ref={dropdownCategoryRef}>
             <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1">Category</label>
             <div 
               className="group relative flex items-center bg-[#1a1d26] border border-gray-800 rounded-xl px-4 py-2.5 cursor-pointer hover:border-blue-500/50 transition-all shadow-lg"

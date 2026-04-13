@@ -107,9 +107,22 @@ Không dùng Nginx, chúng ta cấu hình trực tiếp trong Virtual Host của
 1. **Lỗi 500:** Kiểm tra xem `curl http://localhost:3001` có phản hồi không. Nếu có, hãy kiểm tra lại file `vhost.conf`.
 2. **Lỗi Native Binding:** Luôn chạy `rm -rf node_modules` và cài lại nếu di chuyển code giữa các môi trường khác nhau.
 3. **Cập nhật code mới:**
+
+   **Tại Máy Local (Windows/Mac):**
    ```bash
+   # Lưu code và đẩy lên GitHub
+   git add .
+   git commit -m "Mô tả thay đổi của bạn"
+   git push origin main
+
+   # (Tùy chọn) Đẩy Database mới lên nếu có thay đổi Credentials
+   scp "auth.db" root@IP_CUA_BAN:/home/kanocs.com/public_html/
+   ```
+
+   **Tại VPS (SSH):**
+   ```bash
+   cd /home/kanocs.com/public_html
    git pull origin main
-   npm install --legacy-peer-deps
-   npm run build
-   pm2 restart nextjs-blog
+   npm run redeploy
+   pm2 restart all
    ```
