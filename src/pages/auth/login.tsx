@@ -33,13 +33,19 @@ const LoginPage = () => {
 
     // Trigger invisible recaptha
     let token = captchaToken;
-    if (!token && recaptchaRef.current) {
-      token = await recaptchaRef.current.executeAsync();
-    }
+    const isLocal = typeof window !== 'undefined' && window.location.hostname === 'localhost';
+    
+    if (!isLocal) {
+        if (!token && recaptchaRef.current) {
+            token = await recaptchaRef.current.executeAsync();
+        }
 
-    if (!token) {
-      setError('ReCAPTCHA verification failed. Please try again.');
-      return;
+        if (!token) {
+            setError('ReCAPTCHA verification failed. Please try again.');
+            return;
+        }
+    } else {
+        token = 'dev-token'; // Fake token for local bypass
     }
 
     const { error: signUpError } = await authClient.signIn.email({
@@ -47,7 +53,7 @@ const LoginPage = () => {
       password,
       fetchOptions: {
         headers: {
-          'x-recaptcha-token': captchaToken
+          'x-recaptcha-token': token || ''
         }
       }
     });

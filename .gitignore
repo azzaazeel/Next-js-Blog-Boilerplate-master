@@ -36,3 +36,5 @@ local
 
 # local db
 auth.db
+data/tradingview
+data/tradingview-other

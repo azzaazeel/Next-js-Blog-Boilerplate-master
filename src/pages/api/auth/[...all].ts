@@ -12,16 +12,14 @@ export default function handler(req: any, res: any) {
   // eslint-disable-next-line no-console
   console.log(`[Auth API] ${req.method} ${req.url}`);
 
-  if (req.url) {
-    let cleanUrl = req.url;
-    if (cleanUrl.endsWith('/') && cleanUrl.length > 1) {
-      cleanUrl = cleanUrl.slice(0, -1);
-    }
-    req.url = cleanUrl;
-  }
 
   // Intercept sign-in request for ReCAPTCHA Enterprise validation
   if (req.url?.includes('/sign-in/email') && req.method === 'POST') {
+    // BYPASS RECAPTCHA ON LOCALHOST FOR DEVELOPMENT
+    if (process.env.NODE_ENV === 'development' || req.headers.host?.includes('localhost')) {
+      return toNodeHandler(auth.handler)(req, res);
+    }
+    
     const token = req.headers['x-recaptcha-token'];
     
     if (!token) {
