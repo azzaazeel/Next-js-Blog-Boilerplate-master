@@ -325,9 +325,9 @@ const Main = (props: IMainProps) => {
 
         <div className="border-t border-gray-100 dark:border-gray-800 text-left py-8 text-sm text-gray-400 flex justify-between items-center">
           <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-            <div>© Copyright {new Date().getFullYear()} {AppConfig.title}</div>
+            <div className="font-bold text-gray-700 dark:text-gray-300">© Copyright {new Date().getFullYear()} {AppConfig.title}</div>
             <div className="hidden md:block h-4 w-px bg-gray-200 dark:bg-gray-800"></div>
-            <div className="text-[11px] md:text-xs leading-relaxed max-w-md italic opacity-80">
+            <div className="text-[11px] md:text-xs leading-relaxed max-w-md font-bold text-gray-700 dark:text-gray-300">
               Disclaimer: The information provided is for informational purposes only and does not constitute financial advice.
             </div>
           </div>

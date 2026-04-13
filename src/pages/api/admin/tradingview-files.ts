@@ -11,19 +11,31 @@ export default async function handler(
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  const dirPath = path.join(process.cwd(), 'data', 'tradingview');
+  const baseDir = path.join(process.cwd(), 'data', 'tradingview');
   
-  if (!fs.existsSync(dirPath)) {
-    return res.status(200).json({ items: [] });
+  if (!fs.existsSync(baseDir)) {
+    return res.status(200).json({ items: [], categories: [] });
   }
 
   try {
+    // Get all subdirectories as categories
+    const categories = fs.readdirSync(baseDir, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name);
+
+    const selectedCategory = (req.query.category as string) || (categories.includes('Weapon-Cases') ? 'Weapon-Cases' : categories[0] || '');
+    
+    const dirPath = path.join(baseDir, selectedCategory);
+    
+    if (!fs.existsSync(dirPath) || !selectedCategory) {
+      return res.status(200).json({ items: [], categories, selectedCategory });
+    }
+
     const files = fs
       .readdirSync(dirPath)
       .filter((f) => f.endsWith('.json'));
 
     // Group files by Item Name
-    // Format: "Item Name_Resolution.json"
     const itemsMap: Record<string, string[]> = {};
 
     files.forEach(file => {
@@ -32,22 +44,20 @@ export default async function handler(
       
       if (lastUnderscoreIndex !== -1) {
         const itemName = nameWithoutExt.substring(0, lastUnderscoreIndex);
-        const resolution = nameWithoutExt.substring(lastUnderscoreIndex + 1); // e.g. "1D", "1W"
+        const resolution = nameWithoutExt.substring(lastUnderscoreIndex + 1);
         
         if (!itemsMap[itemName]) {
           itemsMap[itemName] = [];
         }
         itemsMap[itemName].push(resolution);
       } else {
-        // Fallback for files without underscore
         if (!itemsMap[nameWithoutExt]) {
-          itemsMap[nameWithoutExt] = ['1D']; // Assume 1D
+          itemsMap[nameWithoutExt] = ['1D'];
         }
       }
     });
 
     const items = Object.keys(itemsMap).map(name => {
-      // Get record count for the primary resolution (prefer 1D)
       const primaryRes = itemsMap[name].includes('1D') ? '1D' : itemsMap[name][0];
       const filePath = path.join(dirPath, `${name}_${primaryRes}.json`);
       let recordCount = 0;
@@ -56,9 +66,7 @@ export default async function handler(
         const content = fs.readFileSync(filePath, 'utf8');
         const data = JSON.parse(content);
         recordCount = Array.isArray(data) ? data.length : 0;
-      } catch (e) {
-        // Fallback to 0 if error reading file
-      }
+      } catch (e) {}
 
       return {
         name,
@@ -67,7 +75,7 @@ export default async function handler(
       };
     }).sort((a, b) => a.recordCount - b.recordCount);
 
-    return res.status(200).json({ items });
+    return res.status(200).json({ items, categories, selectedCategory });
   } catch (error) {
     console.error('Error reading tradingview directory:', error);
     return res.status(500).json({ message: 'Error reading directory' });

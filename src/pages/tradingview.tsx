@@ -75,6 +75,12 @@ const TradingViewAdminPage = () => {
   const [showVolSMA50, setShowVolSMA50] = useState<boolean>(true);
   const [showRSI, setShowRSI] = useState<boolean>(false);
   const [compareBTC, setCompareBTC] = useState<boolean>(false);
+  const [compareMode, setCompareMode] = useState<boolean>(false);
+  const [selectedCompareItems, setSelectedCompareItems] = useState<Set<string>>(new Set());
+  const [categories, setCategories] = useState<string[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [customStartDate, setCustomStartDate] = useState<string>('');
+  const [dropdownCategoryOpen, setDropdownCategoryOpen] = useState(false);
   const [performanceData, setPerformanceData] = useState<any[]>([]);
   
   const [stats, setStats] = useState<{
@@ -96,16 +102,20 @@ const TradingViewAdminPage = () => {
     }
   }, [session, isPending, router]);
 
-  // Load items and patches
+  // Load categories and initial items
   useEffect(() => {
     if (!session) return;
     
-    fetch('/api/admin/tradingview-files')
+    fetch(`/api/admin/tradingview-files${selectedCategory ? `?category=${selectedCategory}` : ''}`)
       .then(res => res.json())
       .then(data => {
+        if (data.categories) setCategories(data.categories);
+        if (data.selectedCategory && !selectedCategory) setSelectedCategory(data.selectedCategory);
+        
         if (data.items) {
           setItems(data.items);
-          if (data.items.length > 0 && !selectedItem) {
+          // Only auto-select if nothing is selected yet
+          if (data.items.length > 0 && !selectedItem && !compareMode) {
             const firstItem = data.items[0];
             setSelectedItem(firstItem.name);
             if (firstItem.resolutions.includes('1D')) setResolution('1D');
@@ -113,6 +123,11 @@ const TradingViewAdminPage = () => {
           }
         }
       });
+  }, [session, selectedCategory]);
+
+  // Load other static data
+  useEffect(() => {
+    if (!session) return;
 
     fetch('/api/admin/patches')
       .then(res => res.json())
@@ -152,6 +167,13 @@ const TradingViewAdminPage = () => {
       localStorage.setItem('tradingview_watchlist', JSON.stringify(next));
       return next;
     });
+  };
+
+  const toggleCompareItem = (itemName: string) => {
+    const next = new Set(selectedCompareItems);
+    if (next.has(itemName)) next.delete(itemName);
+    else next.add(itemName);
+    setSelectedCompareItems(next);
   };
 
   const handleYearToggle = (year: string) => {
@@ -197,7 +219,7 @@ const TradingViewAdminPage = () => {
     const filename = `${selectedItem}_${resolution}.json`;
     
     // Fetch available years from raw data
-    fetch(`/api/admin/tradingview-data?url=${encodeURIComponent(filename)}&range=All`)
+    fetch(`/api/admin/tradingview-data?url=${encodeURIComponent(filename)}&range=All&category=${selectedCategory}&startDate=${customStartDate}`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {
@@ -228,7 +250,7 @@ const TradingViewAdminPage = () => {
       } catch (err) {
         console.warn(`Fallback to client-side calculation for ${filename}`);
         // Fallback: Calculate from raw data since we are already fetching 'All' range above
-        fetch(`/api/admin/tradingview-data?url=${encodeURIComponent(filename)}&range=All`)
+        fetch(`/api/admin/tradingview-data?url=${encodeURIComponent(filename)}&range=All&category=${selectedCategory}&startDate=${customStartDate}`)
           .then(res => res.json())
           .then(data => {
             if (Array.isArray(data)) {
@@ -265,7 +287,7 @@ const TradingViewAdminPage = () => {
     const filename = `${selectedItem}_${resolution}.json`;
     const selectedYearString = selectedYear.join(',');
     
-    fetch(`/api/admin/tradingview-data?url=${encodeURIComponent(filename)}&range=${range}&year=${selectedYearString}`)
+    fetch(`/api/admin/tradingview-data?url=${encodeURIComponent(filename)}&range=${range}&year=${selectedYearString}&category=${selectedCategory}&startDate=${customStartDate}`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data) && data.length > 0) {
@@ -295,12 +317,16 @@ const TradingViewAdminPage = () => {
       });
   }, [selectedItem, resolution, range, selectedYear]);
 
-  // Close dropdown
+  // Close dropdowns on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      // Create a ref or just use id-based logic if ref is complex
+      // For simplicity, we'll check if target is within the dropdown element
+      const target = event.target as HTMLElement;
+      if (dropdownRef.current && !dropdownRef.current.contains(target)) {
         setDropdownOpen(false);
       }
+      // Since we don't have a ref for Category yet, let's use a generic approach or add a ref
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
@@ -309,7 +335,15 @@ const TradingViewAdminPage = () => {
 
 
 
-  const filename = selectedItem ? `${selectedItem}_${resolution}.json` : '';
+  const filename = useMemo(() => {
+    if (compareMode) {
+      if (selectedCompareItems.size === 0) return '';
+      return Array.from(selectedCompareItems)
+        .map(item => `${item}_${resolution}.json`)
+        .join(',');
+    }
+    return selectedItem ? `${selectedItem}_${resolution}.json` : '';
+  }, [selectedItem, resolution, compareMode, selectedCompareItems]);
 
   const yearPatches = useMemo(() => {
     let list = allPatches;
@@ -382,14 +416,27 @@ const TradingViewAdminPage = () => {
   }, [allMajors, selectedMajorNames]);
 
   const selectedYearString = selectedYear.join(',');
-  const dynamicTitle = `${selectedItem ? selectedItem.replace(/_/g, ' ') : 'Market Chart'} ${resolution} (${selectedYear.length > 0 ? selectedYear.join(',') : range})`;
+  const dynamicTitle = compareMode 
+    ? `Comparison (${Array.from(selectedCompareItems).join(', ')}) ${resolution}` 
+    : `${selectedItem ? selectedItem.replace(/_/g, ' ') : 'Market Chart'} ${resolution} (${selectedYear.length > 0 ? selectedYear.join(',') : range})`;
 
   const selectedCase = useMemo(() => {
     const normalize = (s: string) => s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
     return allCases.find(c => normalize(c.name) === normalize(selectedItem));
   }, [allCases, selectedItem]);
 
-  useBlogCharts([selectedItem, resolution, range, selectedYearString, markersString, rangesString, showSMA50, showSMA200, showVolSMA50, showRSI, compareBTC, stats?.priceChange, stats?.volumeChange, selectedCase?.image]);
+  const selectedCaseImages = useMemo(() => {
+    const normalize = (s: string) => s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    if (compareMode) {
+      return Array.from(selectedCompareItems)
+        .map(name => allCases.find(c => normalize(c.name) === normalize(name))?.image)
+        .filter(img => !!img)
+        .join(',');
+    }
+    return selectedCase?.image || '';
+  }, [compareMode, selectedCompareItems, selectedCase, allCases]);
+
+  useBlogCharts([filename, selectedCategory, customStartDate, resolution, range, selectedYearString, markersString, rangesString, showSMA50, showSMA200, showVolSMA50, showRSI, compareBTC, stats?.priceChange, stats?.volumeChange, selectedCaseImages]);
 
   const toggleEvent = (id: string) => {
     const next = new Set(selectedEventIds);
@@ -446,6 +493,15 @@ const TradingViewAdminPage = () => {
   
   const currentItem = items.find(i => i.name === selectedItem);
 
+  const handleItemSelect = (itemName: string) => {
+    if (compareMode) {
+      toggleCompareItem(itemName);
+    } else {
+      setSelectedItem(itemName);
+      setDropdownOpen(false);
+    }
+  };
+
   const handlePrevItem = () => {
     if (watchlist.length < 2) return;
     const currentIndex = watchlist.indexOf(selectedItem);
@@ -485,51 +541,86 @@ const TradingViewAdminPage = () => {
         <div className="flex flex-col gap-6 bg-[#1a1d26]/50 p-6 rounded-2xl border border-gray-800 shadow-xl">
           <div className="flex flex-wrap items-end gap-6">
 
-           <div className="flex flex-col gap-2">
-            <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Resolution</label>
+          {/* 1. Category */}
+          <div className="relative w-full md:w-56" onMouseLeave={() => setDropdownCategoryOpen(false)}>
+            <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1">Category</label>
+            <div 
+              className="group relative flex items-center bg-[#1a1d26] border border-gray-800 rounded-xl px-4 py-2.5 cursor-pointer hover:border-blue-500/50 transition-all shadow-lg"
+              onClick={() => setDropdownCategoryOpen(!dropdownCategoryOpen)}
+            >
+              <span className="block truncate text-sm font-medium text-gray-200 flex-1">{selectedCategory.replace(/-/g, ' ') || 'Select Category...'}</span>
+              <svg className={`w-4 h-4 text-gray-500 transition-transform ${dropdownCategoryOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            {dropdownCategoryOpen && (
+              <div className="absolute z-[60] w-full mt-2 bg-[#1a1d26] border border-gray-800 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                <div className="max-h-64 overflow-y-auto scrollbar-thin">
+                  {categories.map((cat) => (
+                    <div
+                      key={cat}
+                      className={`px-4 py-3 text-sm cursor-pointer border-b border-gray-800/30 last:border-0 hover:bg-gray-800 flex items-center ${selectedCategory === cat ? 'text-blue-400 font-semibold bg-blue-500/10' : 'text-gray-400'}`}
+                      onClick={() => {
+                        setSelectedCategory(cat);
+                        setSelectedItem('');
+                        setSelectedCompareItems(new Set());
+                        setDropdownCategoryOpen(false);
+                      }}
+                    >
+                      {cat.replace(/-/g, ' ')}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* 1.5 Start Date */}
+          <div className="flex flex-col gap-2">
+            <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Start Date</label>
             <div className="flex bg-[#1a1d26] p-1 rounded-xl border border-gray-800">
-              {['1D', '1W', '1M'].map((res) => {
-                const available = currentItem?.resolutions.includes(res);
-                return (
-                  <button
-                    key={res}
-                    disabled={!available}
-                    onClick={() => setResolution(res)}
-                    className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
-                      resolution === res ? 'bg-blue-600 text-white shadow-lg' : available ? 'text-gray-400 hover:text-gray-200' : 'text-gray-700'
-                    }`}
+                <input 
+                  type="date"
+                  value={customStartDate}
+                  onChange={(e) => setCustomStartDate(e.target.value)}
+                  className="bg-transparent text-xs font-bold text-gray-300 outline-none px-2 py-1.5 focus:text-blue-400 transition-colors [color-scheme:dark]"
+                />
+                {customStartDate && (
+                  <button 
+                    onClick={() => setCustomStartDate('')}
+                    className="p-1.5 text-gray-600 hover:text-rose-500 transition-colors"
                   >
-                    {res === '1D' ? 'D' : res === '1W' ? 'W' : 'M'}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                   </button>
-                );
-              })}
+                )}
             </div>
           </div>
 
-          <div className={`flex flex-col gap-2 ${selectedYear.length > 0 ? 'opacity-30 pointer-events-none' : ''}`}>
-            <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Time Range</label>
-            <div className="flex bg-[#1a1d26] p-1 rounded-xl border border-gray-800">
-              {['6M', '1Y', '3Y', 'All'].map((r) => (
-                <button
-                  key={r}
-                  onClick={() => setRange(r)}
-                  className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
-                    range === r ? 'bg-blue-600 text-white shadow-lg' : 'text-gray-400 hover:text-gray-200'
-                  }`}
-                >
-                  {r}
-                </button>
-              ))}
-            </div>
-          </div>
-
+          {/* 2. Data Source */}
           <div className="relative w-full md:w-64" ref={dropdownRef}>
-            <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1">Data Source</label>
+            <div className="flex justify-between items-center mb-2 ml-1">
+              <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">{compareMode ? `Symbols (${selectedCompareItems.size})` : 'Data Source'}</label>
+              {compareMode && selectedCompareItems.size > 0 && (
+                <button 
+                  onClick={() => setSelectedCompareItems(new Set())}
+                  className="text-[8px] font-bold text-rose-500 hover:text-rose-400 uppercase tracking-tighter"
+                >
+                  Clear All
+                </button>
+              )}
+            </div>
             <div 
               className="group relative flex items-center bg-[#1a1d26] border border-gray-800 rounded-xl px-4 py-2.5 cursor-pointer hover:border-blue-500/50 transition-all shadow-lg"
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
-              <span className="block truncate text-sm font-medium text-gray-200 flex-1">{selectedItem || 'Choose Item...'}</span>
+              <span className="block truncate text-sm font-medium text-gray-200 flex-1">
+                {compareMode 
+                  ? (selectedCompareItems.size > 0 ? Array.from(selectedCompareItems).slice(0, 2).join(', ') + (selectedCompareItems.size > 2 ? ` (+${selectedCompareItems.size - 2})` : '') : 'Select Symbols...')
+                  : (selectedItem || 'Choose Item...')
+                }
+              </span>
               <svg className={`w-4 h-4 text-gray-500 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
               </svg>
@@ -576,8 +667,12 @@ const TradingViewAdminPage = () => {
                   {filteredItems.slice(0, 50).map((item) => (
                     <div
                       key={item.name}
-                      className={`px-4 py-3 text-sm cursor-pointer border-b border-gray-800/30 last:border-0 hover:bg-gray-800 flex justify-between items-center group/item ${selectedItem === item.name ? 'text-blue-400 font-semibold bg-blue-500/10' : 'text-gray-400'}`}
-                      onClick={() => { setSelectedItem(item.name); setDropdownOpen(false); }}
+                      className={`px-4 py-3 text-sm cursor-pointer border-b border-gray-800/30 last:border-0 hover:bg-gray-800 flex justify-between items-center group/item ${
+                        compareMode 
+                          ? (selectedCompareItems.has(item.name) ? 'text-blue-400 font-semibold bg-blue-500/10' : 'text-gray-400')
+                          : (selectedItem === item.name ? 'text-blue-400 font-semibold bg-blue-500/10' : 'text-gray-400')
+                      }`}
+                      onClick={() => handleItemSelect(item.name)}
                     >
                       <div className="flex items-center gap-3 truncate">
                         <button 
@@ -611,6 +706,69 @@ const TradingViewAdminPage = () => {
               </div>
             )}
           </div>
+
+          {/* 3. Mode */}
+          <div className="flex flex-col gap-2">
+            <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Mode</label>
+            <div className="flex bg-[#1a1d26] p-1 rounded-xl border border-gray-800">
+                <button
+                  onClick={() => setCompareMode(false)}
+                  className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
+                    !compareMode ? 'bg-blue-600 text-white shadow-lg' : 'text-gray-400 hover:text-gray-200'
+                  }`}
+                >
+                  Single
+                </button>
+                <button
+                  onClick={() => setCompareMode(true)}
+                  className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
+                    compareMode ? 'bg-indigo-600 text-white shadow-lg' : 'text-gray-400 hover:text-gray-200'
+                  }`}
+                >
+                  Compare
+                </button>
+            </div>
+          </div>
+
+          {/* 4. Resolution */}
+          <div className="flex flex-col gap-2">
+            <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Resolution</label>
+            <div className="flex bg-[#1a1d26] p-1 rounded-xl border border-gray-800">
+              {['1D', '1W', '1M'].map((res) => {
+                const available = compareMode ? true : currentItem?.resolutions.includes(res);
+                return (
+                  <button
+                    key={res}
+                    disabled={!available}
+                    onClick={() => setResolution(res)}
+                    className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
+                      resolution === res ? 'bg-blue-600 text-white shadow-lg' : available ? 'text-gray-400 hover:text-gray-200' : 'text-gray-700'
+                    }`}
+                  >
+                    {res === '1D' ? 'D' : res === '1W' ? 'W' : 'M'}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* 5. Time Range */}
+          <div className={`flex flex-col gap-2 ${selectedYear.length > 0 ? 'opacity-30 pointer-events-none' : ''}`}>
+            <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Time Range</label>
+            <div className="flex bg-[#1a1d26] p-1 rounded-xl border border-gray-800">
+              {['1M', '3M', '6M', '1Y', '3Y', 'All'].map((r) => (
+                <button
+                  key={r}
+                  onClick={() => setRange(r)}
+                  className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
+                    range === r ? 'bg-blue-600 text-white shadow-lg' : 'text-gray-400 hover:text-gray-200'
+                  }`}
+                >
+                  {r}
+                </button>
+              ))}
+            </div>
+          </div>
           
           {/* Watchlist display */}
           {watchlist.length > 0 && (
@@ -631,10 +789,10 @@ const TradingViewAdminPage = () => {
                     return (
                       <button
                         key={item.name}
-                        onClick={() => setSelectedItem(item.name)}
+                        onClick={() => handleItemSelect(item.name)}
                         title={item.name}
                         className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border transition-all text-xs font-bold ${
-                          selectedItem === item.name 
+                          (compareMode ? selectedCompareItems.has(item.name) : selectedItem === item.name)
                             ? 'bg-blue-600/20 border-blue-500/50 text-blue-400' 
                             : 'bg-[#1a1d26] border-gray-800 text-gray-400 hover:border-gray-700 hover:text-gray-200'
                         }`}
@@ -733,11 +891,11 @@ const TradingViewAdminPage = () => {
                     <div>
                       <h3 className="text-xl font-bold text-gray-100 flex items-center gap-4">
                         <div className="flex items-center gap-2">
-                          {selectedItem ? selectedItem.replace(/_/g, ' ') : 'Market Trend'}
+                          {compareMode ? 'Market Comparison' : (selectedItem ? selectedItem.replace(/_/g, ' ') : 'Market Trend')}
                           <span className="text-sm font-normal text-gray-500">{resolution} ({selectedYear.length > 0 ? selectedYear.join(',') : range})</span>
                         </div>
                         
-                        {watchlist.length > 1 && (
+                        {!compareMode && watchlist.length > 1 && (
                           <div className="flex items-center gap-1 bg-[#0f1117] p-1 rounded-xl border border-gray-800 shadow-inner group-hover:border-blue-500/30 transition-colors">
                             <button 
                               onClick={handlePrevItem}
@@ -764,7 +922,7 @@ const TradingViewAdminPage = () => {
                    </div>
                   </div>
                   
-                  <StatsPanel stats={stats} />
+                  {!compareMode && <StatsPanel stats={stats} />}
                 </div>
 
                 {selectedEventIds.size > 0 && (
@@ -782,8 +940,10 @@ const TradingViewAdminPage = () => {
                       className="blog-chart"
                       style={{ width: '100%', height: '100%', display: 'block' }}
                       data-url={compareBTC ? `${filename},Bitcoin (BTC)_1D.json` : filename}
+                      data-category={selectedCategory}
+                      data-start-date={customStartDate}
                       data-tradingview="true"
-                      data-mode={range === 'All' && !compareBTC ? 'percent' : 'price'}
+                      data-mode={compareMode ? 'percent' : 'price'}
                       data-range={range}
                       data-year={selectedYearString}
                       data-markers={markersString}
@@ -795,7 +955,7 @@ const TradingViewAdminPage = () => {
                       data-rsi={showRSI ? 'true' : 'false'}
                       data-price-delta={stats?.priceChange?.toFixed(2)}
                       data-vol-delta={stats?.volumeChange?.toFixed(2)}
-                      data-case-image={selectedCase?.image || ''}
+                      data-case-images={selectedCaseImages}
                     ></canvas>
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center text-gray-600 font-medium">Please select a data source above</div>
@@ -804,7 +964,7 @@ const TradingViewAdminPage = () => {
                 </div>
               
               {/* Yearly Performance Table */}
-              {selectedItem && (
+              {!compareMode && selectedItem && (
                 <div className="mt-8 bg-[#1a1d26] border border-gray-800 rounded-3xl p-8 shadow-2xl">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-1.5 h-6 bg-emerald-500 rounded-full"></div>
@@ -840,7 +1000,7 @@ const TradingViewAdminPage = () => {
                               <td className="px-4 py-4 text-right font-mono text-gray-400 group-hover:text-gray-200">
                                 {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(row.endPrice)}
                               </td>
- Riverside                              <td className={`px-4 py-4 text-center font-bold font-mono text-xl ${row.return >= 0 ? 'text-emerald-500' : 'text-rose-500'}`}>
+                              <td className={`px-4 py-4 text-center font-bold font-mono text-xl ${row.return >= 0 ? 'text-emerald-500' : 'text-rose-500'}`}>
                                 {row.return >= 0 ? '+' : ''}{row.return.toFixed(0)}%
                               </td>
                             </tr>

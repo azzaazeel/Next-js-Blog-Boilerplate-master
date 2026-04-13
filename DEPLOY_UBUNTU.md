@@ -1,159 +1,115 @@
-# Hướng dẫn Triển khai Kanocs Blog lên Server Ubuntu
+# Hướng dẫn Triển khai Kanocs Blog lên Server Ubuntu (OpenLiteSpeed)
 
-Bài viết hướng dẫn cách đưa website Next.js này lên một máy chủ sử dụng hệ điều hành Ubuntu. Do dự án có sử dụng API nội bộ (tại `src/pages/api/`), chúng ta KHÔNG thể xuất trang tĩnh (static export) mà phải chạy server Node.js.
+Bài viết hướng dẫn cách đưa website Next.js lên một máy chủ sử dụng OpenLiteSpeed (như CyberPanel, CloudPanel). Do hệ thống thường sử dụng cổng 3000 cho các dịch vụ quản lý, chúng ta sẽ chạy dự án ở cổng **3001**.
 
 ## Bước 1: Cài đặt Môi trường cơ bản
 
-Truy cập vào server thông qua SSH và cài đặt cấu hình cơ bản gồm Node.js, PM2 (Quản lý tiến trình) và Nginx (Web Server):
+Truy cập vào server thông qua SSH và nâng cấp Node.js lên phiên bản mới nhất (Next.js 15 yêu cầu >= 20.9.0):
 
 ```bash
 # Cập nhật Repositories
 sudo apt update && sudo apt upgrade -y
 
-# Cài đặt Node.js (Khuyến nghị phiên bản 20.x hoặc mới hơn - Next.js 15 yêu cầu >= 20.9.0)
+# Cài đặt Node.js 22.x (LTS)
 curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt install -y nodejs
 
-# Kiểm tra phiên bản Node và Npm
-node -v
-npm -v
-
-# Cài đặt PM2 để chạy Next.js ngầm không bị tắt khi thoát SSH
+# Cài đặt PM2 để chạy ngầm
 sudo npm install -g pm2
-
-# Cài đặt Nginx
-sudo apt install -y nginx
 ```
 
-## Bước 2: Tải Source Code về Server
-
-Di chuyển tới thư mục `/var/www/` và tải mã nguồn về từ GitHub:
+## Bước 2: Tải Source Code và Cấu hình
 
 ```bash
-cd /var/www
-# Thay thế URL bằng link github của bạn, hoặc tạo thư mục và copy source vào đây
-sudo git clone https://github.com/azzaazeel/Next-js-Blog-Boilerplate-master.git
+cd /home/kanocs.com/public_html
+# Clone dự án từ GitHub
+sudo git clone https://github.com/azzaazeel/Next-js-Blog-Boilerplate-master.git .
 
 # Cấp quyền cho thư mục
-sudo chown -R $USER:$USER /var/www/Next-js-Blog-Boilerplate-master
-cd Next-js-Blog-Boilerplate-master
+sudo chown -R $USER:$USER /home/kanocs.com/public_html
 ```
 
-## Bước 2.1: Cập nhật mã nguồn (Khi có thay đổi mới)
+### Bước 2.5: Cấu hình mã bí mật (.env.local)
 
-Nếu sau này bạn có commit mới trên máy tính và đẩy lên GitHub, hãy chạy lệnh sau trên VPS để cập nhật:
-
-```bash
-cd /var/www/Next-js-Blog-Boilerplate-master
-git pull origin main
-
-# Sau khi pull, nhớ build lại và restart PM2
-npm install --legacy-peer-deps
-npm run build
-pm2 restart nextjs-blog
-```
-
-## Bước 2.5: Cấu hình Biến môi trường (Environment Variables)
-
-Dự án sử dụng hệ thống Auth và Database cần các biến cấu hình. Hãy tạo file `.env.local`:
-
+Tạo file biến môi trường:
 ```bash
 nano .env.local
 ```
-
-Copy và chỉnh sửa nội dung sau (Thay đổi Secret và Domain của bạn):
+Dán nội dung sau (Tạo secret bằng lệnh `openssl rand -base64 32`):
 ```env
-BETTER_AUTH_SECRET=nhap-ma-bi-mat-cua-ban-o-day
+BETTER_AUTH_SECRET=chuoi-ngau-nhien-cua-ban
 BETTER_AUTH_URL=https://kanocs.com
 ```
-*Lưu ý: `BETTER_AUTH_URL` phải là domain thật bắt đầu bằng https để Auth hoạt động chính xác.*
 
-## Bước 3: Build Dự án và Xử lý Dữ liệu
+## Bước 3: Build Dự án
 
-Cài đặt package (modules) và tiến hành đóng gói dự án.
+Lưu ý sử dụng `--legacy-peer-deps` để tránh xung đột phiên bản React 19:
 
 ```bash
-# Cài đặt các thư viện
+# Xóa bản cũ nếu có lỗi native binding
+rm -rf node_modules package-lock.json
+
+# Cài đặt thư viện
 npm install --legacy-peer-deps
 
-# Build ứng dụng Next.js
+# Build ứng dụng
 npm run build
 ```
 
-## Bước 4: Khởi chạy dự án bằng PM2
+## Bước 4: Khởi chạy dự án bằng PM2 (Cổng 3001)
 
-Sử dụng PM2 để chạy server Next.js (port 3000) trên không gian nền (background).
+Chúng ta sử dụng cổng **3001** để tránh xung đột với các dịch vụ hệ thống:
 
 ```bash
-# Khởi tạo project trong PM2
-pm2 start npm --name "nextjs-blog" -- start
+# Khởi chạy project
+pm2 start npm --name "nextjs-blog" -- start -- -p 3001
 
-# Lưu trữ cấu hình PM2 để tự động chạy lại khi server bị khởi động lại
+# Lưu cấu hình
 pm2 save
 pm2 startup
 ```
-*Ghi chú: Làm theo dòng lệnh mà PM2 in ra màn hình ở câu lệnh `pm2 startup`.*
 
-## Bước 5: Cấu hình Nginx làm Reverse Proxy
+## Bước 5: Cấu hình OpenLiteSpeed Reverse Proxy
 
-Ngay lúc này, site của bạn đã chạy ở `http://IP_CUA_SERVER:3000`. Để người dùng truy cập được bằng Tên miền (Domain) qua port 80/443 thay vì port 3000, ta thao tác với Nginx:
+Không dùng Nginx, chúng ta cấu hình trực tiếp trong Virtual Host của LiteSpeed để chuyển hướng truy cập từ cổng 80/443 vào cổng 3001.
 
-Tạo một file config cho domain của bạn:
-```bash
-sudo nano /etc/nginx/sites-available/kanocs.com
-```
+1. Mở file cấu hình vhost:
+   ```bash
+   nano /usr/local/lsws/conf/vhosts/kanocs.com/vhost.conf
+   ```
 
-Thêm nội dung bên dưới (Thay `kanocs.com` bằng tên miền thật của bạn):
-```nginx
-server {
-    listen 80;
-    server_name kanocs.com www.kanocs.com;
+2. Dán đoạn mã này vào **cuối file**:
+   ```text
+   extprocessor nextjs_proxy {
+     type                    proxy
+     address                 127.0.0.1:3001
+     maxConns                100
+     pcKeepAliveTimeout      60
+     initTimeout             60
+     retryTimeout            0
+     respBuffer              0
+   }
 
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
-```
+   context / {
+     type                    proxy
+     handler                 nextjs_proxy
+     addDefaultCharset       off
+   }
+   ```
 
-Lưu file lại (Ctrl+O, Enter, Ctrl+X) và kích hoạt config:
-```bash
-# Tạo symbol link
-sudo ln -s /etc/nginx/sites-available/kanocs.com /etc/nginx/sites-enabled/
+3. Khởi động lại LiteSpeed:
+   ```bash
+   sudo /usr/local/lsws/bin/lswsctrl restart
+   ```
 
-# Kiểm tra xem code nginx có lỗi không
-sudo nginx -t
+## Bước 6: Xử lý sự cố (Troubleshooting)
 
-# Load lại nginx
-sudo systemctl restart nginx
-```
-
-## Bước 6: Cài HTTPS miễn phí với Certbot (Let's Encrypt) 
-
-```bash
-# Cài đặt snap và certbot
-sudo apt install snapd
-sudo snap install core; sudo snap refresh core
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-
-# Auto lấy chứng chỉ SSL và cấu hình Nginx
-sudo certbot --nginx -d kanocs.com -d www.kanocs.com
-```
-
-## Xử lý sự cố (Troubleshooting)
-
-### 1. Lỗi "Cannot find native binding" (Tailwind Oxide)
-Nếu bạn gặp lỗi liên quan đến `@tailwindcss/oxide` hoặc "native binding", nguyên nhân thường do xung đột giữa môi trường Windows và Linux. Hãy chạy lệnh sau để dọn dẹp và cài đặt lại hoàn toàn:
-
-```bash
-rm -rf node_modules package-lock.json
-npm install --legacy-peer-deps
-```
-
-### 2. Lỗi phiên bản Node.js
-Nếu Next.js báo lỗi yêu cầu Node.js >= 20.9.0, hãy đảm bảo bạn đã chạy đúng các lệnh nâng cấp ở **Bước 1**.
+1. **Lỗi 500:** Kiểm tra xem `curl http://localhost:3001` có phản hồi không. Nếu có, hãy kiểm tra lại file `vhost.conf`.
+2. **Lỗi Native Binding:** Luôn chạy `rm -rf node_modules` và cài lại nếu di chuyển code giữa các môi trường khác nhau.
+3. **Cập nhật code mới:**
+   ```bash
+   git pull origin main
+   npm install --legacy-peer-deps
+   npm run build
+   pm2 restart nextjs-blog
+   ```

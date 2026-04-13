@@ -13,25 +13,33 @@ export function useBlogCharts(deps: any[]) {
       for (const canvasElem of Array.from(canvases)) {
         const canvas = canvasElem as HTMLCanvasElement;
         const chartUrlAttr = canvas.getAttribute('data-url') || '';
+        const chartCategory = canvas.getAttribute('data-category') || '';
+        const chartStartDate = canvas.getAttribute('data-start-date') || '';
         const priceDeltaAttr = canvas.getAttribute('data-price-delta');
         const volDeltaAttr = canvas.getAttribute('data-vol-delta');
-        const caseImageAttr = canvas.getAttribute('data-case-image') || '';
+        const caseImageAttr = canvas.getAttribute('data-case-images') || canvas.getAttribute('data-case-image') || '';
         
-        const currentId = `${chartUrlAttr}-${canvas.getAttribute('data-markers')}-${canvas.getAttribute('data-ranges')}-${canvas.getAttribute('data-range')}-${canvas.getAttribute('data-year')}-${canvas.getAttribute('data-sma50')}-${canvas.getAttribute('data-sma200')}-${canvas.getAttribute('data-volsma50')}-${canvas.getAttribute('data-rsi')}-${priceDeltaAttr}-${volDeltaAttr}-${caseImageAttr}`;
+        const currentId = `${chartUrlAttr}-${chartCategory}-${chartStartDate}-${canvas.getAttribute('data-markers')}-${canvas.getAttribute('data-ranges')}-${canvas.getAttribute('data-range')}-${canvas.getAttribute('data-year')}-${canvas.getAttribute('data-sma50')}-${canvas.getAttribute('data-sma200')}-${canvas.getAttribute('data-volsma50')}-${canvas.getAttribute('data-rsi')}-${priceDeltaAttr}-${volDeltaAttr}-${caseImageAttr}`;
         
         // Prevent redundant initialization if nothing changed
         if (canvas.getAttribute('data-inited') === currentId) continue;
         canvas.setAttribute('data-inited', currentId);
         
-        // Load Case Image if any
-        let caseImage: HTMLImageElement | null = null;
+        // Load Case Images if any
+        const caseImages: HTMLImageElement[] = [];
         if (caseImageAttr) {
-          caseImage = new Image();
-          caseImage.src = caseImageAttr;
-          await new Promise((resolve) => {
-            caseImage!.onload = resolve;
-            caseImage!.onerror = resolve;
-          });
+          const sources = caseImageAttr.split(',').filter(s => s.trim());
+          await Promise.all(sources.map(src => {
+            return new Promise((resolve) => {
+              const img = new Image();
+              img.src = src;
+              img.onload = () => {
+                caseImages.push(img);
+                resolve(null);
+              };
+              img.onerror = () => resolve(null);
+            });
+          }));
         }
         
         const chartTitle = canvas.getAttribute('data-title') || '';
@@ -42,25 +50,25 @@ export function useBlogCharts(deps: any[]) {
         const chartType = canvas.getAttribute('data-type') || 'line';
         const chartYear = canvas.getAttribute('data-year');
         
+        const chartRange = canvas.getAttribute('data-range');
+        
         if (!chartUrlAttr) continue;
 
         // Support multiple URLs for comparison, separated by comma
         const urls = chartUrlAttr.split(',').map(u => u.trim());
         const isComparison = urls.length > 1;
-        const chartMode = canvas.getAttribute('data-mode') || (isComparison ? 'percent' : 'price');
+        const chartMode = canvas.getAttribute('data-mode') || 'price';
 
         try {
-          const datasetsResponse = await Promise.all(
+          // Fetch and filter datasets while keeping them associated with their source labels
+          const rawDatasets = await Promise.all(
             urls.map(async (url) => {
               try {
                 let finalUrl = url;
-                // Handle private data proxy
                 let apiPath = '/api/market-data';
-                if (is3Y) {
-                  apiPath = '/api/market-3y';
-                } else if (isHistory) {
-                  apiPath = '/api/market-history';
-                } else if (canvas.getAttribute('data-tradingview') === 'true') {
+                if (is3Y) apiPath = '/api/market-3y';
+                else if (isHistory) apiPath = '/api/market-history';
+                else if (canvas.getAttribute('data-tradingview') === 'true') {
                   apiPath = '/api/admin/tradingview-data';
                 }
                 
@@ -71,18 +79,17 @@ export function useBlogCharts(deps: any[]) {
                   finalUrl = `${apiPath}?url=${encodeURIComponent(filename || '')}`;
                 }
 
-                if (chartYear) {
-                  finalUrl += `&year=${chartYear}`;
-                }
-                
-                const range = canvas.getAttribute('data-range');
-                if (range) {
-                  finalUrl += `&range=${range}`;
-                }
+                if (chartYear) finalUrl += `&year=${chartYear}`;
+                if (chartRange) finalUrl += `&range=${chartRange}`;
+                if (chartCategory) finalUrl += `&category=${encodeURIComponent(chartCategory)}`;
+                if (chartStartDate) finalUrl += `&startDate=${encodeURIComponent(chartStartDate)}`;
 
                 const res = await fetch(finalUrl);
                 const json = await res.json();
-                return Array.isArray(json) ? json : null;
+                return Array.isArray(json) ? { 
+                  name: url.replace('_1D.json', '').replace('.json', ''), 
+                  data: json 
+                } : null;
               } catch (err) {
                 console.error(`Failed to fetch ${url}:`, err);
                 return null;
@@ -90,40 +97,42 @@ export function useBlogCharts(deps: any[]) {
             })
           );
 
-          const validDatasets = datasetsResponse.filter(d => d !== null);
+          const validDatasets = rawDatasets.filter(d => d !== null) as { name: string, data: any[] }[];
           if (validDatasets.length === 0) continue;
 
-          // Cleanup previous instance if any
+          // Cleanup previous instance
           const existingChart = Chart.getChart(canvas);
           if (existingChart) existingChart.destroy();
 
-          // Unified date synchronization (fixes shifts when datasets have different start/end dates)
+          // Unified date synchronization
           const allDatesMap = new Map<string, number>();
-          validDatasets.forEach(dataset => {
-            dataset.forEach((d: any) => {
-              if (!allDatesMap.has(d.date)) {
-                allDatesMap.set(d.date, d.timestamp);
-              }
+          validDatasets.forEach(ds => {
+            ds.data.forEach((d: any) => {
+              if (!allDatesMap.has(d.date)) allDatesMap.set(d.date, d.timestamp);
             });
           });
 
-          // Master labels sorted by timestamp
           const labels = Array.from(allDatesMap.entries())
             .sort((a, b) => a[1] - b[1])
             .map(entry => entry[0]);
 
           const colors = ['#45AAF2', '#A55EEA', '#26DE81', '#FC5C65', '#FD9644'];
           
-          const calculateSMA = (data: number[], period: number) => {
+          const calculateSMA = (data: (number | null)[], period: number) => {
             const sma = [];
             for (let i = 0; i < data.length; i++) {
               if (i < period - 1) {
                 sma.push(null);
                 continue;
               }
-              const slice = data.slice(i - period + 1, i + 1);
-              const sum = slice.reduce((a, b) => a + b, 0);
-              sma.push(sum / period);
+              const slice = data.slice(i - period + 1, i + 1) as (number | null)[];
+              const validPoints = slice.filter(p => p !== null) as number[];
+              if (validPoints.length < period / 2) { // Need at least some data
+                sma.push(null);
+                continue;
+              }
+              const sum = validPoints.reduce((a, b) => a + b, 0);
+              sma.push(sum / validPoints.length);
             }
             return sma;
           };
@@ -161,15 +170,13 @@ export function useBlogCharts(deps: any[]) {
 
           const datasets: any[] = [];
 
-          validDatasets.forEach((data, index) => {
-            const fileName = urls[index].replace('_1D.json', '').replace('.json', '');
+          validDatasets.forEach((dataset, index) => {
+            const { name: fileName, data } = dataset;
             const isBTC = fileName.includes('Bitcoin (BTC)');
             
-            // Map data by date for alignment
             const dateToPrice = new Map(data.map((d: any) => [d.date, d.price]));
             const dateToVolume = new Map(data.map((d: any) => [d.date, d.volume || 0]));
             
-            // Find first available price for percent mode baseline
             const firstAvailablePrice = data[0]?.price || 0;
             
             const chartPoints = labels.map((date) => {
@@ -191,10 +198,10 @@ export function useBlogCharts(deps: any[]) {
               borderColor: isComparison ? colors[index % colors.length] : '#45AAF2',
               backgroundColor: isComparison ? colors[index % colors.length] : 'rgba(69, 170, 242, 0.1)',
               fill: !isComparison && chartMode !== 'percent',
-              tension: 0.15, // Slightly lower tension for technical feel
+              tension: 0.15,
               borderWidth: 2,
               pointRadius: 0,
-              yAxisID: isBTC && isComparison ? 'yBTC' : 'y',
+              yAxisID: isComparison ? (isBTC ? 'yBTC' : (chartMode === 'percent' ? 'yPercent' : 'y')) : 'y',
               spanGaps: true
             });
 
@@ -295,6 +302,8 @@ export function useBlogCharts(deps: any[]) {
               });
             }
           });
+          
+          // Removed _hidden_price logic because left axis is now disabled in percent mode per user request
 
           const priceDeltaAttr = canvas.getAttribute('data-price-delta');
           const volDeltaAttr = canvas.getAttribute('data-vol-delta');
@@ -326,12 +335,22 @@ export function useBlogCharts(deps: any[]) {
                 let currentY = chartArea.top + margin;
                 const currentX = chartArea.left + margin;
 
-                // Draw Case Image if exists
-                if (caseImage && caseImage.complete && caseImage.naturalWidth > 0) {
-                   const imgWidth = caseImage.naturalWidth * 0.5; // Reduce by 50%
-                   const imgHeight = caseImage.naturalHeight * 0.5; // Reduce by 50%
-                   ctx.drawImage(caseImage, currentX, currentY, imgWidth, imgHeight);
-                   currentY += imgHeight + 15;
+                // Draw Case Images if exists
+                if (caseImages.length > 0) {
+                   let currentImgX = currentX;
+                   caseImages.forEach(img => {
+                     const imgHeight = img.naturalHeight * 0.5; 
+                     const imgWidth = img.naturalWidth * 0.5;
+                     ctx.drawImage(img, currentImgX, currentY, imgWidth, imgHeight);
+                     currentImgX += imgWidth + 10;
+                   });
+                   // We use the height of the first image for the next Y position
+                   currentY += (caseImages[0].naturalHeight * 0.5) + 15;
+                }
+
+                if (isComparison) {
+                   ctx.restore();
+                   return;
                 }
 
                 ctx.font = 'bold 11px Inter, system-ui, -apple-system, sans-serif';
@@ -552,18 +571,34 @@ export function useBlogCharts(deps: any[]) {
                     }
                 },
                 y: {
+                    display: !(isComparison && chartMode === 'percent'),
                     type: 'logarithmic',
                     position: 'right',
+                    grid: { 
+                        display: true,
+                        color: 'rgba(156, 163, 175, 0.1)' 
+                    },
+                    ticks: {
+                        color: '#45AAF2',
+                        font: { size: 10, family: 'Inter', weight: 'bold' },
+                        callback: function(value: any) {
+                          const val = Number(value);
+                          if (val >= 1000000) return '$' + (val/1000000).toFixed(1) + 'M';
+                          if (val >= 1000) return '$' + (val/1000).toFixed(0) + 'K';
+                          return '$' + val.toLocaleString();
+                        }
+                    }
+                },
+                yPercent: {
+                    display: isComparison && chartMode === 'percent',
+                    position: 'right',
+                    type: 'linear',
                     grid: { color: 'rgba(156, 163, 175, 0.1)' },
                     ticks: {
                         color: '#9ca3af',
                         font: { size: 10, family: 'Inter', weight: '500' },
                         callback: function(value: any) {
-                          const val = Number(value);
-                          if (chartMode === 'percent') return val.toFixed(0) + '%';
-                          if (val >= 1000000) return '$' + (val/1000000).toFixed(1) + 'M';
-                          if (val >= 1000) return '$' + (val/1000).toFixed(0) + 'K';
-                          return '$' + val.toLocaleString();
+                          return value >= 0 ? '+' + value.toFixed(0) + '%' : value.toFixed(0) + '%';
                         }
                     }
                 },
@@ -573,13 +608,13 @@ export function useBlogCharts(deps: any[]) {
                   grid: { display: false },
                   ticks: { display: false },
                   min: 0,
-                  max: isComparison ? 0 : Math.max(...datasetsResponse[0].map((d: any) => d.volume || 0)) * 4
+                  max: isComparison ? 0 : Math.max(...validDatasets[0].data.map((d: any) => d.volume || 0)) * 4
                 },
                 yRSI: {
                   display: !isComparison && rsiAttr,
                   position: 'left',
                   min: 0,
-                  max: 400, // Make it take bottom 25% of the chart
+                  max: 400,
                   grid: { display: false },
                   ticks: {
                     display: true,
@@ -624,7 +659,8 @@ export function useBlogCharts(deps: any[]) {
                     color: '#9ca3af',
                     font: { family: 'Inter', size: 12 },
                     usePointStyle: true,
-                    padding: 20
+                    padding: 20,
+                    filter: (item: any) => !item.text.startsWith('_')
                   }
                 },
                 title: {
@@ -635,6 +671,7 @@ export function useBlogCharts(deps: any[]) {
                   padding: { bottom: 20 }
                 },
                 tooltip: {
+                  filter: (item: any) => !item.dataset.label?.startsWith('_'),
                   backgroundColor: 'rgba(17, 24, 39, 0.95)',
                   padding: 12,
                   titleFont: { family: 'Inter' },

@@ -12,7 +12,63 @@ const Editor = dynamic(
   () => import('@bytemd/react').then((mod) => mod.Editor),
   { ssr: false }
 );
-const plugins = [gfm()];
+const plugins = [
+  gfm(),
+  {
+    actions: [
+      {
+        title: 'Image',
+        icon: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c0 1.1.9 2 2 2zm-11-4l2.03 2.71L15 14l4.15 5.5H5L9.15 12 10 15zM20 4H4v16h16V4z"/></svg>',
+        handler: {
+          type: 'dropdown' as const,
+          actions: [
+            {
+              title: 'Upload local image',
+              handler: {
+                type: 'action' as const,
+                click({ editor }: any) {
+                  const input = document.createElement('input');
+                  input.type = 'file';
+                  input.accept = 'image/*';
+                  input.onchange = async () => {
+                    const file = input.files?.[0];
+                    if (file) {
+                      const formData = new FormData();
+                      formData.append('file', file);
+                      const res = await fetch('/api/admin/upload', {
+                        method: 'POST',
+                        body: formData,
+                      });
+                      const data = await res.json();
+                      if (data.url) {
+                        editor.replaceSelection(`![${file.name}](${data.url})`);
+                        editor.focus();
+                      }
+                    }
+                  };
+                  input.click();
+                },
+              },
+            },
+            {
+              title: 'Insert from URL',
+              handler: {
+                type: 'action' as const,
+                click({ editor }: any) {
+                  const url = window.prompt('Enter image URL:');
+                  if (url) {
+                    editor.replaceSelection(`![image](${url})`);
+                    editor.focus();
+                  }
+                },
+              },
+            },
+          ],
+        },
+      },
+    ],
+  },
+];
 
 const today = new Date().toISOString().split('T')[0];
 const DEFAULT_FRONTMATTER = `---
@@ -309,14 +365,37 @@ const EditorPage = () => {
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
           <style
             dangerouslySetInnerHTML={{
-              __html:
-                '.bytemd { height: calc(100vh - 240px); min-height: 500px; }',
+              __html: `
+                .bytemd { height: calc(100vh - 240px); min-height: 500px; }
+                /* Hide the default ByteMD image button (it's usually the 13th-15th button or has aria-label="Image") */
+                button[aria-label="Image"] { display: none !important; }
+              `,
             }}
           />
           <Editor
             value={content}
             plugins={plugins}
             onChange={(v) => setContent(v)}
+            uploadImages={async (files) => {
+              const results = await Promise.all(
+                files.map(async (file) => {
+                  const formData = new FormData();
+                  formData.append('file', file);
+                  
+                  const res = await fetch('/api/admin/upload', {
+                    method: 'POST',
+                    body: formData,
+                  });
+                  
+                  const data = await res.json();
+                  return {
+                    url: data.url,
+                    alt: file.name,
+                  };
+                })
+              );
+              return results;
+            }}
           />
         </div>
       </div>

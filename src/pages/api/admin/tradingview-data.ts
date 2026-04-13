@@ -11,7 +11,7 @@ export default async function handler(
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  const { filename, url } = req.query;
+  const { filename, url, category, startDate, range, year } = req.query;
   const target = url || filename;
 
   if (!target) {
@@ -20,7 +20,8 @@ export default async function handler(
 
   // Prevent directory traversal
   const safeFilename = path.basename(target as string);
-  const filePath = path.join(process.cwd(), 'data', 'tradingview', safeFilename);
+  const selectedCategory = (category as string) || '';
+  const filePath = path.join(process.cwd(), 'data', 'tradingview', selectedCategory, safeFilename);
 
   if (!fs.existsSync(filePath)) {
     return res.status(404).json({ message: 'File not found' });
@@ -52,16 +53,29 @@ export default async function handler(
                 }
                 return false;
             });
-        } else if (range && range !== 'All') {
+        } else if ((range && range !== 'All') || startDate) {
             const now = Date.now();
-            let days = 365; // Default 1Y
+            let rangeMs = 365 * 24 * 60 * 60 * 1000;
             
-            if (range === '6M') days = 180;
-            else if (range === '1Y') days = 365;
-            else if (range === '3Y') days = 1095;
+            if (range === '1M') rangeMs = 30 * 24 * 60 * 60 * 1000;
+            else if (range === '3M') rangeMs = 90 * 24 * 60 * 60 * 1000;
+            else if (range === '6M') rangeMs = 180 * 24 * 60 * 60 * 1000;
+            else if (range === '1Y') rangeMs = 365 * 24 * 60 * 60 * 1000;
+            else if (range === '3Y') rangeMs = 1095 * 24 * 60 * 60 * 1000;
+            else if (range === 'All') rangeMs = Infinity;
             
-            const cutoff = now - (days * 24 * 60 * 60 * 1000);
-            data = data.filter((item: any) => item.timestamp >= cutoff);
+            if (startDate && typeof startDate === 'string' && startDate.length > 0) {
+                const startTs = new Date(startDate).getTime();
+                if (!isNaN(startTs)) {
+                    // Forward window: [StartDate, StartDate + Range]
+                    const endTs = Math.min(now, startTs + rangeMs);
+                    data = data.filter((item: any) => item.timestamp >= startTs && item.timestamp <= endTs);
+                }
+            } else {
+                // Default Backward window: [Now - Range, Now]
+                const cutoff = now - rangeMs;
+                data = data.filter((item: any) => item.timestamp >= cutoff);
+            }
         }
 
         if (limit) {

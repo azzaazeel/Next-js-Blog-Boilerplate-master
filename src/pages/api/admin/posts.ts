@@ -17,7 +17,7 @@ export default async function handler(
       }
       return res.status(404).json({ message: 'File not found' });
     }
-    let allFiles: string[] = [];
+    const allFiles: { filename: string; mtime: number }[] = [];
     const folders = ['_articles', '_tweets', '_insights'];
     folders.forEach((dir) => {
       const dirPath = path.join(process.cwd(), dir);
@@ -25,12 +25,24 @@ export default async function handler(
         const files = fs
           .readdirSync(dirPath)
           .filter((f) => f.endsWith('.md'))
-          .map((f) => `${dir}/${f}`);
-        allFiles = [...allFiles, ...files];
+          .map((f) => {
+            const filename = `${dir}/${f}`;
+            const fullPath = path.join(process.cwd(), filename);
+            const stats = fs.statSync(fullPath);
+            return {
+              filename,
+              mtime: stats.mtimeMs,
+            };
+          });
+        allFiles.push(...files);
       }
     });
-    allFiles.sort().reverse();
-    return res.status(200).json({ files: allFiles });
+
+    // Sort by modification time descending (newest first)
+    allFiles.sort((a, b) => b.mtime - a.mtime);
+    const sortedFilenames = allFiles.map((f) => f.filename);
+
+    return res.status(200).json({ files: sortedFilenames });
   }
 
   if (req.method === 'POST') {
