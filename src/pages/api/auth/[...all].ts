@@ -10,7 +10,9 @@ export const config = {
 
 export default function handler(req: any, res: any) {
   // eslint-disable-next-line no-console
-  console.log(`[Auth API] ${req.method} ${req.url}`);
+  console.log(`[Auth API Debug] Method: ${req.method}, URL: ${req.url}`);
+  console.log(`[Auth API Debug] Origin: ${req.headers.origin}`);
+  console.log(`[Auth API Debug] Host: ${req.headers.host}`);
 
 
   // Intercept sign-in request for ReCAPTCHA Enterprise validation
