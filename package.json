@@ -7,6 +7,8 @@
     "build": "npm run generate-performance && next build",
     "start": "next start",
     "redeploy": "npm run build",
+    "sync": "node scripts/sync.js",
+    "vps-update": "node scripts/deploy.js",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "export": "next export",
     "build-prod": "run-s clean build export",

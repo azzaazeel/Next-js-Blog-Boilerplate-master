@@ -110,19 +110,12 @@ Không dùng Nginx, chúng ta cấu hình trực tiếp trong Virtual Host của
 
    **Tại Máy Local (Windows/Mac):**
    ```bash
-   # Lưu code và đẩy lên GitHub
-   git add .
-   git commit -m "Mô tả thay đổi của bạn"
-   git push origin main
-
-   # (Tùy chọn) Đẩy Database mới lên nếu có thay đổi Credentials
-   scp "auth.db" root@IP_CUA_BAN:/home/kanocs.com/public_html/
+   # Tự động add, commit "." và push lên GitHub
+   npm run sync
    ```
 
    **Tại VPS (SSH):**
    ```bash
    cd /home/kanocs.com/public_html
-   git pull origin main
-   npm run redeploy
-   pm2 restart all
+   npm run vps-update
    ```
