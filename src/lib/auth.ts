@@ -13,6 +13,7 @@ export const auth = betterAuth({
   trustedOrigins: [
     baseURL,
     'http://localhost:3000',
-    'http://localhost:3001'
+    'https://kanocs.com',
+    'https://www.kanocs.com'
   ],
 });
