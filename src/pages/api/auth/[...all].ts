@@ -9,6 +9,11 @@ export const config = {
 };
 
 export default function handler(req: any, res: any) {
+  // CLEAN DOUBLE ORIGIN HEADER (VPS PROXY ISSUE)
+  if (req.headers.origin && req.headers.origin.includes(',')) {
+    req.headers.origin = req.headers.origin.split(',')[0].trim();
+  }
+
   // eslint-disable-next-line no-console
   console.log(`[Auth API Debug] Method: ${req.method}, URL: ${req.url}`);
   console.log(`[Auth API Debug] Origin: ${req.headers.origin}`);
