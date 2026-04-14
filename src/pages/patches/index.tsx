@@ -10,6 +10,8 @@ type IPatchesPageProps = {
   patches: PatchItem[];
 };
 
+import { ReactElement } from 'react';
+
 const PatchesPage = (props: IPatchesPageProps) => {
   const [selectedYear, setSelectedYear] = useState<string>('All');
   const [currentPage, setCurrentPage] = useState(1);
@@ -43,14 +45,7 @@ const PatchesPage = (props: IPatchesPageProps) => {
   }, [filteredPatches, currentPage]);
 
   return (
-    <Main
-      meta={
-        <Meta
-          title="Game Patches"
-          description="Latest Counter-Strike 2 updates and patch notes"
-        />
-      }
-    >
+    <>
       <div className="mb-10">
         <h1 className="text-5xl font-extrabold text-secondary mb-2">
           Patches
@@ -129,6 +124,21 @@ const PatchesPage = (props: IPatchesPageProps) => {
           <p className="text-gray-500">No patches found for {selectedYear}.</p>
         </div>
       )}
+    </>
+  );
+};
+
+PatchesPage.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Main
+      meta={
+        <Meta
+          title="Game Patches"
+          description="Latest Counter-Strike 2 updates and patch notes"
+        />
+      }
+    >
+      {page}
     </Main>
   );
 };

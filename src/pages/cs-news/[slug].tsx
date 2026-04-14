@@ -32,23 +32,13 @@ type IPostProps = {
   content: MDXRemoteSerializeResult;
 };
 
+import { ReactElement } from 'react';
+
 const CSNewsPost = (props: IPostProps) => {
   useBlogCharts([props.content.compiledSource]);
 
   return (
-    <Main
-      meta={
-        <Meta
-          title={props.title}
-          description={props.description}
-          post={{
-            image: '',
-            date: props.date,
-            modified_date: props.date,
-          }}
-        />
-      }
-    >
+    <>
       <div className="pt-10 pb-12 text-center max-w-2xl mx-auto">
         <div className="flex justify-center gap-2 mb-4">
              <span className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded ${
@@ -82,6 +72,27 @@ const CSNewsPost = (props: IPostProps) => {
             View Official Source
         </a>
       </div>
+    </>
+  );
+};
+
+CSNewsPost.getLayout = function getLayout(page: ReactElement) {
+  const props = page.props as IPostProps;
+  return (
+    <Main
+      meta={
+        <Meta
+          title={props.title}
+          description={props.description}
+          post={{
+            image: '',
+            date: props.date,
+            modified_date: props.date,
+          }}
+        />
+      }
+    >
+      {page}
     </Main>
   );
 };

@@ -3,6 +3,21 @@ import React, { ReactNode, useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { 
+  User, 
+  ChevronDown, 
+  Edit3, 
+  LayoutDashboard, 
+  LogOut, 
+  Menu, 
+  X, 
+  Home,
+  Bird,
+  FileText,
+  Zap,
+  Hammer
+} from 'lucide-react';
+
 import { BackToTop } from '../components/BackToTop';
 import { Search } from '../components/Search';
 import { ThemeToggle } from '../components/ThemeToggle';
@@ -100,21 +115,11 @@ const Main = (props: IMainProps) => {
                         <span className="text-sm font-medium text-gray-700 dark:text-gray-200">
                           {session.user.name?.split(' ')[0]}
                         </span>
-                        <svg
-                          className={`w-3 h-3 text-gray-400 transition-transform duration-200 ${
+                        <ChevronDown
+                          className={`w-3.5 h-3.5 text-gray-400 transition-transform duration-300 ${
                             accountDropdownOpen ? 'rotate-180' : ''
                           }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={3}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
+                        />
                       </div>
 
                       {accountDropdownOpen && (
@@ -135,46 +140,22 @@ const Main = (props: IMainProps) => {
                           {/* Management Section */}
                           <div className="py-2">
                             <Link href="/editor" legacyBehavior>
-                              <a className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors group">
-                                <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/50 transition-colors">
-                                  <svg
-                                    className="w-4 h-4"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth={2}
-                                      d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-                                    />
-                                  </svg>
+                              <a className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 hover:text-emerald-700 dark:hover:text-emerald-400 transition-all group active:scale-[0.98]">
+                                <div className="w-9 h-9 rounded-xl bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/50 transition-all shadow-sm">
+                                  <Edit3 className="w-4.5 h-4.5" />
                                 </div>
-                                <span className="font-semibold text-xs tracking-tight uppercase">
+                                <span className="font-bold text-[11px] tracking-widest uppercase">
                                   Editor
                                 </span>
                               </a>
                             </Link>
 
                             <Link href="/dashboard" legacyBehavior>
-                              <a className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-950/30 hover:text-blue-700 dark:hover:text-blue-400 transition-colors group">
-                                <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-950/50 transition-colors">
-                                  <svg
-                                    className="w-4 h-4"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth={2}
-                                      d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                                    />
-                                  </svg>
+                              <a className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-950/30 hover:text-blue-700 dark:hover:text-blue-400 transition-all group active:scale-[0.98]">
+                                <div className="w-9 h-9 rounded-xl bg-blue-50 dark:bg-blue-910/30 text-blue-600 dark:text-blue-400 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-920/50 transition-all shadow-sm">
+                                  <LayoutDashboard className="w-4.5 h-4.5" />
                                 </div>
-                                <span className="font-semibold text-xs tracking-tight uppercase">
+                                <span className="font-bold text-[11px] tracking-widest uppercase">
                                   Dashboard
                                 </span>
                               </a>
@@ -187,24 +168,12 @@ const Main = (props: IMainProps) => {
                               onClick={() =>
                                 signOut().then(() => router.push('/auth/login'))
                               }
-                              className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors group"
+                              className="w-full flex items-center gap-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30 transition-all group active:scale-[0.98] text-left"
                             >
-                              <div className="w-8 h-8 rounded-lg bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center group-hover:bg-red-100 dark:group-hover:bg-red-900/50 transition-colors">
-                                <svg
-                                  className="w-4 h-4"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                                  />
-                                </svg>
+                              <div className="w-9 h-9 rounded-xl bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center group-hover:bg-red-100 dark:group-hover:bg-red-900/50 transition-all shadow-sm">
+                                <LogOut className="w-4.5 h-4.5 translate-x-0.5" />
                               </div>
-                              <span className="font-bold text-xs tracking-tight uppercase">
+                              <span className="font-bold text-[11px] tracking-widest uppercase">
                                 Logout
                               </span>
                             </button>
@@ -222,37 +191,13 @@ const Main = (props: IMainProps) => {
                 {/* Hamburger Button */}
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className={`${session ? 'block' : 'md:hidden'} p-2 rounded-lg bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors`}
+                  className={`${session ? 'block' : 'md:hidden'} p-2 rounded-xl bg-white dark:bg-slate-900 hover:bg-gray-100 dark:hover:bg-slate-800 transition-all border border-gray-100 dark:border-gray-800 shadow-sm active:scale-90`}
                   aria-label="Toggle Menu"
                 >
                   {isMenuOpen ? (
-                    <svg
-                      className="w-5 h-5 text-gray-700 dark:text-gray-200"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
+                    <X className="w-5 h-5 text-gray-700 dark:text-gray-200" />
                   ) : (
-                    <svg
-                      className="w-5 h-5 text-gray-700 dark:text-gray-200"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
+                    <Menu className="w-5 h-5 text-gray-700 dark:text-gray-200" />
                   )}
                 </button>
               </div>
@@ -264,11 +209,11 @@ const Main = (props: IMainProps) => {
             <div className={`py-4 border-t border-gray-50 dark:border-gray-800/50 bg-white dark:bg-slate-950 animate-in fade-in slide-in-from-top-4 duration-200 ${session ? '' : 'md:hidden'}`}>
               <ul className="flex flex-col space-y-4 px-2">
                 {[
-                  { label: 'Home', href: '/' },
-                  { label: 'Tweets', href: '/tweets' },
-                  { label: 'Articles', href: '/articles' },
-                  { label: 'Insights', href: '/insights' },
-                  { label: 'Patches', href: '/patches' },
+                  { label: 'Home', href: '/', icon: Home },
+                  { label: 'Tweets', href: '/tweets', icon: Bird },
+                  { label: 'Articles', href: '/articles', icon: FileText },
+                  { label: 'Insights', href: '/insights', icon: Zap },
+                  { label: 'Patches', href: '/patches', icon: Hammer },
                 ].map((item) => {
                   const active = item.href === '/' 
                     ? router.pathname === '/' 
@@ -277,9 +222,10 @@ const Main = (props: IMainProps) => {
                   return (
                     <li key={item.href}>
                       <Link href={item.href} legacyBehavior>
-                        <a className={`block py-2 text-base font-bold transition-colors ${
+                        <a className={`flex items-center gap-3 py-2 text-base font-bold transition-colors ${
                           active ? 'text-primary' : 'text-gray-900 dark:text-gray-100 hover:text-primary'
                         }`} onClick={() => setIsMenuOpen(false)}>
+                          <item.icon className={`w-5 h-5 ${active ? 'text-primary' : 'text-gray-400'}`} />
                           {item.label}
                         </a>
                       </Link>
@@ -292,6 +238,7 @@ const Main = (props: IMainProps) => {
                     <li>
                       <Link href="/editor" legacyBehavior>
                         <a className="flex items-center gap-3 py-2 text-base font-bold text-emerald-600" onClick={() => setIsMenuOpen(false)}>
+                          <Edit3 className="w-5 h-5" />
                           Editor
                         </a>
                       </Link>
@@ -299,6 +246,7 @@ const Main = (props: IMainProps) => {
                     <li>
                       <Link href="/dashboard" legacyBehavior>
                         <a className="flex items-center gap-3 py-2 text-base font-bold text-blue-600" onClick={() => setIsMenuOpen(false)}>
+                          <LayoutDashboard className="w-5 h-5" />
                           Dashboard
                         </a>
                       </Link>
@@ -311,6 +259,7 @@ const Main = (props: IMainProps) => {
                         }}
                         className="flex items-center gap-3 py-2 text-base font-bold text-red-600 w-full text-left"
                       >
+                        <LogOut className="w-5 h-5" />
                         Logout
                       </button>
                     </li>

@@ -12,15 +12,25 @@ import { AppConfig } from '../utils/AppConfig';
 import { getAllPosts } from '../utils/Content';
 import { convertTo2D } from '../utils/Pagination';
 
+import { ReactElement } from 'react';
+
 type IPageUrl = {
   page: string;
 };
 
 const PaginatePosts = (props: IBlogGalleryProps) => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
-  </Main>
+  <BlogGallery posts={props.posts} pagination={props.pagination} />
 );
+
+PaginatePosts.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Main
+      meta={<Meta title={AppConfig.title} description={AppConfig.description} />}
+    >
+      {page}
+    </Main>
+  );
+};
 
 export const getStaticPaths: GetStaticPaths<IPageUrl> = async () => {
   const postsFromTweets = getAllPosts(['slug'], '_tweets');

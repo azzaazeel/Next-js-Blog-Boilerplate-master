@@ -11,8 +11,10 @@ import { Main } from '../../templates/Main';
 import { AppConfig } from '../../utils/AppConfig';
 import { getAllPosts } from '../../utils/Content';
 
+import { ReactElement } from 'react';
+
 const TweetsPage = (props: IBlogGalleryProps) => (
-  <Main meta={<Meta title="Tweets" description="Market tweets and updates" />}>
+  <>
     <div className="mb-10">
       <h1 className="text-5xl font-extrabold text-secondary mb-2">Tweets</h1>
       <p className="text-gray-500 dark:text-gray-400 mb-8">
@@ -20,8 +22,16 @@ const TweetsPage = (props: IBlogGalleryProps) => (
       </p>
     </div>
     <BlogGallery posts={props.posts} pagination={props.pagination} />
-  </Main>
+  </>
 );
+
+TweetsPage.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Main meta={<Meta title="Tweets" description="Market tweets and updates" />}>
+      {page}
+    </Main>
+  );
+};
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
   const raw: any[] = getAllPosts(

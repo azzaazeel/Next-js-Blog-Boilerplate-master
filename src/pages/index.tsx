@@ -11,13 +11,21 @@ import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
 import { getAllPosts } from '../utils/Content';
 
+import { ReactElement } from 'react';
+
 const Index = (props: IBlogGalleryProps) => (
-  <Main
-    meta={<Meta title={AppConfig.title} description={AppConfig.description} />}
-  >
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
-  </Main>
+  <BlogGallery posts={props.posts} pagination={props.pagination} />
 );
+
+Index.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Main
+      meta={<Meta title={AppConfig.title} description={AppConfig.description} />}
+    >
+      {page}
+    </Main>
+  );
+};
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
   const postsFromTweets: any[] = getAllPosts(

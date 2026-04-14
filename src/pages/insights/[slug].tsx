@@ -32,9 +32,31 @@ type IPostProps = {
   content: MDXRemoteSerializeResult;
 };
 
+import { ReactElement } from 'react';
+
 const DisplayPost = (props: IPostProps) => {
   useBlogCharts([props.content.compiledSource]);
 
+  return (
+    <>
+      <div className="pt-10 pb-12 text-center">
+        <h1 className="font-light text-5xl text-gray-600 mb-4 tracking-tight">
+          {props.title}
+        </h1>
+        <div className="text-gray-400">
+          {format(new Date(props.date), 'LLLL d, yyyy')}
+        </div>
+      </div>
+
+      <Content>
+        <MDXRemote {...props.content} components={components} />
+      </Content>
+    </>
+  );
+};
+
+DisplayPost.getLayout = function getLayout(page: ReactElement) {
+  const props = page.props as IPostProps;
   return (
     <Main
       meta={
@@ -49,18 +71,7 @@ const DisplayPost = (props: IPostProps) => {
         />
       }
     >
-      <div className="pt-10 pb-12 text-center">
-        <h1 className="font-light text-5xl text-gray-600 mb-4 tracking-tight">
-          {props.title}
-        </h1>
-        <div className="text-gray-400">
-          {format(new Date(props.date), 'LLLL d, yyyy')}
-        </div>
-      </div>
-
-      <Content>
-        <MDXRemote {...props.content} components={components} />
-      </Content>
+      {page}
     </Main>
   );
 };

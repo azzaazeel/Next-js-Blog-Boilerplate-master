@@ -1,8 +1,22 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, ReactElement } from 'react';
 
 import gfm from '@bytemd/plugin-gfm';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { 
+  Plus, 
+  Trash2, 
+  Save, 
+  Search as SearchIcon, 
+  Folder, 
+  FileText, 
+  ChevronDown, 
+  X,
+  Image as ImageIcon,
+  Upload,
+  Link
+} from 'lucide-react';
 
 import { Meta } from '../layout/Meta';
 import { useSession } from '../lib/auth-client';
@@ -12,18 +26,22 @@ const Editor = dynamic(
   () => import('@bytemd/react').then((mod) => mod.Editor),
   { ssr: false }
 );
+
+const getIcon = (Icon: any) => renderToStaticMarkup(<Icon size={16} strokeWidth={2} />);
+
 const plugins = [
   gfm(),
   {
     actions: [
       {
         title: 'Image',
-        icon: '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c0 1.1.9 2 2 2zm-11-4l2.03 2.71L15 14l4.15 5.5H5L9.15 12 10 15zM20 4H4v16h16V4z"/></svg>',
+        icon: '<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.333 2.667v10.666h13.334V2.667H1.333zM13.333 4v8H2.667V4h10.666zM4 5.333a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 5.334l2.667-2.667 2 2 1.333-1.334 2 2H4z" fill="currentColor"/></svg>',
         handler: {
           type: 'dropdown' as const,
           actions: [
             {
               title: 'Upload local image',
+              icon: getIcon(Upload),
               handler: {
                 type: 'action' as const,
                 click({ editor }: any) {
@@ -52,6 +70,7 @@ const plugins = [
             },
             {
               title: 'Insert from URL',
+              icon: getIcon(Link),
               handler: {
                 type: 'action' as const,
                 click({ editor }: any) {
@@ -210,202 +229,171 @@ const EditorPage = () => {
   }
 
   return (
-    <Main
-      meta={
-        <Meta
-          title="Internal Post Manager"
-          description="Local markdown editor"
-        />
-      }
-    >
-      <div className="py-8">
-        {/* Toolbar */}
-        <div className="flex justify-between items-center mb-6 border-b pb-4 gap-3 flex-wrap">
-          <div className="flex items-center gap-3 flex-wrap">
-            <h1 className="text-2xl font-bold whitespace-nowrap">
-              Edit Content
-            </h1>
+    <div className="py-8">
+      {/* Toolbar */}
+      <div className="flex justify-between items-center mb-6 border-b pb-4 gap-3 flex-wrap">
+        <div className="flex items-center gap-3 flex-wrap">
+          <h1 className="text-2xl font-bold whitespace-nowrap">
+            Edit Content
+          </h1>
 
-            {/* File Selector */}
-            <div className="relative" ref={dropdownRef}>
-              <div
-                className="border border-gray-300 bg-white rounded-lg px-3 py-2 font-medium text-gray-700 cursor-pointer min-w-[280px] flex justify-between items-center hover:border-gray-400 transition-colors"
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-              >
-                <span className="truncate mr-3 text-sm">
-                  {selectedFile || 'Select a post...'}
-                </span>
-                <span className="text-gray-400 text-xs">▼</span>
-              </div>
-
-              {dropdownOpen && (
-                <div className="absolute z-20 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-xl overflow-hidden">
-                  <input
-                    type="text"
-                    className="w-full px-3 py-2.5 border-b border-gray-100 outline-none text-sm placeholder-gray-400"
-                    placeholder="Search posts..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onClick={(e) => e.stopPropagation()}
-                    autoFocus
-                  />
-                  <div className="max-h-64 overflow-y-auto">
-                    {filteredFiles.map((f) => {
-                      const [dir, ...nameParts] = f.split('/');
-                      return (
-                        <div
-                          key={f}
-                          className={`px-3 py-2.5 text-sm cursor-pointer border-b border-gray-50 last:border-0 ${
-                            selectedFile === f
-                              ? 'bg-blue-50 text-blue-700 font-semibold'
-                              : 'text-gray-700 hover:bg-gray-50'
-                          }`}
-                          onClick={() => {
-                            loadPost(f);
-                            setDropdownOpen(false);
-                            setSearchQuery('');
-                          }}
-                        >
-                          <span className="text-[10px] font-bold uppercase text-gray-400 mr-1">
-                            [{dir}]
-                          </span>
-                          {nameParts.join('/')}
-                        </div>
-                      );
-                    })}
-                    {!searchQuery && files.length > 8 && (
-                      <div className="px-3 py-2 text-xs text-center text-gray-400 bg-gray-50">
-                        Search to find {files.length - 8} more items
-                      </div>
-                    )}
-                    {filteredFiles.length === 0 && (
-                      <div className="px-3 py-4 text-sm text-center text-gray-400">
-                        No results found
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
+          {/* File Selector */}
+          <div className="relative" ref={dropdownRef}>
+            <div
+              className="border border-gray-300 bg-white rounded-lg px-3 py-2 font-medium text-gray-700 cursor-pointer min-w-[280px] flex justify-between items-center hover:border-gray-400 transition-colors"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            >
+              <span className="truncate mr-3 text-sm">
+                {selectedFile || 'Select a post...'}
+              </span>
+              <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
             </div>
-          </div>
 
-          {/* Action Buttons */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setShowNewModal(true)}
-              className="flex items-center gap-1.5 bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-emerald-700 transition-all shadow-sm"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 4v16m8-8H4"
+            {dropdownOpen && (
+              <div className="absolute z-20 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-xl overflow-hidden">
+                <input
+                  type="text"
+                  className="w-full px-3 py-2.5 border-b border-gray-100 outline-none text-sm placeholder-gray-400"
+                  placeholder="Search posts..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onClick={(e) => e.stopPropagation()}
+                  autoFocus
                 />
-              </svg>
-              New
-            </button>
-            <button
-              onClick={handleDelete}
-              disabled={!selectedFile}
-              className="flex items-center gap-1.5 bg-red-500 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-red-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                />
-              </svg>
-              Delete
-            </button>
-            <button
-              onClick={handleSave}
-              disabled={saving || !selectedFile}
-              className="flex items-center gap-1.5 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-sm"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
-                />
-              </svg>
-              {saving ? 'Saving...' : 'Save'}
-            </button>
+                <div className="max-h-64 overflow-y-auto">
+                  {filteredFiles.map((f) => {
+                    const [dir, ...nameParts] = f.split('/');
+                    return (
+                      <div
+                        key={f}
+                        className={`px-3 py-2.5 text-sm cursor-pointer border-b border-gray-50 last:border-0 ${
+                          selectedFile === f
+                            ? 'bg-blue-50 text-blue-700 font-semibold'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                        onClick={() => {
+                          loadPost(f);
+                          setDropdownOpen(false);
+                          setSearchQuery('');
+                        }}
+                      >
+                        <span className="text-[10px] font-bold uppercase text-gray-400 mr-2 bg-gray-100 px-1.5 py-0.5 rounded">
+                          {dir.replace('_', '')}
+                        </span>
+                        <span className="truncate">{nameParts.join('/')}</span>
+                      </div>
+                    );
+                  })}
+                  {!searchQuery && files.length > 8 && (
+                    <div className="px-3 py-2 text-xs text-center text-gray-400 bg-gray-50">
+                      Search to find {files.length - 8} more items
+                    </div>
+                  )}
+                  {filteredFiles.length === 0 && (
+                    <div className="px-3 py-4 text-sm text-center text-gray-400">
+                      No results found
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Current file badge */}
-        {selectedFile && (
-          <div className="mb-3 text-xs text-gray-400 font-mono">
-            Editing:{' '}
-            <span className="text-gray-600 font-semibold">{selectedFile}</span>
-          </div>
-        )}
-
-        {/* Editor */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-          <style
-            dangerouslySetInnerHTML={{
-              __html: `
-                .bytemd { height: calc(100vh - 240px); min-height: 500px; }
-                /* Hide the default ByteMD image button (it's usually the 13th-15th button or has aria-label="Image") */
-                button[aria-label="Image"] { display: none !important; }
-              `,
-            }}
-          />
-          <Editor
-            value={content}
-            plugins={plugins}
-            onChange={(v) => setContent(v)}
-            uploadImages={async (files) => {
-              const results = await Promise.all(
-                files.map(async (file) => {
-                  const formData = new FormData();
-                  formData.append('file', file);
-                  
-                  const res = await fetch('/api/admin/upload', {
-                    method: 'POST',
-                    body: formData,
-                  });
-                  
-                  const data = await res.json();
-                  return {
-                    url: data.url,
-                    alt: file.name,
-                  };
-                })
-              );
-              return results;
-            }}
-          />
+        {/* Action Buttons */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setShowNewModal(true)}
+            className="group flex items-center gap-2 bg-emerald-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-emerald-700 transition-all shadow-md hover:shadow-emerald-500/20 active:scale-95"
+          >
+            <Plus className="w-4 h-4 group-hover:rotate-90 transition-transform" />
+            New Post
+          </button>
+          <button
+            onClick={handleDelete}
+            disabled={!selectedFile}
+            className="flex items-center gap-2 bg-rose-500 text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-rose-600 disabled:opacity-30 disabled:grayscale transition-all shadow-md hover:shadow-rose-500/20 active:scale-95"
+          >
+            <Trash2 className="w-4 h-4" />
+            Delete
+          </button>
+          <button
+            onClick={handleSave}
+            disabled={saving || !selectedFile}
+            className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-blue-700 disabled:opacity-30 disabled:grayscale transition-all shadow-md hover:shadow-blue-500/20 active:scale-95"
+          >
+            <Save className={`w-4 h-4 ${saving ? 'animate-pulse' : ''}`} />
+            {saving ? 'Saving...' : 'Save Draft'}
+          </button>
         </div>
+      </div>
+
+      {/* Current file badge */}
+      {selectedFile && (
+        <div className="mb-4 flex items-center gap-2 text-xs text-gray-400 font-medium">
+          <FileText className="w-3.5 h-3.5" />
+          Editing:{' '}
+          <span className="text-gray-600 font-bold bg-gray-100 px-2 py-0.5 rounded-full">{selectedFile}</span>
+        </div>
+      )}
+
+      {/* Editor */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .bytemd { height: calc(100vh - 240px); min-height: 500px; }
+              /* Hide the default ByteMD image button to use our enhanced one */
+              button[aria-label="Image"], 
+              button[title="Image"],
+              button[data-tippy-content="Image"] { 
+                display: none !important; 
+              }
+            `,
+          }}
+        />
+        <Editor
+          value={content}
+          plugins={plugins}
+          onChange={(v) => setContent(v)}
+          uploadImages={async (files) => {
+            const results = await Promise.all(
+              files.map(async (file) => {
+                const formData = new FormData();
+                formData.append('file', file);
+                
+                const res = await fetch('/api/admin/upload', {
+                  method: 'POST',
+                  body: formData,
+                });
+                
+                const data = await res.json();
+                return {
+                  url: data.url,
+                  alt: file.name,
+                };
+              })
+            );
+            return results;
+          }}
+        />
       </div>
 
       {/* New Post Modal */}
       {showNewModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-6">
-            <h2 className="text-xl font-bold mb-4">Create New Post</h2>
-            <div className="mb-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-md p-4">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl w-full max-w-md overflow-hidden animate-in zoom-in-95 duration-200">
+            <div className="p-6 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center bg-gray-50/50 dark:bg-gray-800/50">
+                <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                    <Plus className="w-5 h-5 text-emerald-500" />
+                    Create New Post
+                </h2>
+                <button onClick={() => setShowNewModal(false)} className="text-gray-400 hover:text-gray-600 transition-colors">
+                    <X className="w-5 h-5" />
+                </button>
+            </div>
+            <div className="p-6">
+                <div className="mb-5">
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Folder
               </label>
@@ -465,7 +453,23 @@ const EditorPage = () => {
             </div>
           </div>
         </div>
-      )}
+      </div>
+    )}
+    </div>
+  );
+};
+
+EditorPage.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Main
+      meta={
+        <Meta
+          title="Internal Post Manager"
+          description="Local markdown editor"
+        />
+      }
+    >
+      {page}
     </Main>
   );
 };

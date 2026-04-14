@@ -26,6 +26,8 @@ type IPatchProps = {
   mdxContent: MDXRemoteSerializeResult;
 };
 
+import { ReactElement } from 'react';
+
 const PatchPost = (props: IPatchProps) => {
   useBlogCharts([props.mdxContent.compiledSource]);
 
@@ -42,14 +44,7 @@ const PatchPost = (props: IPatchProps) => {
   };
 
   return (
-    <Main
-      meta={
-        <Meta
-          title={props.patch.title}
-          description={`Patch notes for Counter-Strike 2 - Build ${props.patch.buildId}`}
-        />
-      }
-    >
+    <>
       <div className="pt-10 pb-12 mb-8 border-b border-gray-100 dark:border-gray-800">
         <div className="flex items-center gap-2 mb-4">
           <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -93,6 +88,22 @@ const PatchPost = (props: IPatchProps) => {
           Back to all patches
         </a>
       </div>
+    </>
+  );
+};
+
+PatchPost.getLayout = function getLayout(page: ReactElement) {
+  const props = page.props as IPatchProps;
+  return (
+    <Main
+      meta={
+        <Meta
+          title={props.patch.title}
+          description={`Patch notes for Counter-Strike 2 - Build ${props.patch.buildId}`}
+        />
+      }
+    >
+      {page}
     </Main>
   );
 };

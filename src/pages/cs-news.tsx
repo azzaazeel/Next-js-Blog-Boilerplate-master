@@ -11,15 +11,10 @@ export type ICSNewsProps = {
   news: any[];
 };
 
+import { ReactElement } from 'react';
+
 const CSNewsPage = ({ news }: ICSNewsProps) => (
-  <Main
-    meta={
-      <Meta 
-        title="CS2 News Feed - Kanocs" 
-        description="Market updates and official news cached locally from Steam Counter-Strike feed." 
-      />
-    }
-  >
+  <>
     <div className="mb-10">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">CS2 News Feed</h1>
       <p className="text-gray-500 dark:text-gray-400">Archived official Counter-Strike news with market impact analysis.</p>
@@ -46,8 +41,23 @@ const CSNewsPage = ({ news }: ICSNewsProps) => (
         Our system automatically scans news content for mentions of skins, cases, collections, and stickers to provide early volatility warnings for the Kanocs community.
       </p>
     </div>
-  </Main>
+  </>
 );
+
+CSNewsPage.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Main
+      meta={
+        <Meta 
+          title="CS2 News Feed - Kanocs" 
+          description="Market updates and official news cached locally from Steam Counter-Strike feed." 
+        />
+      }
+    >
+      {page}
+    </Main>
+  );
+};
 
 export const getStaticProps: GetStaticProps<ICSNewsProps> = async () => {
   const news = getAllPosts(
