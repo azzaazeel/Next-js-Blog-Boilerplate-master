@@ -38,3 +38,7 @@ local
 auth.db
 data/tradingview
 data/tradingview-other
+
+# admin paths (local only)
+src/pages/admin
+src/pages/api/admin

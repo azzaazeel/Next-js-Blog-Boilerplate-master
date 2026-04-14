@@ -109,7 +109,7 @@ PatchPost.getLayout = function getLayout(page: ReactElement) {
 };
 
 export const getStaticPaths: GetStaticPaths<IPatchUrl> = async () => {
-  const patches = getAllPatches();
+  const patches = getAllPatches(false);
 
   return {
     paths: patches.map((patch) => ({

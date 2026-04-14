@@ -139,7 +139,7 @@ const Main = (props: IMainProps) => {
 
                           {/* Management Section */}
                           <div className="py-2">
-                            <Link href="/editor" legacyBehavior>
+                            <Link href="/admin/editor" legacyBehavior>
                               <a className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 hover:text-emerald-700 dark:hover:text-emerald-400 transition-all group active:scale-[0.98]">
                                 <div className="w-9 h-9 rounded-xl bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/50 transition-all shadow-sm">
                                   <Edit3 className="w-4.5 h-4.5" />
@@ -150,7 +150,7 @@ const Main = (props: IMainProps) => {
                               </a>
                             </Link>
 
-                            <Link href="/dashboard" legacyBehavior>
+                            <Link href="/admin/dashboard" legacyBehavior>
                               <a className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-950/30 hover:text-blue-700 dark:hover:text-blue-400 transition-all group active:scale-[0.98]">
                                 <div className="w-9 h-9 rounded-xl bg-blue-50 dark:bg-blue-910/30 text-blue-600 dark:text-blue-400 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-920/50 transition-all shadow-sm">
                                   <LayoutDashboard className="w-4.5 h-4.5" />
@@ -236,7 +236,7 @@ const Main = (props: IMainProps) => {
                   <>
                     <div className="h-px bg-gray-100 dark:bg-gray-800 my-2" />
                     <li>
-                      <Link href="/editor" legacyBehavior>
+                      <Link href="/admin/editor" legacyBehavior>
                         <a className="flex items-center gap-3 py-2 text-base font-bold text-emerald-600" onClick={() => setIsMenuOpen(false)}>
                           <Edit3 className="w-5 h-5" />
                           Editor
@@ -244,7 +244,7 @@ const Main = (props: IMainProps) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/dashboard" legacyBehavior>
+                      <Link href="/admin/dashboard" legacyBehavior>
                         <a className="flex items-center gap-3 py-2 text-base font-bold text-blue-600" onClick={() => setIsMenuOpen(false)}>
                           <LayoutDashboard className="w-5 h-5" />
                           Dashboard

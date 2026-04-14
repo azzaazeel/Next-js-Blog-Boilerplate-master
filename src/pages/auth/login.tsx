@@ -19,7 +19,7 @@ const LoginPage = () => {
   // Redirect if already logged in
   React.useEffect(() => {
     if (session) {
-      router.replace('/dashboard');
+      router.replace('/admin/dashboard');
     }
   }, [session, router]);
 
@@ -61,7 +61,7 @@ const LoginPage = () => {
     if (signUpError) {
       setError(signUpError.message || 'Invalid credentials');
     } else {
-      router.push('/dashboard');
+      router.push('/admin/dashboard');
     }
   };
 

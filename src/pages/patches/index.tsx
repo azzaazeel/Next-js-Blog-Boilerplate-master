@@ -144,7 +144,7 @@ PatchesPage.getLayout = function getLayout(page: ReactElement) {
 };
 
 export const getStaticProps: GetStaticProps<IPatchesPageProps> = async () => {
-  const allPatches = getAllPatches();
+  const allPatches = getAllPatches(false);
   
   return {
     props: {

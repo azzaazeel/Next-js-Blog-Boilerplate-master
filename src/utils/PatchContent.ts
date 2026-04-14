@@ -30,7 +30,7 @@ const buildFileMap = (dir: string, map: Map<string, string> = new Map()) => {
   return map;
 };
 
-export function getAllPatches(): PatchItem[] {
+export function getAllPatches(includeContent: boolean = true): PatchItem[] {
   if (!fs.existsSync(patchesIndexFile)) return [];
 
   const indexContent = fs.readFileSync(patchesIndexFile, 'utf8');
@@ -60,14 +60,21 @@ export function getAllPatches(): PatchItem[] {
     const contentPath = fileMap.get(`${buildId}.md`);
     
     if (contentPath) {
-      const content = fs.readFileSync(contentPath, 'utf8');
+      const content = includeContent ? fs.readFileSync(contentPath, 'utf8') : '';
       
-      const description = content
-        .replace(/#+\s+.*?\n/g, '') // Remove headings
-        .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Simplify links
-        .replace(/\n\s*\n/g, ' ') // Consolidate paragraphs
-        .trim()
-        .substring(0, 160) + '...';
+      const description = includeContent 
+        ? content
+          .replace(/#+\s+.*?\n/g, '') // Remove headings
+          .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Simplify links
+          .replace(/\n\s*\n/g, ' ') // Consolidate paragraphs
+          .trim()
+          .substring(0, 160) + '...'
+        : fs.readFileSync(contentPath, 'utf8')
+          .replace(/#+\s+.*?\n/g, '')
+          .replace(/\[(.*?)\]\(.*?\)/g, '$1')
+          .replace(/\n\s*\n/g, ' ')
+          .trim()
+          .substring(0, 160) + '...';
 
       patches.push({
         date: date || '',
