@@ -12,8 +12,8 @@ export type PatchItem = {
   description: string;
 };
 
-const patchesIndexFile = join(process.cwd(), 'reportings', 'Steamdb-730.md');
-const patchesDirectory = join(process.cwd(), 'reportings', 'steamdb');
+const patchesIndexFile = join(/* turbopackIgnore: true */ process.cwd(), 'reportings', 'Steamdb-730.md');
+const patchesDirectory = join(/* turbopackIgnore: true */ process.cwd(), 'reportings', 'steamdb');
 
 // Pre-build a map of all files in the steamdb directory to avoid recursive searching
 const buildFileMap = (dir: string, map: Map<string, string> = new Map()) => {

@@ -8,7 +8,7 @@ export type PostItems = {
 };
 
 export function getPostSlugs(directory = '_articles') {
-  const postsDirectory = join(process.cwd(), directory);
+  const postsDirectory = join(/* turbopackIgnore: true */ process.cwd(), directory);
   if (!fs.existsSync(postsDirectory)) return [];
   return fs.readdirSync(postsDirectory);
 }
@@ -18,7 +18,7 @@ export function getPostBySlug(
   fields: string[] = [],
   directory = '_articles'
 ) {
-  const postsDirectory = join(process.cwd(), directory);
+  const postsDirectory = join(/* turbopackIgnore: true */ process.cwd(), directory);
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   if (!fs.existsSync(fullPath)) return {};
