@@ -4,6 +4,13 @@ function run() {
   try {
     console.log('🚀 Starting VPS Deployment...');
     
+    console.log('🧹 Cleaning up local changes on VPS...');
+    try {
+      execSync('git checkout package-lock.json', { stdio: 'inherit' });
+    } catch (e) {
+      console.log('⚠️ No package-lock.json changes to clean or checkout failed.');
+    }
+
     console.log('📥 Pulling latest code from GitHub...');
     execSync('git pull origin main', { stdio: 'inherit' });
     
