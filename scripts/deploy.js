@@ -14,6 +14,9 @@ function run() {
     console.log('📥 Pulling latest code from GitHub...');
     execSync('git pull origin main', { stdio: 'inherit' });
     
+    console.log('📦 Installing dependencies...');
+    execSync('npm install --legacy-peer-deps', { stdio: 'inherit' });
+
     console.log('🏗️ Rebuilding project (this may take a minute)...');
     // We use npm run redeploy which is already defined as 'npm run build'
     execSync('npm run redeploy', { stdio: 'inherit' });
