@@ -6,9 +6,9 @@ function run() {
     
     console.log('🧹 Cleaning up local changes on VPS...');
     try {
-      execSync('git checkout package-lock.json', { stdio: 'inherit' });
+      execSync('git checkout next-env.d.ts package-lock.json', { stdio: 'inherit' });
     } catch (e) {
-      console.log('⚠️ No package-lock.json changes to clean or checkout failed.');
+      console.log('⚠️ Cleanup failed or files were already clean.');
     }
 
     console.log('📥 Pulling latest code from GitHub...');
