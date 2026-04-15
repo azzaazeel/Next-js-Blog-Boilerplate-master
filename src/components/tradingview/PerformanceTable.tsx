@@ -101,7 +101,7 @@ const PerformanceTable: React.FC<PerformanceTableProps> = ({ performanceData, se
     <div 
       ref={tableRef}
       id="performance-table-container"
-      className="bg-[#1a1d26] border border-gray-800 rounded-3xl p-8 shadow-2xl overflow-hidden relative group"
+      className="bg-[#1a1d26] border border-gray-800 rounded-3xl p-8 shadow-2xl overflow-hidden relative group my-2"
     >
       <div className="absolute inset-0 pointer-events-none opacity-50" style={{ backgroundImage: 'linear-gradient(to bottom right, rgba(16, 185, 129, 0.05), transparent)' }}></div>
       

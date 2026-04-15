@@ -37,19 +37,48 @@ function calculateYearlyPerformance(jsonData) {
   });
 }
 
-function processData() {
-  const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
+function getFilesRecursive(dir) {
+  let results = [];
+  const list = fs.readdirSync(dir, { withFileTypes: true });
+  for (const item of list) {
+    const res = path.resolve(dir, item.name);
+    if (item.isDirectory()) {
+      results = results.concat(getFilesRecursive(res));
+    } else if (item.isFile() && item.name.endsWith('.json')) {
+      results.push({ fullPath: res, filename: item.name });
+    }
+  }
+  return results;
+}
 
-  files.forEach(file => {
+function processData() {
+  const args = process.argv.slice(2);
+  const categoryArg = args.find(a => a.startsWith('--category='));
+  const category = categoryArg ? categoryArg.split('=')[1] : null;
+
+  let filesToProcess = [];
+  if (category) {
+    const categoryDir = path.join(DATA_DIR, category);
+    if (fs.existsSync(categoryDir)) {
+      console.log(`Filtering by category: ${category}`);
+      filesToProcess = getFilesRecursive(categoryDir);
+    } else {
+      console.error(`Category directory not found: ${category}`);
+      return;
+    }
+  } else {
+    filesToProcess = getFilesRecursive(DATA_DIR);
+  }
+
+  filesToProcess.forEach(({ fullPath, filename }) => {
     // Bỏ qua các file copy hoặc tạm
-    if (file.toLowerCase().includes('copy')) {
-      console.log(`Skipping copy file: ${file}`);
+    if (filename.toLowerCase().includes('copy')) {
+      console.log(`Skipping copy file: ${filename}`);
       return;
     }
 
     try {
-      const inputPath = path.join(DATA_DIR, file);
-      const content = fs.readFileSync(inputPath, 'utf8');
+      const content = fs.readFileSync(fullPath, 'utf8');
       const jsonData = JSON.parse(content);
       
       if (!Array.isArray(jsonData)) return;
@@ -64,13 +93,13 @@ function processData() {
       const performance = calculateYearlyPerformance(jsonData);
       
       // Chuẩn hóa tên file đầu ra: Loại bỏ khoảng trắng thừa nếu có
-      const outputFilename = file.replace('.json', '_performance.json');
+      const outputFilename = filename.replace('.json', '_performance.json');
       const outputPath = path.join(OUTPUT_DIR, outputFilename);
 
       fs.writeFileSync(outputPath, JSON.stringify(performance, null, 2));
-      console.log(`Generated performance for ${file} (Converted to USD)`);
+      console.log(`Generated performance for ${filename} (Converted to USD)`);
     } catch (err) {
-      console.error(`Error processing ${file}:`, err.message);
+      console.error(`Error processing ${filename}:`, err.message);
     }
   });
 }

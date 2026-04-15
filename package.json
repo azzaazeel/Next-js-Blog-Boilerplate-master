@@ -4,9 +4,9 @@
   "scripts": {
     "dev": "next dev",
     "generate-performance": "node scripts/generate-performance-json.js",
+    "build-next": "next build",
     "build": "npm run generate-performance && next build",
-    "start": "next start",
-    "redeploy": "npm run build",
+    "redeploy": "node scripts/redeploy.js",
     "sync": "node scripts/sync.js",
     "vps-update": "node scripts/deploy.js",
     "build-stats": "cross-env ANALYZE=true npm run build",

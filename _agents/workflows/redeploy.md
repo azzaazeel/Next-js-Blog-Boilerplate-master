@@ -9,17 +9,18 @@ Workflow này giúp bạn cập nhật toàn bộ dữ liệu thống kê Yearly
 1.  **Cập nhật dữ liệu thô**: Đảm bảo các file JSON mới đã được đưa vào thư mục `data/json/`.
 2.  **Chạy quy trình tái triển khai (Redeploy)**:
     - Mở terminal tại thư mục gốc của dự án.
-    - Chạy lệnh tích hợp:
+    - **Triển khai toàn bộ**:
     ```bash
     npm run redeploy
     ```
+    - **Triển khai theo danh mục cụ thể (Ví dụ: Agents)**:
+    ```bash
+    npm run redeploy -- --category=Agents
+    ```
     - Lệnh này sẽ thực hiện chuỗi hành động:
-        - `node scripts/generate-performance-json.js`: Tính toán lại bảng hiệu năng cho mọi datasource.
+        - `node scripts/generate-performance-json.js`: Tính toán lại bảng hiệu năng (cho tất cả hoặc theo category).
         - `next build`: Build lại toàn bộ website với dữ liệu mới.
 
-3.  **Kiểm tra kết quả**:
-    - Truy cập trang `/tradingview` để kiểm tra bảng **Yearly Performance Table** đã cập nhật dữ liệu mới nhất chưa.
-    - Kiểm tra các biểu đồ trên trang chủ và các bài viết Insight.
 
 // turbo-all
 // Nếu bạn muốn mình tự động thực hiện quy trình này, hãy gọi lệnh:
