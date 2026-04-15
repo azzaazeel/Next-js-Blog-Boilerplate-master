@@ -18,8 +18,8 @@ function run() {
     execSync('npm install --legacy-peer-deps', { stdio: 'inherit' });
 
     console.log('🏗️ Rebuilding project (this may take a minute)...');
-    // We use npm run redeploy which is already defined as 'npm run build'
-    execSync('npm run redeploy', { stdio: 'inherit' });
+    // We skip 'npm run redeploy' on server as it's for local only
+    execSync('npm run build-next', { stdio: 'inherit' });
     
     console.log('🔄 Restarting PM2 processes...');
     try {

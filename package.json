@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
+    "start": "next start",
     "generate-performance": "node scripts/generate-performance-json.js",
     "build-next": "next build",
     "build": "npm run generate-performance && next build",
