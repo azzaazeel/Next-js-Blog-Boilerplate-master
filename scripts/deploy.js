@@ -19,7 +19,7 @@ function run() {
 
     console.log('🏗️ Rebuilding project (this may take a minute)...');
     // We skip 'npm run redeploy' on server as it's for local only
-    execSync('npm run build-next', { stdio: 'inherit' });
+    execSync('npm run build-next', { stdio: 'inherit', env: { ...process.env, IS_VPS: 'true' } });
     
     console.log('🔄 Restarting PM2 processes...');
     try {

@@ -7,17 +7,24 @@ const category = categoryArg ? categoryArg.split('=')[1] : null;
 
 console.log('--- Starting Redeploy Process ---');
 
+// Check if running on VPS (Linux + path check or explicit env var)
+const isVPS = process.env.IS_VPS === 'true' || (process.platform === 'linux' && process.cwd().includes('kanocs.com'));
+
 // 1. Generate Performance Data
-console.log('Step 1: Generating performance data...');
-const genArgs = ['scripts/generate-performance-json.js'];
+if (isVPS) {
+  console.log('Step 1: [SKIPPED] Performance generation is skipped on VPS.');
+} else {
+  console.log('Step 1: Generating performance data...');
+  const genArgs = ['scripts/generate-performance-json.js'];
 if (category) {
   genArgs.push(`--category=${category}`);
 }
 
-const genResult = spawnSync('node', genArgs, { stdio: 'inherit', shell: true });
-if (genResult.status !== 0) {
-  console.error('Performance generation failed.');
-  process.exit(1);
+  const genResult = spawnSync('node', genArgs, { stdio: 'inherit', shell: true });
+  if (genResult.status !== 0) {
+    console.error('Performance generation failed.');
+    process.exit(1);
+  }
 }
 
 // 2. Build Next.js

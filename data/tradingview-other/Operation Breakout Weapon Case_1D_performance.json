@@ -2,105 +2,105 @@
   {
     "year": 2014,
     "startDate": "Jul 02 2014",
-    "startPrice": 4.212166666666667,
+    "startPrice": 4.214388888888889,
     "endDate": "Dec 31 2014",
-    "endPrice": 0.24034555555555556,
-    "return": -94.29401601181763
+    "endPrice": 0.24047222222222223,
+    "return": -94.29401916713903
   },
   {
     "year": 2015,
     "startDate": "Jan 01 2015",
-    "startPrice": 0.24820851851851852,
+    "startPrice": 0.24833962962962963,
     "endDate": "Dec 31 2015",
-    "endPrice": 0.02533,
-    "return": -89.79487080008893
+    "endPrice": 0.025343333333333332,
+    "return": -89.79488961502841
   },
   {
     "year": 2016,
     "startDate": "Jan 01 2016",
-    "startPrice": 0.024695555555555554,
+    "startPrice": 0.02470851851851852,
     "endDate": "Dec 31 2016",
-    "endPrice": 0.011114074074074073,
-    "return": -54.995650739374305
+    "endPrice": 0.01112,
+    "return": -54.995278281594295
   },
   {
     "year": 2017,
     "startDate": "Jan 01 2017",
-    "startPrice": 0.006928518518518518,
+    "startPrice": 0.0069322222222222216,
     "endDate": "Dec 31 2017",
-    "endPrice": 0.01227074074074074,
-    "return": 77.10482707008073
+    "endPrice": 0.012277407407407407,
+    "return": 77.10637388470376
   },
   {
     "year": 2018,
     "startDate": "Jan 01 2018",
-    "startPrice": 0.011221111111111112,
+    "startPrice": 0.011227037037037037,
     "endDate": "Dec 31 2018",
-    "endPrice": 0.02072074074074074,
-    "return": 84.6585470508631
+    "endPrice": 0.020731851851851852,
+    "return": 84.66004684458814
   },
   {
     "year": 2019,
     "startDate": "Jan 01 2019",
-    "startPrice": 0.023867777777777776,
+    "startPrice": 0.02388037037037037,
     "endDate": "Dec 31 2019",
-    "endPrice": 0.2921574074074074,
-    "return": 1124.0662290706516
+    "endPrice": 0.29231148148148145,
+    "return": 1124.0659459962465
   },
   {
     "year": 2020,
     "startDate": "Jan 01 2020",
-    "startPrice": 0.298457037037037,
+    "startPrice": 0.29861481481481483,
     "endDate": "Dec 31 2020",
-    "endPrice": 0.9619,
-    "return": 222.29094329601384
+    "endPrice": 0.9624074074074074,
+    "return": 222.29057624091476
   },
   {
     "year": 2021,
     "startDate": "Jan 01 2021",
-    "startPrice": 0.9830492592592593,
+    "startPrice": 0.9835677777777778,
     "endDate": "Dec 31 2021",
-    "endPrice": 2.3667362962962963,
-    "return": 140.75459840940866
+    "endPrice": 2.3679848148148146,
+    "return": 140.7546148131161
   },
   {
     "year": 2022,
     "startDate": "Jan 01 2022",
-    "startPrice": 2.4333370370370373,
+    "startPrice": 2.4346211111111113,
     "endDate": "Dec 31 2022",
-    "endPrice": 3.8582366666666665,
-    "return": 58.55742989736695
+    "endPrice": 3.8602718518518517,
+    "return": 58.55739664107745
   },
   {
     "year": 2023,
     "startDate": "Jan 01 2023",
-    "startPrice": 3.8361185185185183,
+    "startPrice": 3.838142222222222,
     "endDate": "Dec 31 2023",
-    "endPrice": 6.298622222222222,
-    "return": 64.19258664236227
+    "endPrice": 6.301945185185184,
+    "return": 64.19259163190833
   },
   {
     "year": 2024,
     "startDate": "Jan 01 2024",
-    "startPrice": 6.251654444444445,
+    "startPrice": 6.254952592592593,
     "endDate": "Dec 31 2024",
-    "endPrice": 7.914357777777778,
-    "return": 26.59621302023339
+    "endPrice": 7.9185329629629635,
+    "return": 26.596210694553623
   },
   {
     "year": 2025,
     "startDate": "Jan 01 2025",
-    "startPrice": 8.049131851851852,
+    "startPrice": 8.05337851851852,
     "endDate": "Dec 31 2025",
-    "endPrice": 12.08619111111111,
-    "return": 50.15521342628346
+    "endPrice": 12.092567037037037,
+    "return": 50.1552051630321
   },
   {
     "year": 2026,
     "startDate": "Jan 01 2026",
-    "startPrice": 11.938037037037038,
-    "endDate": "Apr 15 2026",
-    "endPrice": 12.964600370370372,
-    "return": 8.599096569632705
+    "startPrice": 11.944335555555556,
+    "endDate": "Apr 18 2026",
+    "endPrice": 12.972244814814815,
+    "return": 8.605830391135964
   }
 ]

@@ -2,105 +2,105 @@
   {
     "year": 2014,
     "startDate": "Feb 21 2014",
-    "startPrice": 6.6335444444444445,
+    "startPrice": 6.637044074074074,
     "endDate": "Dec 31 2014",
-    "endPrice": 0.33635185185185185,
-    "return": -94.92953043928809
+    "endPrice": 0.3365292592592593,
+    "return": -94.92953104569811
   },
   {
     "year": 2015,
     "startDate": "Jan 01 2015",
-    "startPrice": 0.3491337037037037,
+    "startPrice": 0.3493177777777778,
     "endDate": "Dec 31 2015",
-    "endPrice": 0.05390962962962963,
-    "return": -84.55903023462305
+    "endPrice": 0.053938148148148145,
+    "return": -84.55900283939701
   },
   {
     "year": 2016,
     "startDate": "Jan 01 2016",
-    "startPrice": 0.05049222222222222,
+    "startPrice": 0.05051888888888889,
     "endDate": "Dec 31 2016",
-    "endPrice": 0.04559222222222222,
-    "return": -9.704464934093263
+    "endPrice": 0.0456162962962963,
+    "return": -9.704474307373108
   },
   {
     "year": 2017,
     "startDate": "Jan 01 2017",
-    "startPrice": 0.04497629629629629,
+    "startPrice": 0.045,
     "endDate": "Dec 31 2017",
-    "endPrice": 0.03841074074074074,
-    "return": -14.597812839685098
+    "endPrice": 0.038430740740740744,
+    "return": -14.59835390946501
   },
   {
     "year": 2018,
     "startDate": "Jan 01 2018",
-    "startPrice": 0.03974777777777778,
+    "startPrice": 0.03976888888888889,
     "endDate": "Dec 31 2018",
-    "endPrice": 0.052518888888888886,
-    "return": 32.130377659128385
+    "endPrice": 0.052546666666666665,
+    "return": 32.13008493518104
   },
   {
     "year": 2019,
     "startDate": "Jan 01 2019",
-    "startPrice": 0.054277407407407406,
+    "startPrice": 0.054305925925925924,
     "endDate": "Dec 31 2019",
-    "endPrice": 0.29223074074074074,
-    "return": 438.4021726521505
+    "endPrice": 0.2923848148148148,
+    "return": 438.4031481456222
   },
   {
     "year": 2020,
     "startDate": "Jan 01 2020",
-    "startPrice": 0.3004514814814815,
+    "startPrice": 0.3006096296296296,
     "endDate": "Dec 31 2020",
-    "endPrice": 0.5660962962962963,
-    "return": 88.41521216835405
+    "endPrice": 0.5663948148148148,
+    "return": 88.415392917602
   },
   {
     "year": 2021,
     "startDate": "Jan 01 2021",
-    "startPrice": 0.5668388888888889,
+    "startPrice": 0.5671377777777777,
     "endDate": "Dec 31 2021",
-    "endPrice": 1.0026522222222223,
-    "return": 76.88486832433281
+    "endPrice": 1.003181111111111,
+    "return": 76.88490353118192
   },
   {
     "year": 2022,
     "startDate": "Jan 01 2022",
-    "startPrice": 1.0010292592592593,
+    "startPrice": 1.0015574074074074,
     "endDate": "Dec 31 2022",
-    "endPrice": 1.4624907407407408,
-    "return": 46.098700633681105
+    "endPrice": 1.4632622222222222,
+    "return": 46.09868704480615
   },
   {
     "year": 2023,
     "startDate": "Jan 01 2023",
-    "startPrice": 1.451982222222222,
+    "startPrice": 1.4527481481481481,
     "endDate": "Dec 31 2023",
-    "endPrice": 3.1902677777777777,
-    "return": 119.71810184391607
+    "endPrice": 3.1919507407407406,
+    "return": 119.71810769881859
   },
   {
     "year": 2024,
     "startDate": "Jan 01 2024",
-    "startPrice": 3.18131962962963,
+    "startPrice": 3.182998148148148,
     "endDate": "Dec 31 2024",
-    "endPrice": 4.615558888888889,
-    "return": 45.08315498704647
+    "endPrice": 4.617994074074074,
+    "return": 45.08315302542038
   },
   {
     "year": 2025,
     "startDate": "Jan 01 2025",
-    "startPrice": 4.6222755555555555,
+    "startPrice": 4.624713703703704,
     "endDate": "Dec 31 2025",
-    "endPrice": 5.647097777777779,
-    "return": 22.17137879178319
+    "endPrice": 5.650077407407407,
+    "return": 22.171398477759606
   },
   {
     "year": 2026,
     "startDate": "Jan 01 2026",
-    "startPrice": 5.641755185185185,
-    "endDate": "Apr 15 2026",
-    "endPrice": 6.3421696296296295,
-    "return": 12.414832289846228
+    "startPrice": 5.644732222222222,
+    "endDate": "Apr 18 2026",
+    "endPrice": 6.4757011111111105,
+    "return": 14.721139217508385
   }
 ]

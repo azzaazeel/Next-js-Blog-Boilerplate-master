@@ -2,105 +2,105 @@
   {
     "year": 2014,
     "startDate": "Nov 12 2014",
-    "startPrice": 1.067852962962963,
+    "startPrice": 1.0684162962962964,
     "endDate": "Dec 31 2014",
-    "endPrice": 0.07994888888888889,
-    "return": -92.51311822303182
+    "endPrice": 0.07999111111111112,
+    "return": -92.51311390621771
   },
   {
     "year": 2015,
     "startDate": "Jan 01 2015",
-    "startPrice": 0.08288333333333334,
+    "startPrice": 0.08292703703703705,
     "endDate": "Dec 31 2015",
-    "endPrice": 0.14381777777777777,
-    "return": 73.51833232790399
+    "endPrice": 0.14389370370370372,
+    "return": 73.518443254445
   },
   {
     "year": 2016,
     "startDate": "Jan 01 2016",
-    "startPrice": 0.16462370370370372,
+    "startPrice": 0.16471037037037037,
     "endDate": "Dec 31 2016",
-    "endPrice": 0.17108888888888887,
-    "return": 3.927250474707734
+    "endPrice": 0.17117925925925925,
+    "return": 3.9274326651945706
   },
   {
     "year": 2017,
     "startDate": "Jan 01 2017",
-    "startPrice": 0.17966555555555558,
+    "startPrice": 0.17976037037037035,
     "endDate": "Dec 31 2017",
-    "endPrice": 0.08611777777777777,
-    "return": -52.067730783740174
+    "endPrice": 0.08616333333333333,
+    "return": -52.06767033478725
   },
   {
     "year": 2018,
     "startDate": "Jan 01 2018",
-    "startPrice": 0.08200925925925925,
+    "startPrice": 0.0820525925925926,
     "endDate": "Dec 31 2018",
-    "endPrice": 0.09141703703703705,
-    "return": 11.471604380715837
+    "endPrice": 0.09146518518518518,
+    "return": 11.471413998248629
   },
   {
     "year": 2019,
     "startDate": "Jan 01 2019",
-    "startPrice": 0.0935951851851852,
+    "startPrice": 0.09364444444444445,
     "endDate": "Dec 31 2019",
-    "endPrice": 0.22389814814814815,
-    "return": 139.21972877680474
+    "endPrice": 0.22401629629629627,
+    "return": 139.22006011707003
   },
   {
     "year": 2020,
     "startDate": "Jan 01 2020",
-    "startPrice": 0.22418962962962963,
+    "startPrice": 0.2243077777777778,
     "endDate": "Dec 31 2020",
-    "endPrice": 0.45602592592592595,
-    "return": 103.41080302389511
+    "endPrice": 0.4562666666666667,
+    "return": 103.41098787875787
   },
   {
     "year": 2021,
     "startDate": "Jan 01 2021",
-    "startPrice": 0.45862592592592594,
+    "startPrice": 0.45886777777777776,
     "endDate": "Dec 31 2021",
-    "endPrice": 0.68869,
-    "return": 50.16377423705271
+    "endPrice": 0.6890533333333333,
+    "return": 50.163808988791246
   },
   {
     "year": 2022,
     "startDate": "Jan 01 2022",
-    "startPrice": 0.6988381481481482,
+    "startPrice": 0.699207037037037,
     "endDate": "Dec 31 2022",
-    "endPrice": 1.0328048148148148,
-    "return": 47.78884317515368
+    "endPrice": 1.0333496296296296,
+    "return": 47.788791429868446
   },
   {
     "year": 2023,
     "startDate": "Jan 01 2023",
-    "startPrice": 1.0408844444444445,
+    "startPrice": 1.0414337037037036,
     "endDate": "Dec 31 2023",
-    "endPrice": 2.9980800000000003,
-    "return": 188.03197280944838
+    "endPrice": 2.999661851851852,
+    "return": 188.03195452422963
   },
   {
     "year": 2024,
     "startDate": "Jan 01 2024",
-    "startPrice": 3.0331307407407406,
+    "startPrice": 3.0347307407407405,
     "endDate": "Dec 31 2024",
-    "endPrice": 3.4666977777777777,
-    "return": 14.294373506997355
+    "endPrice": 3.468527037037037,
+    "return": 14.294391606894658
   },
   {
     "year": 2025,
     "startDate": "Jan 01 2025",
-    "startPrice": 3.4366596296296295,
+    "startPrice": 3.438472962962963,
     "endDate": "Dec 31 2025",
-    "endPrice": 5.856191481481482,
-    "return": 70.40359280830516
+    "endPrice": 5.85928074074074,
+    "return": 70.40357169747075
   },
   {
     "year": 2026,
     "startDate": "Jan 01 2026",
-    "startPrice": 5.866718888888889,
-    "endDate": "Apr 15 2026",
-    "endPrice": 8.606766296296296,
-    "return": 46.704937790642134
+    "startPrice": 5.869813703703704,
+    "endDate": "Apr 18 2026",
+    "endPrice": 8.794065925925926,
+    "return": 49.81848436479497
   }
 ]
