@@ -184,10 +184,10 @@ const PerformanceTable: React.FC<PerformanceTableProps> = ({ performanceData, se
                 <td className="px-4 py-4 text-gray-500 text-xs">{row.startDate}</td>
                 <td className="px-4 py-4 text-gray-500 text-xs">{row.endDate}</td>
                 <td className="px-4 py-4 text-right font-mono text-gray-400 group-hover:text-gray-200">
-                  {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(row.startPrice)}
+                  {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(row.startPrice)}
                 </td>
                 <td className="px-4 py-4 text-right font-mono text-gray-400 group-hover:text-gray-200">
-                  {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(row.endPrice)}
+                  {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(row.endPrice)}
                 </td>
                 <td 
                   className="px-4 py-4 text-center font-bold font-mono text-xl"

@@ -83,10 +83,10 @@ function processData() {
       
       if (!Array.isArray(jsonData)) return;
 
-      // Chuyển đổi VND sang USD (tỉ giá 27000) trước khi xử lý
+      // Chuyển đổi VND sang USD (tỉ giá 26500) trước khi xử lý
       jsonData.forEach(item => {
         if (item.price) {
-          item.price = item.price / 27000;
+          item.price = item.price / 26500;
         }
       });
 

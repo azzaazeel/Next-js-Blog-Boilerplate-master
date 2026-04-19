@@ -30,3 +30,7 @@
 ### 5. Hệ màu thiết kế
 - **Màu chính (Primary)**: `#45AAF2` (Dành cho Branding, Tiêu đề).
 - **Màu phụ (Secondary)**: `#F7B731` (Dành cho khối lượng và điểm nhấn dữ liệu).
+
+### 6. Trải nghiệm người dùng (UX) & Độ ổn định layout
+- **Chống giật khung (Avoid Layout Shift)**: Luôn sử dụng **Skeleton Loading** hoặc khung container có chiều cao cố định cho các thành phần chứa dữ liệu động (bảng, biểu đồ) để tránh việc giao diện bị nhảy khi dữ liệu đang tải.
+- **An toàn Hydration**: Khi sử dụng dữ liệu từ phía máy khách (`localStorage`, `window`), phải sử dụng trạng thái `mounted`. Tuyệt đối tránh việc thay đổi cấu trúc UI (như ẩn/hiện cột) ngay lập tức khi trang vừa load để tránh hiện tượng "lóe" hoặc nhảy khung hình.

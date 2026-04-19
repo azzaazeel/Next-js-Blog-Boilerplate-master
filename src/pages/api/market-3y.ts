@@ -24,6 +24,12 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     let data = JSON.parse(fileContent);
 
     if (Array.isArray(data)) {
+      // Chuyển đổi VND sang USD (tỉ giá 26500)
+      data.forEach((item: any) => {
+        if (item.price) {
+          item.price = item.price / 26500;
+        }
+      });
       // 3 years = 1095 days approximately
       const dailyData = data.slice(-1095);
       // Filter to get weekly data points (every 7th day)

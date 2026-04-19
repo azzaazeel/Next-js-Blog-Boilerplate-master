@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Chart from 'chart.js/auto';
+import { AppConfig } from './AppConfig';
 
 export function useBlogCharts(deps: any[]) {
   useEffect(() => {
@@ -182,7 +183,7 @@ export function useBlogCharts(deps: any[]) {
             const chartPoints = labels.map((date) => {
               const price = dateToPrice.get(date);
               if (price === undefined) return null;
-              
+
               if (chartMode === 'percent' && firstAvailablePrice !== 0) {
                 return ((price - firstAvailablePrice) / firstAvailablePrice) * 100;
               }
@@ -584,7 +585,7 @@ export function useBlogCharts(deps: any[]) {
                           const val = Number(value);
                           if (val >= 1000000) return '$' + (val/1000000).toFixed(1) + 'M';
                           if (val >= 1000) return '$' + (val/1000).toFixed(0) + 'K';
-                          return '$' + val.toLocaleString();
+                          return '$' + Math.round(val).toLocaleString();
                         }
                     }
                 },
@@ -683,9 +684,9 @@ export function useBlogCharts(deps: any[]) {
                       if (label) label += ': ';
                       if (context.parsed.y !== null) {
                         if (chartMode === 'percent') {
-                          label += (context.parsed.y >= 0 ? '+' : '') + context.parsed.y.toFixed(2) + '%';
+                          label += (context.parsed.y >= 0 ? '+' : '') + context.parsed.y.toFixed(0) + '%';
                         } else {
-                          label += '$' + context.parsed.y.toLocaleString(undefined, { minimumFractionDigits: 2 });
+                          label += '$' + context.parsed.y.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                         }
                       }
                       return label;

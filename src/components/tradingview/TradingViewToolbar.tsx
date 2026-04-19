@@ -45,7 +45,8 @@ const TradingViewToolbar: React.FC<any> = ({
   items, watchlist, toggleWatchlist,
   selectedItem, handleItemSelect,
   resolution, setResolution, currentItem,
-  range, setRange, selectedYear
+  range, setRange, selectedYear,
+  className
 }) => {
   const benchmarkItems = items.filter(i => i.isBenchmark);
   const filteredItems = items.filter(i => 
@@ -54,7 +55,7 @@ const TradingViewToolbar: React.FC<any> = ({
   );
 
   return (
-    <div className="flex flex-wrap items-end gap-6">
+    <div className={`flex flex-wrap items-end gap-6 ${className || ''}`}>
       {/* 1. Category */}
       <div className="relative w-full md:w-56" ref={dropdownCategoryRef}>
         <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1">Category</label>

@@ -4,6 +4,20 @@ function run() {
   try {
     console.log('🚀 Starting VPS Deployment...');
     
+    console.log('🔍 Checking for updates from GitHub...');
+    execSync('git fetch origin main', { stdio: 'inherit' });
+    
+    const localCommit = execSync('git rev-parse HEAD').toString().trim();
+    const remoteCommit = execSync('git rev-parse origin/main').toString().trim();
+
+    if (localCommit === remoteCommit) {
+      console.log('✅ Already up to date. No new changes found on GitHub.');
+      console.log('🛑 Stopping deployment.');
+      return;
+    }
+
+    console.log('🚀 New updates found! Proceeding with deployment...');
+
     console.log('🧹 Cleaning up local changes on VPS...');
     try {
       execSync('git checkout next-env.d.ts package-lock.json', { stdio: 'inherit' });

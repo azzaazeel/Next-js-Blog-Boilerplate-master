@@ -25,6 +25,12 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     let data = JSON.parse(fileContent);
 
     if (Array.isArray(data)) {
+      // Chuyển đổi VND sang USD (tỉ giá 26500)
+      data.forEach((item: any) => {
+        if (item.price) {
+          item.price = item.price / 26500;
+        }
+      });
       if (req.query.year) {
         const yearStr = String(req.query.year);
         data = data.filter((d: any) => d.date.includes(yearStr));

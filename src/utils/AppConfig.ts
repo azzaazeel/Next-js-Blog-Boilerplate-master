@@ -6,4 +6,5 @@ export const AppConfig = {
   locale: 'en',
   author: 'Kanocs',
   pagination_size: 5,
+  exchange_rate: 26500,
 };

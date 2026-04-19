@@ -24,3 +24,6 @@
 - **Colors**:
   - **Primary**: `#45AAF2` (Headings, Branding).
   - **Secondary/Volume**: `#F7B731` (Market data highlights, Volume histograms).
+- **UX & Layout Stability**:
+  - **Avoid Layout Shift (CLS)**: Always use **Skeleton Loading** patterns or fixed-height containers for components with dynamic data (like tables or charts) to prevent vertical jumping during data fetching.
+  - **Hydration Safety**: When using client-side data (e.g., `localStorage`, `window`), implement a `mounted` state check. Prevent "flashing" or layout jumps by ensuring the UI doesn't suddenly change structure (like hiding/showing columns) immediately after hydration.

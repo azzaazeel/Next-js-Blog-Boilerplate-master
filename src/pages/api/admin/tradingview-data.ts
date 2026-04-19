@@ -32,10 +32,10 @@ export default async function handler(
     let data = JSON.parse(fileContent);
     
     if (Array.isArray(data)) {
-      // Chuyển đổi VND sang USD (tỉ giá 27000)
+      // Chuyển đổi VND sang USD (tỉ giá 26500)
       data.forEach((item: any) => {
         if (item.price) {
-          item.price = item.price / 27000;
+          item.price = item.price / 26500;
         }
       });
     }
