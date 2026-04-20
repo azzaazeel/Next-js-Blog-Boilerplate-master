@@ -2,65 +2,65 @@
   {
     "year": 2019,
     "startDate": "Mar 13 2019",
-    "startPrice": 22.06004407407407,
+    "startPrice": 22.476271320754716,
     "endDate": "Dec 31 2019",
-    "endPrice": 0.02588851851851852,
+    "endPrice": 0.026376981132075473,
     "return": -99.88264520944932
   },
   {
     "year": 2020,
     "startDate": "Jan 01 2020",
-    "startPrice": 0.03003925925925926,
+    "startPrice": 0.030606037735849054,
     "endDate": "Dec 31 2020",
-    "endPrice": 0.017307407407407407,
+    "endPrice": 0.017633962264150944,
     "return": -42.3840406381772
   },
   {
     "year": 2021,
     "startDate": "Jan 01 2021",
-    "startPrice": 0.016447037037037038,
+    "startPrice": 0.01675735849056604,
     "endDate": "Dec 31 2021",
-    "endPrice": 0.052064074074074075,
+    "endPrice": 0.053046415094339626,
     "return": 216.55594838651564
   },
   {
     "year": 2022,
     "startDate": "Jan 01 2022",
-    "startPrice": 0.060344444444444444,
+    "startPrice": 0.061483018867924524,
     "endDate": "Dec 31 2022",
-    "endPrice": 0.15620925925925924,
-    "return": 158.86270177376784
+    "endPrice": 0.1591566037735849,
+    "return": 158.8627017737679
   },
   {
     "year": 2023,
     "startDate": "Jan 01 2023",
-    "startPrice": 0.15799185185185186,
+    "startPrice": 0.16097283018867922,
     "endDate": "Dec 31 2023",
-    "endPrice": 0.8231855555555555,
+    "endPrice": 0.838717358490566,
     "return": 421.030386002091
   },
   {
     "year": 2024,
     "startDate": "Jan 01 2024",
-    "startPrice": 0.8143996296296296,
+    "startPrice": 0.8297656603773585,
     "endDate": "Dec 31 2024",
-    "endPrice": 0.8450718518518519,
-    "return": 3.7662372508901116
+    "endPrice": 0.8610166037735849,
+    "return": 3.766237250890106
   },
   {
     "year": 2025,
     "startDate": "Jan 01 2025",
-    "startPrice": 0.8527518518518519,
+    "startPrice": 0.8688415094339622,
     "endDate": "Dec 31 2025",
-    "endPrice": 1.9056388888888889,
-    "return": 123.46933457260374
+    "endPrice": 1.9415943396226416,
+    "return": 123.46933457260376
   },
   {
     "year": 2026,
     "startDate": "Jan 01 2026",
-    "startPrice": 1.9846585185185184,
-    "endDate": "Apr 18 2026",
-    "endPrice": 2.6217003703703705,
-    "return": 32.098310409963254
+    "startPrice": 2.0221049056603775,
+    "endDate": "Apr 19 2026",
+    "endPrice": 2.6913732075471697,
+    "return": 33.097605372171486
   }
 ]

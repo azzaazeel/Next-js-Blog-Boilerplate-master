@@ -20990,20 +20990,20 @@
   {
     "date": "Mar 18 2026",
     "timestamp": 1773835200000,
-    "price": 125321.96,
-    "volume": 2851
+    "price": 126972.02,
+    "volume": 2993
   },
   {
     "date": "Mar 19 2026",
     "timestamp": 1773921600000,
-    "price": 125920.35,
-    "volume": 3416
+    "price": 125500.47,
+    "volume": 3405
   },
   {
     "date": "Mar 20 2026",
     "timestamp": 1774008000000,
-    "price": 125989.34,
-    "volume": 3833
+    "price": 126816.03,
+    "volume": 3702
   },
   {
     "date": "Mar 21 2026",
@@ -21176,7 +21176,19 @@
   {
     "date": "Apr 18 2026",
     "timestamp": 1776513600000,
-    "price": 141251.78,
-    "volume": 1380
+    "price": 139843.88,
+    "volume": 5050
+  },
+  {
+    "date": "Apr 19 2026",
+    "timestamp": 1776600000000,
+    "price": 139351.92,
+    "volume": 4390
+  },
+  {
+    "date": "Apr 20 2026",
+    "timestamp": 1776686400000,
+    "price": 138549.61,
+    "volume": 3556
   }
 ]

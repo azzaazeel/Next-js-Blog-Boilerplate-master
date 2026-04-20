@@ -37,7 +37,7 @@ function run() {
     
     console.log('🔄 Restarting PM2 processes...');
     try {
-      execSync('pm2 restart all', { stdio: 'inherit' });
+      execSync('pm2 restart next-blog', { stdio: 'inherit' });
     } catch (e) {
       console.log('⚠️ PM2 restart failed. If this is the first time, you might need to run pm2 start manually.');
     }

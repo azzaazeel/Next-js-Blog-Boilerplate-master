@@ -271,6 +271,36 @@ See [LICENSE](LICENSE) for more information.
 
 ---
 
+## Cấu hình riêng cho dự án này (Custom configurations)
+
+### 1. Port và Môi trường
+Dự án đã được cấu hình mặc định chạy trên port **3013** để tránh xung đột với các ứng dụng Next.js khác (thường dùng port 3000).
+- File cấu hình: `package.json` (script `start`).
+
+### 2. Quản lý quy trình với PM2
+Ứng dụng được quản lý bởi PM2 dưới tên `next-blog`.
+- Để khởi động/quản lý ứng dụng, hãy sử dụng file ecosystem:
+  ```bash
+  pm2 start ecosystem.config.js
+  ```
+- Các lệnh PM2 hữu ích:
+  ```bash
+  pm2 list                # Xem danh sách các process
+  pm2 logs next-blog      # Xem log của ứng dụng
+  pm2 restart next-blog   # Khởi động lại ứng dụng
+  ```
+
+### 3. Quy trình Triển khai (Redeploy)
+Khi có dữ liệu thị trường mới trong `data/json/`, hãy chạy lệnh sau để cập nhật thống kê và build lại dự án:
+```bash
+npm run redeploy
+```
+Lệnh này sẽ tự động:
+1. Chạy script tính toán hiệu năng (`scripts/generate-performance-json.js`).
+2. Build lại mã nguồn Next.js (`next build`).
+
+---
+
 Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 [![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://github.com/sponsors/ixartz)
